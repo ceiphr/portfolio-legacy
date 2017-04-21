@@ -1,0 +1,231 @@
+html {
+  scroll-behavior: smooth;
+}
+
+nav{
+  background: transparent;
+  box-shadow: none;
+  position: fixed;
+  z-index: 9999;
+}
+
+.headerLogo{
+  text-align: center !important;
+}
+
+body{
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('images/bk.jpg');
+  background-position: right top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.headerText{
+  color: white;
+  font-family: 'Roboto:400', sans-serif !important;
+
+  text-align: center;
+  margin-left:-189px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+.hamburger{
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.hamburger:hover{
+  color: #7289DA;
+}
+
+.side-nav{
+  background: #23272A;
+}
+
+a{
+  color: white !important;
+  text-decoration: none !important;
+  font-family: 'Roboto:400', sans-serif !important;
+}
+
+a:hover{
+  color: #7289DA !important;
+}
+
+.side_icon{
+  color: white !important;
+  padding: 0;
+}
+
+.logo{
+  top: 40%;
+  left: 50%;
+
+  width: 126px;
+  height: 128px;
+
+  margin-top: -64px;
+  margin-left: -64px;
+
+  position: absolute;
+}
+
+#seg1, #seg2{
+  height: 100vh;
+}
+
+#seg2, .divider{
+  background: #2C2F33;
+}
+
+#mouse-scroll {
+  position: absolute;
+  margin: auto;
+  left: 50%;
+  top: 90%;
+  -webkit-transform: translateX(-50%);
+  z-index: 9998;
+  cursor: pointer;
+}
+
+#mouse-scroll .mouse {
+  height: 42px;
+  width: 28px;
+  border-radius: 20px;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  border: 2px solid #ffffff;
+  top: 170px;
+}
+
+#mouse-scroll .mouse-in {
+  height: 10px;
+  width: 2px;
+  display: block; 
+  margin: 8px auto;
+  border-radius: 2px;
+  background: #ffffff;
+  position: relative;
+}
+
+#mouse-scroll .mouse-in {
+ -webkit-animation: animated-mouse 2s ease infinite;
+  
+}
+
+@-webkit-keyframes animated-mouse {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+     opacity: 0;
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+}
+
+@-webkit-keyframes mouse-scroll {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  } 
+}
+
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#seg2{
+  overflow: scroll;
+}
+
+.background{
+    background-position: right top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    overflow: hidden;
+
+    width: 300px;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.p{
+  margin-bottom: 48px;
+  margin-top: 25vh;
+  margin-left: 25%;
+  margin-right: 25%;
+
+  color: white;
+  top: 120%;
+
+  font-family: 'Roboto:400', sans-serif !important;
+}
+
+.left{
+  margin-left: 18px !important;
+}
+
+.slideanim {visibility:hidden;}
+
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1.5s; 
+    -webkit-animation-duration: 1.5s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}

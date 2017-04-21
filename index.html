@@ -1,30 +1,81 @@
-<!Doctype HTML>
+<!doctype html5>
 <html lang="en">
-<header>
+<head>
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
-    <!--Backend-->
-    <link rel="script" type="js" href="backend.js">
+    <title>Ari Birnbaum | Ceiphr.com</title>
 
-    <!--Stylesheet-->
-    <link rel="stylesheet" type="css" href="stylesheet.css">
-    
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+    <!--JavaScript-->
+    <script type="text/javascript" src="backend.js"></script>
 
     <!--Favicon-->
-    <link rel="shortcut icon" type="image/png" href="https://s14.postimg.org/xg95w8c41/favicon.png"/>
-</header>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
 <body>
-    <div class="container-fluid">
-        <h1>Oh hi there.</h1>
+    <nav id="nav_bar">
+        <div class="nav-wrapper">
+            <ul class="side-nav" id="slide-out">
+                <li>
+                    <div class="userView"><div class="background"><img src="images/sidebk.jpg"></div>
+                        <a href="#!user"><img class="circle" src="images/avatarv1.png"></a>
+                        <a href="#!name"><span class="white-text name">Ari Birnbaum</span></a>
+                        <a href="#!email"><span class="white-text email">ari@ceiphr.com</span></a>
+                    </div>
+                </li>
+                <li><a href="#"><i class="material-icons side_icon">account_circle</i>About</a></li>
+                <li><a href="#"><i class="material-icons side_icon">dashboard</i>Projects</a></li>
+                <li><a href="#"><i class="material-icons side_icon">favorite</i>Turtles ;)</a></li>
+                <li><a href="#"><i class="material-icons side_icon">email</i>Contact</a></li>
+                <li><div class="divider"></div></li>
+                <li><a href="#"><i class="material-icons side_icon">lock</i>Privacy Policy</a></li>
+                <li><a href="#"><i class="material-icons side_icon">bug_report</i>Github Fork</a></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse hamburger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <div id="seg1">
+        <img src="images/logoWhite.png" class="logo slide">
+        <h4 class="headerText slide">Oh hi there. Ma naem Jeff.</h4>
+        <a id="scrollBtn" href="#seg2">
+            <div id="mouse-scroll">
+                <div class="mouse">
+                    <div class="mouse-in"></div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="lineflip">test</div>
+    <div id="seg2">
+        <div class="p">
+            <h3 class="slideanim">Lorem ipsum dolor sit amet, consectetur.</h3>
+            <div class="quote slideanim">
+                <p class="slideanim">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <blockquote class="slideanim">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <footer>consectetur adipiscing</footer>
+                </blockquote>
+            </div>
+        </div>
     </div>
 </body>
 <html>
