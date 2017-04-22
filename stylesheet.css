@@ -89,13 +89,8 @@ a{
   height: 128px;
 }
 
-#home{
+#home, #aboutme, #projects, #hackathons, #contact{
   height: 100vh;
-  overflow: hidden;
-}
-
-#aboutme, #projects, #hackathons, #contact{
-  height: auto;
   overflow: hidden;
 }
 
