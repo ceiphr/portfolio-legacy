@@ -91,11 +91,10 @@ a{
 
 #home{
   height: 100vh;
-  overflow: hidden;
 }
 
 #aboutme, #projects, #hackathons, #contact{
-  height: auto;
+  height: 100vh;
   overflow: hidden;
 }
 
