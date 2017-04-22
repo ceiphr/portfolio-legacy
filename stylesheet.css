@@ -25,15 +25,23 @@ body{
 .headerText{
   color: white;
   font-family: 'Roboto:400', sans-serif !important;
-
-  text-align: center;
-  margin-left:-189px;
-  left: 50%;
   top: 50%;
   position: absolute;
+  width: 100%;
+  text-align: center;
+
 }
 
 .hamburger{
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+
+  color: white;
+}
+
+.hamburger.scroll{
+  color: #99AAB5;
+
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
@@ -47,18 +55,20 @@ body{
 }
 
 a{
-  color: white !important;
   text-decoration: none !important;
-  font-family: 'Roboto:400', sans-serif !important;
 }
 
-a:hover{
-  color: #7289DA !important;
+.sideLink{
+  color: white !important;
+  font-family: 'Roboto:400', sans-serif !important;
 }
 
 .side_icon{
   color: white !important;
-  padding: 0;
+}
+
+.side_icon:hover, .sideLink:hover{
+  color: #7289DA !important;
 }
 
 .logo{
@@ -74,11 +84,15 @@ a:hover{
   position: absolute;
 }
 
-#seg1, #seg2{
+#home, #aboutme, #projects, #hackathons, #contact{
   height: 100vh;
 }
 
-#seg2, .divider{
+#projects, #contact{
+  background: white;
+}
+
+#aboutme, .divider, #hackathons{
   background: #2C2F33;
 }
 
@@ -158,7 +172,7 @@ a:hover{
 }
 
 #seg2{
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .background{
@@ -228,4 +242,44 @@ a:hover{
         opacity: 1;
         -webkit-transform: translateY(0%);
     }
+}
+
+.slanttop {
+    border-style: solid;
+    border-width: 100px 0 0 100vw;
+    border-color: transparent #2C2F33;
+}
+
+.slantd {
+    border-style: solid;
+    border-width: 100px 0 0 100vw;
+    border-color: white #2C2F33;
+}
+
+.slantl {
+    border-style: solid;
+    border-width: 100px 0 0 100vw;
+    border-color: #2C2F33 white;
+}
+
+.dark, .light{
+  margin-left: 64px;
+}
+
+.dark{
+  color: white;
+
+  text-overflow: ellipsis;
+}
+
+.light{
+  color: #2C2F33;
+
+  text-overflow: ellipsis;
+}
+
+.footer{
+  height: 15vh;
+
+  background: #2C2F33;
 }
