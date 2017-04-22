@@ -9,10 +9,6 @@ nav{
   z-index: 9999;
 }
 
-.headerLogo{
-  text-align: center !important;
-}
-
 body{
   background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('images/bk.jpg');
   background-position: right top;
@@ -63,12 +59,12 @@ a{
   font-family: 'Roboto:400', sans-serif !important;
 }
 
-.side_icon{
-  color: white !important;
+.sideLink:hover{
+  color: #7289DA !important;
 }
 
-.side_icon:hover, .sideLink:hover{
-  color: #7289DA !important;
+.side_icon{
+  color: white !important;
 }
 
 .logo{
@@ -84,8 +80,12 @@ a{
   position: absolute;
 }
 
-#home, #aboutme, #projects, #hackathons, #contact{
+#home{
   height: 100vh;
+}
+
+#aboutme, #projects, #hackathons, #contact{
+  height: 75em;
 }
 
 #projects, #contact{
@@ -171,10 +171,6 @@ a{
   }
 }
 
-#seg2{
-  overflow: hidden;
-}
-
 .background{
     background-position: right top;
     background-attachment: fixed;
@@ -192,36 +188,16 @@ a{
     right: 0;
 }
 
-.p{
-  margin-bottom: 48px;
-  margin-top: 25vh;
-  margin-left: 25%;
-  margin-right: 25%;
-
-  color: white;
-  top: 120%;
-
-  font-family: 'Roboto:400', sans-serif !important;
-}
-
-.left{
-  margin-left: 18px !important;
-}
-
 .slideanim {visibility:hidden;}
 
 .slide {
-    /* The name of the animation */
     animation-name: slide;
     -webkit-animation-name: slide; 
-    /* The duration of the animation */
     animation-duration: 1.5s; 
     -webkit-animation-duration: 1.5s;
-    /* Make the element visible */
     visibility: visible; 
 }
 
-/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
 @keyframes slide {
     0% {
         opacity: 0;
