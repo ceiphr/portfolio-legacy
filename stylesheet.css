@@ -265,22 +265,25 @@ a, a:visited, a:active{
   font-size: 16px;
 }
 
-.textLink{
+.textLink, a{
   color: white;
   transition-duration: 0.2s;
 }
 
-.textLink:hover{
+.textLink:hover, a:hover{
   color: #7289DA;
 }
 
 .textLogo{
   width: 60%;
-  margin-left: 20%;
 }
 
 .ceiphrText{
   margin-right: 20%;
+}
+
+.ceiphrTextHead, .textLogo{
+  margin-left: 20%
 }
 
 .icon{
@@ -316,7 +319,7 @@ a, a:visited, a:active{
 }
 
 .footerText{
-  font-size: 20px;
+  font-size: 16px;
   font-family: 'Roboto:400', sans-serif !important;
 
   position: absolute;
