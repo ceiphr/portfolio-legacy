@@ -46,12 +46,9 @@ body{
   color: #7289DA;
 }
 
-.side-nav{
-  background: #23272A;
-}
-
-a{
+a, a:visited, a:active{
   text-decoration: none !important;
+  color: white;
 }
 
 .sideLink{
@@ -94,7 +91,8 @@ a{
 }
 
 #aboutme, #projects, #hackathons, #contact{
-  height: 100vh;
+  min-height: 100vh;
+  max-height: auto;
   overflow: hidden;
 }
 
@@ -102,8 +100,12 @@ a{
   background: white;
 }
 
-#aboutme, .divider, #hackathons{
+#aboutme, .side-nav, #hackathons{
   background: #2C2F33;
+}
+
+.divider{
+  background: #23272A;
 }
 
 #mouse-scroll {
@@ -248,30 +250,84 @@ a{
     border-color: #2C2F33 white;
 }
 
-.dark, .light{
+.textHeader{
+  color: white;
   margin-left: 64px;
 }
 
-.dark{
-  color: white;
-
-  text-overflow: ellipsis;
+.textH1{
+  color: #7289DA;
+  text-align: center;
 }
 
-.light{
-  color: #2C2F33;
+.text{
+  color: #99AAB5;
+  font-size: 16px;
+}
 
-  text-overflow: ellipsis;
+.textLink{
+  color: white;
+  transition-duration: 0.2s;
+}
+
+.textLink:hover{
+  color: #7289DA;
+}
+
+.textLogo{
+  width: 60%;
+  margin-left: 20%;
+}
+
+.ceiphrText{
+  margin-right: 20%;
+}
+
+.icon{
+  font-size: 100px !important;
+  text-align: center;
+  color: white;
+}
+
+.row{
+  max-width: 82%;
+}
+
+.headDivider, .contentDivider{
+  margin-bottom: 32px;
+  height: 1px;
+  background: #7289DA;
+}
+
+.headDivider{
+  width: 128px;
+  margin-left: 64px;
+}
+
+.contentDivider{
+  width: 50%;
+  margin-left: 25%;
 }
 
 .footer{
-  height: 15vh;
+  height: 7vh;
 
   background: #2C2F33;
 }
 
-p{
-  padding-right: 64px;
-  padding-bottom: 64px;
-  font-size: 32px;
+.footerText{
+  font-size: 20px;
+  font-family: 'Roboto:400', sans-serif !important;
+
+  position: absolute;
+  width: 100%;
+  text-align: center;
+
+  color: white;
+}
+
+#heart{
+  color: red;
+
+  font-size: 18px !important; 
 }
