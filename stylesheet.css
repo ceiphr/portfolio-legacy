@@ -80,12 +80,23 @@ a{
   position: absolute;
 }
 
+.logo_icon{
+  height: 48px;
+  margin-bottom: 128px;
+}
+
+.logo_text{
+  height: 128px;
+}
+
 #home{
   height: 100vh;
+  overflow: hidden;
 }
 
 #aboutme, #projects, #hackathons, #contact{
-  height: 75em;
+  height: auto;
+  overflow: hidden;
 }
 
 #projects, #contact{
@@ -258,4 +269,10 @@ a{
   height: 15vh;
 
   background: #2C2F33;
+}
+
+p{
+  padding-right: 64px;
+  padding-bottom: 64px;
+  font-size: 32px;
 }
