@@ -347,7 +347,8 @@ a:hover{
   background: #7289DA;
 
   height: 450px;
-  width: 275px;
+  max-width: 275px;
+  min-width: 225px;
   border-radius: 24px;
 
   margin-bottom: 24px;
@@ -356,7 +357,7 @@ a:hover{
 #proj1Logo{
   color: white;
   font-size: 22px;
-  margin-left: 75px;
+  margin-left: 24%;
   width: 100%;
   top: 80px;
 
@@ -364,8 +365,8 @@ a:hover{
 }
 
 #proj2Logo{
-  width: 300px;
-  margin-top: 32px;
+  width: 100%;
+  margin-top: 48px;
 }
 
 .proj1Head, .proj2Head{
@@ -390,9 +391,9 @@ a:hover{
   color: white;
   background: #2C2F33;
 
-  font-size: 16px;
+  font-size: 14px;
 
-  padding-top: 18px;
+  padding-top: 16px;
   padding-bottom: 4px;
 }
 
@@ -402,27 +403,28 @@ a:hover{
 }
 
 .projTitleText{
-  margin-left: 24px;
+  margin-left: 18px;
   line-height: 8px;
 }
 
 .projText{
   color: white;
 
-  font-size: 16px;
-  margin: 24px;
+  font-size: 14px;
+  margin: 18px;
 }
 
 .projBtn{
-  width: 250px;
+  width: 90%;
   top: 395px;
-  margin-left: 45px;
+  margin-left: 10%;
 
   position: absolute;
 }
 
 .projRow{
   margin-left: 48px;
+  margin-right: 48px;
   max-width: 925px;
 }
 
