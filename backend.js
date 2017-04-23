@@ -45,3 +45,7 @@ $(window).on("scroll", function() {
        $(".hamburger").removeClass("scroll");
     }
 });
+
+  $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  });

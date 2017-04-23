@@ -41,13 +41,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!--Nav Bar-->
     <div class="nav">
-    <nav id="nav_bar">
+    <nav class="navbar">
         <div class="nav-wrapper">
             <!--Side Bar-->
-            <ul class="side-nav" id="slide-out">
+            <ul class="side-nav navbar" id="slide-out">
                 <!--User Profile-->
                 <li>
                     <div class="userView"><div class="background"><img src="images/sidebk.jpg"></div>
@@ -121,7 +121,7 @@
                             <i class="material-icons icon_light">people</i>
                             <h5 class="header1">User Experience</h5>
                         </div>
-                        <p class="text_light slideanim center">I enjoy making websites like the one you're on right now. I love Google's material design and incorporate it into every interface I make. My main forcus at the moment is html, css, javascipt and python.</p>
+                        <p class="text_light slideanim center">I enjoy making websites like the one you're on right now. I love Google's material design and incorporate it into every interface I make. My main focus at the moment is html, css, javascipt and python.</p>
                     </div>
                     <!--Editing Reality-->
                     <div class="col-sm-4">
@@ -201,10 +201,6 @@
                     </div>
                 </div>
             </div>
-            <div class="contentDivider slideanim"></div>
-            <div>
-                <h5 class="textHeaderd center slideanim" id="comingSoon">More to come!</h5>
-            </div>
         </div>
         <!--Slanted Transition-->
         <div class="slantd"></div>
@@ -216,7 +212,19 @@
                 <div class="slideanim">
                     <h3 class="textHeaderl">Hackathon Contributions</h3>
                     <div class="headDivider"></div>
-                </div>       
+                </div>      
+                <a href="https://www.hackbca.com/" target="_blank">
+                    <div id="hackbcaiv" class="slideanim">
+                        <p>
+                            <img id="hackbcaivlogo" src="images/hackathons/hackbcaiv.png">
+                            <div class="hackText">
+                                <h4>HackBCA IV</h4>
+                                <h6 class="hackTextDate">March 25-26, 2017</h6>
+                                <h5 class="hackTextBody">HackBCA IV is the fourth annual hackathon hosted at the Bergen County Academies. HackBCA is open to all high school students who are interested in exploring computer science.</h5>
+                            </div>
+                        </p>
+                    </div>
+                </a>
             </div>
         </div>
         <!--Slanted Transition-->
