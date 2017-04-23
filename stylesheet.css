@@ -62,20 +62,13 @@ body{
 }
 
 .background{
-    background-position: right top;
+    background-position: center;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
 
     position: absolute;
     overflow: hidden;
 
     width: 300px;
-
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
 }
 
 /*Link Styling*/
@@ -431,7 +424,7 @@ a:hover{
 #comingSoon{
   margin-right: 30%;
   margin-left: 30%;
-  padding-top: 64px;
+  padding-top: 32px;
 
   font-size: 32px;
 }
