@@ -18,7 +18,6 @@
 
         ga('create', 'UA-82625288-1', 'auto');
         ga('send', 'pageview');
-
     </script>
 
     <!-- jQuery library -->
@@ -43,10 +42,13 @@
 
 </head>
 <body>
+    <!--Nav Bar-->
     <div class="nav">
     <nav id="nav_bar">
         <div class="nav-wrapper">
+            <!--Side Bar-->
             <ul class="side-nav" id="slide-out">
+                <!--User Profile-->
                 <li>
                     <div class="userView"><div class="background"><img src="images/sidebk.jpg"></div>
                         <a href="#!user"><img class="circle" src="images/avatarv1.png"></a>
@@ -54,215 +56,188 @@
                         <a href="#!email"><span class="white-text email">ari@ceiphr.com</span></a>
                     </div>
                 </li>
+                <!--Navigation Links-->
                 <li><a class="sideLink" href="#aboutme"><i class="material-icons side_icon">account_circle</i>About</a></li>
                 <li><a class="sideLink" href="#projects"><i class="material-icons side_icon">dashboard</i>Projects</a></li>
                 <li><a class="sideLink" href="#hackathons"><i class="material-icons side_icon">code</i>Hackathons</a></li>
                 <li><a class="sideLink" href="#contact"><i class="material-icons side_icon">email</i>Contact</a></li>
+                <!--Side Bar Divider-->
                 <li><div class="divider"></div></li>
+                <!--Hyper Links-->
                 <li><a class="sideLink" href="http://www.iubenda.com/privacy-policy/8103385" target="_blank"><i class="material-icons side_icon">lock</i>Privacy Policy</a></li>
                 <li><a class="sideLink" href="https://github.com/ceiphr/portfolio" target="_blank"><i class="material-icons side_icon">bug_report</i>Github Fork</a></li>
             </ul>
+            <!--Hamburger Menu-->
             <a href="#" data-activates="slide-out" class="button-collapse hamburger show-on-large"><i class="material-icons">menu</i></a>
         </div>
     </nav>
     </div>
+    <!--Front Page-->
     <div class="head">
-    <div id="home">
-        <img src="images/logoWhite.png" class="logo slide">
-        <div class="headerText slide">
-            <h4 >Oh hi there. I'm Ari and this is my portfolio.</h4>
+        <div id="home">
+            <!--Centered Elements-->
+            <img src="images/logoWhite.png" class="logo slide">
+            <div class="header_title slide">
+                <h4 >Oh hi there. I'm Ari and this is my portfolio.</h4>
+            </div>
+            <!--Scroll Link-->
+            <a href="#aboutme">
+                <div id="mouse-scroll">
+                    <div class="mouse">
+                        <div class="mouse-in"></div>
+                    </div>
+                </div>
+            </a>
         </div>
-        <a id="scrollBtn" href="#aboutme">
-            <div id="mouse-scroll">
-                <div class="mouse">
-                    <div class="mouse-in"></div>
-                </div>
-            </div>
-        </a>
     </div>
-    </div>
+    <!--Body Pages-->
     <div class="body">
-    <div class="slanttop"></div>
-    <div id="aboutme">
-        <div class="content">
-            <br>
-            <div class="slideanim">
-                <h3 class="textHeaderl">About Me</h3>
-                <div class="headDivider"></div>
+        <!--Slanted Top Transition-->
+        <div class="slant_top"></div>
+        <!--About Me Page-->
+        <div id="aboutme">
+            <div class="content">
+                <!--Page Title-->
+                <div class="margin">
+                    <br>
+                    <div class="slideanim">
+                        <h3 class="textHeaderl">About Me</h3>
+                        <div class="headDivider"></div>
+                    </div>
+                </div>
+                <!--Row Elements-->
+                <div class="row rowWidth">
+                    <!--Born a Hacker-->
+                    <div class="col-sm-4">
+                        <div class="icon_light slideanim">
+                            <i class="material-icons icon_light">code</i>
+                            <h5 class="header1">Born a Hacker</h5>
+                        </div>
+                        <p class="text_light slideanim center">Since I was little I've been playing with tech. In 7th grade I worked on Minecraft mod packs with other developers and made <a class="textLink" href="https://www.technicpack.net/modpack/the-simple-pack-18.600862" target="_blank">The Simple Pack</a> which achieved 70k downloads last year. Recently I've gone to my first <a class="textLink" href="https://hackbca.com/" target="_blank">Hackathon</a> where I learned to develop web apps.</p>
+                    </div>
+                    <!--User Experience-->
+                    <div class="col-sm-4">
+                        <div class="icon_light slideanim">
+                            <i class="material-icons icon_light">people</i>
+                            <h5 class="header1">User Experience</h5>
+                        </div>
+                        <p class="text_light slideanim center">I enjoy making websites like the one you're on right now. I love Google's material design and incorporate it into every interface I make. My main forcus at the moment is html, css, javascipt and python.</p>
+                    </div>
+                    <!--Editing Reality-->
+                    <div class="col-sm-4">
+                        <div class="icon_light slideanim">
+                            <i class="material-icons icon_light">local_movies</i>
+                            <h5 class="header1">Editing Reality</h5>
+                        </div>
+                        <p class="text_light slideanim center">Besides my major hacking skills I also enjoy editing videos with After Effects and photos using Photoshop and Illustrator. You can check out my photography and graphics on <a class="textLink" href="https://www.instagram.com/ceiphr/" target="_blank">Instagram</a> and in the future you can check out my videos on <a class="textLink" href="https://www.youtube.com/channel/UC18bVTGP63HUEnG2uiKsSPg/videos" target="_blank">Youtube</a>.</p>
+                    </div>
+                </div>
+                <!--Seperator-->
+                <div class="contentDivider slideanim"></div>
+                <!--Ceiphr Elements-->
+                <h5 class="textheaderl slideanim" id="ceiphrTextHead">I should also mention that online I go by...</h5>
+                <div>
+                    <img class="textLogo_light slideanim" src="images/logoWhiteText.png">
+                    <h5 class="text_light right slideanim" id="ceiphrText"><i>Big surprise right?</i></h5>
+                </div>
             </div>
-            <div class="row aboutRow">
-                <div class="col-sm-4">
-                    <div class="iconl slideanim">
-                        <i class="material-icons iconl">code</i>
-                        <h5 class="textH1">Born a Hacker</h5>
-                    </div>
-                    <p class="textl slideanim center">Since I was little I've been playing with tech. In 7th grade I worked on Minecraft mod packs with other developers and made <a class="textLink" href="https://www.technicpack.net/modpack/the-simple-pack-18.600862" target="_blank">The Simple Pack</a> which achieved 70k downloads last year. Recently I've gone to my first <a class="textLink" href="https://hackbca.com/" target="_blank">Hackathon</a> where I learned to develop web apps.</p>
+        </div>
+        <!--Slanted Transition-->
+        <div class="slantl"></div>
+        <!--Projects Page-->
+        <div id="projects">
+            <!--Page Title-->
+            <div class="margin">
+                <br>
+                <div class="slideanim">
+                    <h3 class="textHeaderd">My Projects</h3>
+                    <div class="headDivider"></div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="iconl slideanim">
-                        <i class="material-icons iconl">people</i>
-                        <h5 class="textH1">User Experience</h5>
+            </div>
+            <!--Projects-->
+            <div class="row projRow">
+                <!--Project 1-->
+                <div class="col-sm-4 slideanim">
+                    <div id="project1">
+                        <!--Project Header Image-->
+                        <div class="proj1Head">
+                            <span id="proj1Logo"><img src="images/proj1/logo.png">Prsntli</span>
+                        </div>
+                        <!--Project Body Elements-->
+                        <div class="projBody">
+                            <div class="projTitle">
+                                <p class="projTitleText">Prsntli | Website Templates</p>
+                                <p class="projDate projTitleText">March 26, 2017</p>
+                            </div>
+                            <div class="projText">
+                                <p>Prsntli is an easy to use, downloadable, website template for presentations and portfolios.</p>
+                            </div>
+                            <div class="projBtn">
+                                <button class="btn-flat" href="https://ceiphr.com/prsntli">Visit Project</button>
+                            </div>
+                        </div>
                     </div>
-                    <p class="textl slideanim center">I enjoy making websites like the one you're on right now. I love Google's material design and incorporate it into every interface I make. My main forcus at the moment is html, css, javascipt and python.</p>
                 </div>
-                <div class="col-sm-4">
-                    <div class="iconl slideanim">
-                        <i class="material-icons iconl">local_movies</i>
-                        <h5 class="textH1">Editing Reality</h5>
+                <!--Project 2-->
+                <div class="col-sm-4 slideanim">
+                    <div id="project2">
+                        <!--Project Header Image-->
+                        <div class="proj2Head">
+                            <div><img src="images/proj2/logo.png" id="proj2Logo"></div>
+                        </div>
+                        <!--Project Body Elements-->
+                        <div class="projBody">
+                            <div class="projTitle">
+                                <p class="projTitleText">The Simple Pack | Mod Pack</p>
+                                <p class="projDate projTitleText">March 26, 2017</p>
+                            </div>
+                            <div class="projText">
+                                <p>The Simple Pack is a graphical enhancement mod pack for Minecraft versions 1.8 and 1.9.4.</p>
+                            </div>
+                            <div class="projBtn">
+                                <button class="btn-flat" href="https://ceiphr.com/prsntli">Visit Project</button>
+                            </div>
+                        </div>
                     </div>
-                    <p class="textl slideanim center">Besides my major hacking skills I also enjoy editing videos with After Effects and photos using Photoshop and Illustrator. You can check out my photography and graphics on <a class="textLink" href="https://www.instagram.com/ceiphr/" target="_blank">Instagram</a> and in the future you can check out my videos on <a class="textLink" href="https://www.youtube.com/channel/UC18bVTGP63HUEnG2uiKsSPg/videos" target="_blank">Youtube</a>.</p>
                 </div>
             </div>
             <div class="contentDivider slideanim"></div>
-            <h5 class="textHeaderl ceiphrTextHead slideanim">I should also mention that online I go by...</h5>
             <div>
-                <img class="textLogol slideanim" src="images/logoWhiteText.png">
-                <h5 class="textl right ceiphrText slideanim"><i>Big surprise right?</i></h5>
+                <h5 class="textHeaderd center slideanim" id="comingSoon">More to come!</h5>
             </div>
         </div>
-    </div>
-    <div class="slantl"></div>
-    <div id="projects">
-            <br>
-            <div class="slideanim">
-                <h3 class="textHeaderd">My Projects</h3>
-                <div class="headDivider"></div>
-            </div>
+        <!--Slanted Transition-->
+        <div class="slantd"></div>
+        <!--Hackathon Page-->
+        <div id="hackathons">
+            <!--Page Title-->
             <div class="margin">
-            <div class="row projRow">
-                <div class="col-sm-4 slideanim">
-                    <div id="project1">
-                        <div class="projHead">
-                            <span id="prsntliHead"><img src="images/prsntli.png">Prsntli</span>
-                        </div>
-                        <div class="projBody">
-                            <div class="projTitle">
-                                <p class="projTitleText">Prsntli | Website Templates</p>
-                            </div>
-                            <div class="projText">
-                                <p>Prsntli is an easy to use, downloadable, website template for presentations and portfolios.</p>
-                            </div>
-                            <div class="projBtn">
-                                <button class="btn-flat" href="https://ceiphr.com/prsntli">Visit Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 slideanim">
-                    <div id="project1">
-                        <div class="projHead">
-                            <span id="prsntliHead"><img src="images/prsntli.png">Prsntli</span>
-                        </div>
-                        <div class="projBody">
-                            <div class="projTitle">
-                                <p class="projTitleText">Prsntli | Website Templates</p>
-                            </div>
-                            <div class="projText">
-                                <p>Prsntli is an easy to use, downloadable, website template for presentations and portfolios.</p>
-                            </div>
-                            <div class="projBtn">
-                                <button class="btn-flat">Visit Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 slideanim">
-                    <div id="project1">
-                        <div class="projHead">
-                            <span id="prsntliHead"><img src="images/prsntli.png">Prsntli</span>
-                        </div>
-                        <div class="projBody">
-                            <div class="projTitle">
-                                <p class="projTitleText">Prsntli | Website Templates</p>
-                            </div>
-                            <div class="projText">
-                                <p>Prsntli is an easy to use, downloadable, website template for presentations and portfolios.</p>
-                            </div>
-                            <div class="projBtn">
-                                <button class="btn-flat">Visit Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <div class="row projRow">
-                <div class="col-sm-4 slideanim">
-                    <div id="project1">
-                        <div class="projHead">
-                            <span id="prsntliHead"><img src="images/prsntli.png">Prsntli</span>
-                        </div>
-                        <div class="projBody">
-                            <div class="projTitle">
-                                <p class="projTitleText">Prsntli | Website Templates</p>
-                            </div>
-                            <div class="projText">
-                                <p>Prsntli is an easy to use, downloadable, website template for presentations and portfolios.</p>
-                            </div>
-                            <div class="projBtn">
-                                <button class="btn-flat" href="https://ceiphr.com/prsntli">Visit Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 slideanim">
-                    <div id="project1">
-                        <div class="projHead">
-                            <span id="prsntliHead"><img src="images/prsntli.png">Prsntli</span>
-                        </div>
-                        <div class="projBody">
-                            <div class="projTitle">
-                                <p class="projTitleText">Prsntli | Website Templates</p>
-                            </div>
-                            <div class="projText">
-                                <p>Prsntli is an easy to use, downloadable, website template for presentations and portfolios.</p>
-                            </div>
-                            <div class="projBtn">
-                                <button class="btn-flat">Visit Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 slideanim">
-                    <div id="project1">
-                        <div class="projHead">
-                            <span id="prsntliHead"><img src="images/prsntli.png">Prsntli</span>
-                        </div>
-                        <div class="projBody">
-                            <div class="projTitle">
-                                <p class="projTitleText">Prsntli | Website Templates</p>
-                            </div>
-                            <div class="projText">
-                                <p>Prsntli is an easy to use, downloadable, website template for presentations and portfolios.</p>
-                            </div>
-                            <div class="projBtn">
-                                <button class="btn-flat">Visit Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
+                <br>
+                <div class="slideanim">
+                    <h3 class="textHeaderl">Hackathon Contributions</h3>
+                    <div class="headDivider"></div>
+                </div>       
+            </div>
         </div>
-    </div>
-    <div class="slantd"></div>
-    <div id="hackathons">
-        <div class="margin">
-            <br>
-            <h3 class="slideanim">Hackathon Contributions</h3>
-            <p class="slideanim">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <!--Slanted Transition-->
+        <div class="slantl"></div>
+        <!--Contacts Page-->
+        <div id="contact">
+            <!--Page Title-->
+            <div class="margin">
+                <br>
+                <div class="slideanim">
+                    <h3 class="textHeaderd">My Projects</h3>
+                    <div class="headDivider"></div>
+                </div>   
+            </div>     
         </div>
-    </div>
-    <div class="slantl"></div>
-    <div id="contact">
-        <div class="margin">
-            <br>
-            <h3 class="slideanim">Contact Me</h3>
-            <p class="slideanim">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <!--Slanted Transition-->
+        <div class="slantd"></div>
+        <!--Footer-->
+        <div class="footer">
+            <span class="footerText"><p>Made with <i class="material-icons" id="heart">favorite</i> by Ari Birnbaum.</p></span>
         </div>
-    </div>
-    <div class="slantd"></div>
-    <div class="footer">
-        <span class="footerText"><p>Made with <i class="material-icons" id="heart">favorite</i> by Ari Birnbaum.</p></span>
-    </div>
     </div>
 </body>
 <html>

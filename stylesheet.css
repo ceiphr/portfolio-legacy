@@ -18,7 +18,9 @@ body{
   width: 100%;
 }
 
-.headerText{
+/*Header Styling*/
+
+.header_title{
   color: white;
   font-family: 'Roboto:400', sans-serif !important;
   top: 50%;
@@ -26,6 +28,19 @@ body{
   width: 100%;
   text-align: center;
 
+}
+
+.logo{
+  top: 40%;
+  left: 50%;
+
+  width: 126px;
+  height: 128px;
+
+  margin-top: -64px;
+  margin-left: -64px;
+
+  position: absolute;
 }
 
 .hamburger{
@@ -46,6 +61,25 @@ body{
   color: #7289DA;
 }
 
+.background{
+    background-position: right top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    overflow: hidden;
+
+    width: 300px;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/*Link Styling*/
+
 a, a:visited, a:active{
   text-decoration: none !important;
   color: white;
@@ -64,27 +98,31 @@ a, a:visited, a:active{
   color: white !important;
 }
 
-.logo{
-  top: 40%;
-  left: 50%;
-
-  width: 126px;
-  height: 128px;
-
-  margin-top: -64px;
-  margin-left: -64px;
-
-  position: absolute;
+.divider{
+  background: #23272A;
 }
 
-.logo_icon{
-  height: 48px;
-  margin-bottom: 128px;
+/*Slanted Transition Styling*/
+
+.slant_top {
+    border-style: solid;
+    border-width: 100px 0 0 100vw;
+    border-color: transparent #2C2F33;
 }
 
-.logo_text{
-  height: 128px;
+.slantd {
+    border-style: solid;
+    border-width: 100px 0 0 100vw;
+    border-color: white #2C2F33;
 }
+
+.slantl {
+    border-style: solid;
+    border-width: 100px 0 0 100vw;
+    border-color: #2C2F33 white;
+}
+
+/*Body Styling*/
 
 #home{
   height: 100vh;
@@ -104,9 +142,46 @@ a, a:visited, a:active{
   background: #2C2F33;
 }
 
-.divider{
-  background: #23272A;
+.margin{
+  margin-left: 64px;
+  margin-right: 64px;
 }
+
+.headDivider, .contentDivider{
+  margin-bottom: 32px;
+  height: 1px;
+  background: #7289DA;
+}
+
+.headDivider{
+  width: 128px;
+}
+
+.contentDivider{
+  width: 50%;
+  margin-left: 25%;
+}
+
+.rowWidth{
+  max-width: 90%;
+}
+
+/*Button Styling*/
+
+.btn-flat{
+  width: 75%;
+  background: white;
+  color: #7289DA;
+
+  border-radius: 24px;
+}
+
+.btn-flat:hover{
+  background: #2C2F33;
+  color: white;
+}
+
+/*Scroll Link Styling/Animation*/
 
 #mouse-scroll {
   position: absolute;
@@ -183,22 +258,7 @@ a, a:visited, a:active{
   }
 }
 
-.background{
-    background-position: right top;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    position: absolute;
-    overflow: hidden;
-
-    width: 300px;
-
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
+/*Slide In Animation*/
 
 .slideanim {visibility:hidden;}
 
@@ -232,109 +292,98 @@ a, a:visited, a:active{
     }
 }
 
-.slanttop {
-    border-style: solid;
-    border-width: 100px 0 0 100vw;
-    border-color: transparent #2C2F33;
-}
+/*Text Formatting/Styling*/
 
-.slantd {
-    border-style: solid;
-    border-width: 100px 0 0 100vw;
-    border-color: white #2C2F33;
-}
-
-.slantl {
-    border-style: solid;
-    border-width: 100px 0 0 100vw;
-    border-color: #2C2F33 white;
-}
-
-.textHeaderl{
-  color: white;
-  margin-left: 64px;
-}
-
-.textHeaderd{
-  color: #2C2F33;
-  margin-left: 64px;
-}
-
-.textH1{
+.header1{
   color: #7289DA;
   text-align: center;
 }
 
-.textl{
+.text_light{
   color: #99AAB5;
   font-size: 16px;
 }
 
-.textLinkl, a{
+a{
   color: white;
   transition-duration: 0.2s;
 }
 
-.textLinkl:hover, a:hover{
+a:hover{
   color: #7289DA;
 }
 
-.textLogol{
+.textHeaderl{
+  color: white;
+}
+
+.textHeaderd{
+  color: #2C2F33;
+}
+
+
+.textLogo_light{
   width: 60%;
 }
 
-.ceiphrText, .ceiphrTextHead{
-  margin-right: 20%;
-}
-
-.ceiphrTextHead, .textLogol{
-  margin-left: 20%
-}
-
-.iconl{
+.icon_light{
   font-size: 100px !important;
   text-align: center;
   color: white;
 }
 
-.aboutRow{
-  max-width: 82%;
+
+#ceiphrText, #ceiphrTextHead{
+  margin-right: 20%;
 }
 
-.headDivider, .contentDivider{
-  margin-bottom: 32px;
-  height: 1px;
-  background: #7289DA;
+#ceiphrTextHead, .textLogo_light{
+  margin-left: 20%
 }
 
-.headDivider{
-  width: 128px;
-  margin-left: 64px;
-}
+/*Project Page Styling*/
 
-.contentDivider{
-  width: 50%;
-  margin-left: 25%;
-}
-
-#project1{
+#project1, #project2{
   background: #7289DA;
 
   height: 450px;
-  width: 100%;
+  width: 275px;
   border-radius: 24px;
 
   margin-bottom: 24px;
 }
 
-.projHead{
+#proj1Logo{
+  color: white;
+  font-size: 22px;
+  margin-left: 75px;
+  width: 100%;
+  top: 80px;
+
+  position: absolute;
+}
+
+#proj2Logo{
+  width: 300px;
+  margin-top: 32px;
+}
+
+.proj1Head, .proj2Head{
   height: 200px;
 
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
+}
 
+.proj1Head{
   background: blue;
   background: -webkit-linear-gradient(left top,rgba(41, 128, 185,1.0), rgba(22, 160, 133,1.0))
+
+}
+
+.proj2Head{
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("images/proj2/bk.jpg");
+  background-position: center;
 }
 
 .projTitle{
@@ -342,11 +391,19 @@ a, a:visited, a:active{
   background: #2C2F33;
 
   font-size: 16px;
-  line-height: 48px;
+
+  padding-top: 18px;
+  padding-bottom: 4px;
+}
+
+.projDate{
+  font-size: 12px;
+  color: #99AAB5;
 }
 
 .projTitleText{
   margin-left: 24px;
+  line-height: 8px;
 }
 
 .projText{
@@ -357,43 +414,27 @@ a, a:visited, a:active{
 }
 
 .projBtn{
-  width: 100%;
+  width: 250px;
   top: 395px;
-  left: 50%;
-  margin-left: -38%;
-
-  position: absolute;
-  
-}
-
-.btn-flat{
-  width: 75%;
-  background: white;
-  color: #7289DA;
-
-  border-radius: 24px;
-}
-
-.btn-flat:hover{
-  background: #2C2F33;
-  color: white;
-}
-
-#prsntliHead{
-  color: white;
-  font-size: 22px;
-  margin-left: -64px;
-  width: 100%;
-  left: 50%;
-  top: 80px;
+  margin-left: 45px;
 
   position: absolute;
 }
 
-.margin{
+.projRow{
   margin-left: 48px;
-  margin-right: 48px;
+  max-width: 925px;
 }
+
+#comingSoon{
+  margin-right: 30%;
+  margin-left: 30%;
+  padding-top: 64px;
+
+  font-size: 32px;
+}
+
+/*Footer Styling*/
 
 .footer{
   height: 7vh;
