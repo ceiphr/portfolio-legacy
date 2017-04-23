@@ -250,8 +250,13 @@ a, a:visited, a:active{
     border-color: #2C2F33 white;
 }
 
-.textHeader{
+.textHeaderl{
   color: white;
+  margin-left: 64px;
+}
+
+.textHeaderd{
+  color: #2C2F33;
   margin-left: 64px;
 }
 
@@ -260,39 +265,39 @@ a, a:visited, a:active{
   text-align: center;
 }
 
-.text{
+.textl{
   color: #99AAB5;
   font-size: 16px;
 }
 
-.textLink, a{
+.textLinkl, a{
   color: white;
   transition-duration: 0.2s;
 }
 
-.textLink:hover, a:hover{
+.textLinkl:hover, a:hover{
   color: #7289DA;
 }
 
-.textLogo{
+.textLogol{
   width: 60%;
 }
 
-.ceiphrText{
+.ceiphrText, .ceiphrTextHead{
   margin-right: 20%;
 }
 
-.ceiphrTextHead, .textLogo{
+.ceiphrTextHead, .textLogol{
   margin-left: 20%
 }
 
-.icon{
+.iconl{
   font-size: 100px !important;
   text-align: center;
   color: white;
 }
 
-.row{
+.aboutRow{
   max-width: 82%;
 }
 
@@ -310,6 +315,84 @@ a, a:visited, a:active{
 .contentDivider{
   width: 50%;
   margin-left: 25%;
+}
+
+#project1{
+  background: #7289DA;
+
+  height: 450px;
+  width: 100%;
+  border-radius: 24px;
+
+  margin-bottom: 24px;
+}
+
+.projHead{
+  height: 200px;
+
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+
+  background: blue;
+  background: -webkit-linear-gradient(left top,rgba(41, 128, 185,1.0), rgba(22, 160, 133,1.0))
+}
+
+.projTitle{
+  color: white;
+  background: #2C2F33;
+
+  font-size: 16px;
+  line-height: 48px;
+}
+
+.projTitleText{
+  margin-left: 24px;
+}
+
+.projText{
+  color: white;
+
+  font-size: 16px;
+  margin: 24px;
+}
+
+.projBtn{
+  width: 100%;
+  top: 395px;
+  left: 50%;
+  margin-left: -38%;
+
+  position: absolute;
+  
+}
+
+.btn-flat{
+  width: 75%;
+  background: white;
+  color: #7289DA;
+
+  border-radius: 24px;
+}
+
+.btn-flat:hover{
+  background: #2C2F33;
+  color: white;
+}
+
+#prsntliHead{
+  color: white;
+  font-size: 22px;
+  margin-left: -64px;
+  width: 100%;
+  left: 50%;
+  top: 80px;
+
+  position: absolute;
+}
+
+.margin{
+  margin-left: 48px;
+  margin-right: 48px;
 }
 
 .footer{
