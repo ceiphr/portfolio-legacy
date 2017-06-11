@@ -478,5 +478,10 @@ code:hover {
 
 #heart {
   color: red;
+<<<<<<< HEAD
   font-size: 18px !important;
+=======
+
+  font-size: 18px !important; 
+>>>>>>> c782b4c42e934383b4c0f849f161480525157db1
 }
