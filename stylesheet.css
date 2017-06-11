@@ -108,7 +108,7 @@ a, a:visited, a:active {
 #contact {
   max-height: auto;
   padding-top: 15vh;
-  height: 95vh;
+  min-height: 95vh;
   overflow: hidden;
 }
 
