@@ -97,10 +97,18 @@ a, a:visited, a:active {
   height: 100vh;
 }
 
-#aboutme, #projects, #hackathons, #contact {
+#aboutme, #projects, #hackathons {
   max-height: auto;
-  padding-top: 12vh;
-  padding-bottom: 12vh;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#contact {
+  max-height: auto;
+  padding-top: 15vh;
+  height: 95vh;
   overflow: hidden;
 }
 
@@ -114,6 +122,8 @@ a, a:visited, a:active {
 
 .side-nav {
   background: white;
+  border-radius: 0;
+  border-width: 0;
 }
 
 .margin {
@@ -462,13 +472,13 @@ code:hover {
 /*Footer Styling*/
 
 .footer {
-  height: 8vh;
+  height: 5vh;
   padding-bottom: 18px;
   background: white;
 }
 
 .footerText {
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Roboto:400', sans-serif !important;
   position: absolute;
   width: 100%;
@@ -476,12 +486,7 @@ code:hover {
   color: #2C2F33;
 }
 
-#heart {
-  color: red;
-<<<<<<< HEAD
-  font-size: 18px !important;
-=======
-
-  font-size: 18px !important; 
->>>>>>> c782b4c42e934383b4c0f849f161480525157db1
+.parrot {
+  width: 14px;
+  height: 10px;
 }
