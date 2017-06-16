@@ -458,6 +458,10 @@ a:hover {
   color: #7289DA;
 }
 
+.subText{
+  color: grey;
+}
+
 code {
   color: white;
   background: #2C2F33;
