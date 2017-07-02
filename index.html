@@ -28,6 +28,8 @@
     ga('send', 'pageview');
   </script>
 
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
@@ -45,7 +47,7 @@
   <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
 
   <!--Fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
@@ -82,9 +84,13 @@
   <div class="head">
     <div id="home">
       <!--Centered Elements-->
-      <img src="images/logoWhite.png" class="logo slide">
-      <div class="header_title slide">
-        <h4>Hey, I'm Ari and this is my portfolio.</h4>
+      <div class="container">
+        <div class="left">
+          <img src="images/ceiphrTextWhite.png" class="logo slide">
+          <div class="header_title slide">
+            <h5>Hey, I'm Ari and this is my portfolio.</h5>
+          </div>
+        </div>
       </div>
       <!--Scroll Link-->
       <a href="#aboutme">
@@ -100,171 +106,153 @@
   <div class="body">
     <!--About Me Page-->
     <div id="aboutme">
-      <div class="content">
+      <div class="container head">
         <!--Page Title-->
-        <div class="margin">
-          <div class="slideanim">
-            <h3 class="textHeaderl">About Me</h3>
-            <div class="headDivider"></div>
-          </div>
-        </div>
-        <!--Row Elements-->
-        <div class="row rowWidth">
-          <!--Born a Hacker-->
-          <div class="col-sm-4">
-            <div class="icon_light slideanim">
-              <i class="material-icons icon_light">code</i>
-              <h5 class="header1">Born a Hacker</h5>
-            </div>
-            <p class="text_light slideanim center">Since I was little I've been playing with tech. In 7th grade I worked on Minecraft mod packs with other developers and made <a class="textLink" href="https://www.technicpack.net/modpack/the-simple-pack-18.600862" target="_blank">The Simple Pack</a>              which achieved 70k downloads last year. Recently I've gone to my first <a class="textLink" href="https://hackbca.com/" target="_blank">Hackathon</a> where I learned to develop web apps.</p>
-          </div>
-          <!--User Experience-->
-          <div class="col-sm-4">
-            <div class="icon_light slideanim">
-              <i class="material-icons icon_light">people</i>
-              <h5 class="header1">User Experience</h5>
-            </div>
-            <p class="text_light slideanim center">I enjoy making websites like the one you're on right now. I love Google's material design and incorporate it into every interface I make. My main focus at the moment is html, css, javascipt and python.</p>
-          </div>
-          <!--Editing Reality-->
-          <div class="col-sm-4">
-            <div class="icon_light slideanim">
-              <i class="material-icons icon_light">local_movies</i>
-              <h5 class="header1">Editing Reality</h5>
-            </div>
-            <p class="text_light slideanim center">Besides my major hacking skills I also enjoy editing videos with After Effects and photos using Photoshop and Illustrator. You can check out my photography and graphics on <a class="textLink" href="https://www.instagram.com/ceiphr/" target="_blank">Instagram</a>              and in the future you can check out my videos on <a class="textLink" href="https://www.youtube.com/channel/UC18bVTGP63HUEnG2uiKsSPg/videos" target="_blank">Youtube</a>.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Projects Page-->
-    <div id="projects">
-      <!--Page Title-->
-      <div class="margin">
         <div class="slideanim">
-          <h3 class="textHeaderd">My Projects</h3>
+          <h3 class="textHeaderl">About Me</h3>
           <div class="headDivider"></div>
         </div>
       </div>
-      <!--Projects-->
-      <div class="row projRow">
-        <!--Project 2-->
-        <div class="col-sm-4 slideanim projBackground">
-          <div>
-            <!--Project Header Image-->
+      <!--Row Elements-->
+      <div class="row container">
+        <!--Born a Hacker-->
+        <div class="col-sm-4">
+          <div class="icon_light slideanim">
+            <i class="material-icons icon_light">code</i>
+            <h5 class="header1">Born a Hacker</h5>
+          </div>
+          <p class="text_light slideanim center">Since I was little I've been playing with tech. In 7th grade I worked on Minecraft mod packs with other developers and made <a class="textLink" href="https://www.technicpack.net/modpack/the-simple-pack-18.600862" target="_blank">The Simple Pack</a>            which achieved 70k downloads last year. Recently I've gone to my first <a class="textLink" href="https://hackbca.com/" target="_blank">Hackathon</a> where I learned to develop web apps.</p>
+        </div>
+        <!--User Experience-->
+        <div class="col-sm-4">
+          <div class="icon_light slideanim">
+            <i class="material-icons icon_light">people</i>
+            <h5 class="header1">User Experience</h5>
+          </div>
+          <p class="text_light slideanim center">I enjoy making websites like the one you're on right now. I love Google's material design and incorporate it into every interface I make. My main focus at the moment is html, css, javascipt and python.</p>
+        </div>
+        <!--Editing Reality-->
+        <div class="col-sm-4">
+          <div class="icon_light slideanim">
+            <i class="material-icons icon_light">local_movies</i>
+            <h5 class="header1">Editing Reality</h5>
+          </div>
+          <p class="text_light slideanim center">Besides my major hacking skills I also enjoy editing videos with After Effects and photos using Photoshop and Illustrator. You can check out my photography and graphics on <a class="textLink" href="https://www.instagram.com/ceiphr/" target="_blank">Instagram</a>            and in the future you can check out my videos on <a class="textLink" href="https://www.youtube.com/channel/UC18bVTGP63HUEnG2uiKsSPg/videos" target="_blank">Youtube</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Projects Page-->
+  <div id="projects">
+    <!--Page Title-->
+    <div class="container head">
+      <div class="slideanim">
+        <h3 class="textHeaderd">My Projects</h3>
+        <div class="headDivider"></div>
+      </div>
+    </div>
+    <!--Projects-->
+    <div class="row container">
+      <!--Project 2-->
+      <div class="col-sm-6 slideanim">
+        <div class="card project">
+          <div class="card-image">
             <div id="proj2bk">
-              <span id="proj2logo"><img src="images/proj1/logo.png">Prsntli</span>
-            </div>
-            <!--Project Body Elements-->
-            <div>
-              <div class="projTitle">
-                <p>Prsntli | Website Templates</p>
-                <p class="projTitledate">March 26, 2017</p>
-              </div>
               <div>
-                <p class="projP">Prsntli is an easy to use, downloadable, website template for presentations and portfolios.</p>
-              </div>
-              <div class="projBtnDiv">
-                <a href="https://ceiphr.com/prsntli" target="_blank"><button class="btn-flat projBtn">Visit Project</button></a>
+                <p class="center" id="proj2logo">Dr.Frieda</p>
               </div>
             </div>
           </div>
+          <div class="card-content">
+            <span class="card-title activator">Dr.Frieda<i class="material-icons right">more_vert</i></span>
+            <p><a href="https://ceiphr.com/drfrieda" target="_blank">Visit Project</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title">Dr.Frieda<i class="material-icons right">close</i></span>
+            <p class="white-text">This website was developed as a blog/portfolio for Dr. Frieda Birnbaum (my mom).</p>
+          </div>
         </div>
-        <!--Project 1-->
-        <div class="col-sm-4 slideanim projBackground">
-          <div>
-            <!--Project Header Image-->
-            <div id=proj1bk>
-              <div><img id="proj1img" src="images/proj2/logo.png"></div>
+      </div>
+      <!--Project 1-->
+      <div class="col-sm-6 slideanim">
+        <div class="card project">
+          <div class="card-image">
+            <div id="proj1bk">
+              <div><img id="proj1logo" src="images/proj1/logo.png"></div>
             </div>
-            <!--Project Body Elements-->
-            <div>
-              <div class="projTitle">
-                <p>The Simple Pack | Mod Pack</p>
-                <p class="projTitledate">July 23, 2015</p>
+          </div>
+          <div class="card-content">
+            <span class="card-title activator ">The Simple Pack<i class="material-icons right">more_vert</i></span>
+            <p><a href="https://ceiphr.com/tspWeb" target="_blank">Visit Project</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title">The Simple Pack<i class="material-icons right">close</i></span>
+            <p class="white-text">The Simple Pack is a graphical enhancement mod pack for Minecraft versions 1.8 and 1.9.4.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Hackathon Page-->
+  <div id="hackathons">
+    <!--Page Title-->
+    <div class="container head">
+      <div class="slideanim">
+        <h3 class="textHeaderl">Hackathon Contributions</h3>
+        <div class="headDivider"></div>
+      </div>
+    </div>
+    <!--Hackathons-->
+    <!--HackBCA IV-->
+    <div class="row container">
+      <div class="col-sm-12 slideanim">
+        <div class="card hackathon">
+          <div class="card-image">
+            <div id="hackbcaivbk"><img class="hacklogo" src="images/hackathons/hackbcaiv/hackbcaiv.png"></div>
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <div class="hackText">
+                <p class="card-title">HackBCA IV</p>
+                <h6 class="hackTextDate">March 25-26, 2017</h6>
+                <h6 class="hackTextBody">HackBCA IV is the fourth annual hackathon hosted at the Bergen County Academies. HackBCA is open to all high school students who are interested in exploring computer science.</h6>
               </div>
-              <div>
-                <p class="projP">The Simple Pack is a graphical enhancement mod pack for Minecraft versions 1.8 and 1.9.4.</p>
-              </div>
-              <div class="projBtnDiv">
-                <a href="https://www.technicpack.net/modpack/the-simple-pack-18.600862" target="_blank"><button class="btn-flat projBtn">Visit Project</button></a>
-              </div>
+            </div>
+            <div class="card-action">
+              <a href="http://hackbca.com/" target="blank_">Visit Website</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!--Hackathon Page-->
-    <div id="hackathons">
-      <!--Page Title-->
-      <div class="margin">
-        <div class="slideanim">
-          <h3 class="textHeaderl">Hackathon Contributions</h3>
-          <div class="headDivider"></div>
-        </div>
-        <!--Hackathons-->
-        <!--HackBCA IV-->
-        <div class="pull left">
-          <a href="https://www.hackbca.com/" target="_blank">
-            <div id="hackbcaiv" class="slideanim">
-              <p>
-                <img id="hackbcaivlogo" src="images/hackathons/hackbcaiv.png">
-                <div class="hackText">
-                  <h4>HackBCA IV</h4>
-                  <h6 class="hackTextDate">March 25-26, 2017</h6>
-                  <h5 class="hackTextBody">HackBCA IV is the fourth annual hackathon hosted at the Bergen County Academies. HackBCA is open to all high school students who are interested in exploring computer science.</h5>
-                </div>
-              </p>
-            </div>
-          </a>
-        </div>
+  </div>
+  <!--Contacts Page-->
+  <div id="contact">
+    <!--Page Title-->
+    <div class="container head">
+      <div class="slideanim">
+        <h3 class="textHeaderd">Contact Me</h3>
+        <div class="headDivider"></div>
       </div>
     </div>
-    <!--Contacts Page-->
-    <div id="contact">
-      <!--Page Title-->
-      <div class="margin">
-        <div class="slideanim">
-          <h3 class="textHeaderd">Contact Me</h3>
-          <div class="headDivider"></div>
-        </div>
-        <div class="contactsrow contacts row rowWidth">
-          <!--Email-->
-          <div class="contactsDiv col-sm-4 slideanim">
-            <span>
-              <div>
-                <i class="material-icons contactsIco">email</i>
-                <h5>Email Address</h5>
-                <p class="contactsp"><code>contact@ceiphr.com</code></p>
-                <h6 class="subText">I check this email often.</h6>
-              </div>
-            </span>
-          </div>
-          <!--Number-->
-          <div class="contactsDiv col-sm-4 slideanim">
-            <div><i class="material-icons contactsIco">phone_android</i>
-              <h5>Phone Number</h5>
-              <p class="contactsp"><code>+1 201-431-3893</code></p>
-              <h6 class="subText">Not fully configered yet!</h6>
-            </div>
-          </div>
+    <div class="container slideanim">
+      <div class="center emaildiv">
+        <div>
+          <i class="material-icons emailcontact">email</i>
+          <h5><code>contact@ceiphr.com</code><h5>
         </div>
       </div>
+      <div class="center">
+        <a target="_blank" href="https://github.com/ceiphr"><img class="icon svg" src="images/icons/github.svg"/></a>
+        <a target="_blank" href="https://www.instagram.com/ceiphr/"><img class="icon svg" src="images/icons/instagram.svg"/></a>
+        <a target="_blank" href="https://twitter.com/ceiphr"><img class="icon svg" src="images/icons/twitter.svg"/></a>
+        <a target="_blank" href="https://www.facebook.com/ceiphr"><img class="icon svg" src="images/icons/facebook.svg"/></a>
+      </div>
     </div>
-    <!--Footer-->
-    <div class="footer">
-      <!--<span class="footerLinks">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div><img class="slideanim" src="images/icons/github.svg">test</div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div><img class="slideanim" src="images/icons/facebook.svg">test</div>
-                    </div>
-                </div>
-            </span>-->
-      <span class="footerText"><p>Made with <img class="parrot" src="images/parrot.gif"> by Ari Birnbaum.</p></span>
-    </div>
+  </div>
+  <!--Footer-->
+  <div class="footer">
+    <span class="footerText"><p>Made with <img class="parrot" src="images/parrot.gif"> by Ari Birnbaum.</p></span>
   </div>
 </body>
 <html>
