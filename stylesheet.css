@@ -106,7 +106,7 @@ a, a:visited, a:active {
 #contact {
   max-height: auto;
   padding-top: 15vh;
-  min-height: 95vh;
+  min-height: 90vh;
   overflow: hidden;
 }
 
@@ -436,7 +436,8 @@ code:hover {
 }
 
 .footer {
-  height: 5vh;
+  height: 10vh;
+  padding-top: 32px;
   background: white;
 }
 

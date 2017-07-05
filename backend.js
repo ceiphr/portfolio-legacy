@@ -8,7 +8,7 @@ $(document).ready(function() {
 })
 
 $(document).ready(function() {
-  $("nav, a, footer a[href='#myPage']").on('click', function(event) {
+  $("nav, a, footer a[href='#!']").on('click', function(event) {
 
     if (this.hash !== "") {
 
@@ -18,7 +18,7 @@ $(document).ready(function() {
 
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 900, function() {
+      }, 1200, function() {
 
         window.location.hash = hash;
       });
@@ -38,13 +38,9 @@ $(window).scroll(function() {
 });
 
 $(window).on("scroll", function() {
-  if ($(window).scrollTop() > 600) {
+  if ($(window).scrollTop() > 800) {
     $(".hamburger").addClass("scroll");
   } else {
     $(".hamburger").removeClass("scroll");
   }
-});
-
-$(document).ready(function() {
-  $('.scrollspy').scrollSpy();
 });
