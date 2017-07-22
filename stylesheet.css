@@ -16,13 +16,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  z-index: 9000;
 }
 
 
 /*Header Styling*/
 
-.head {
-  padding-left: 30px;
+#home {
   z-index: 9999;
 }
 
@@ -62,6 +62,15 @@ body {
   background-attachment: fixed;
   position: absolute;
   overflow: hidden;
+}
+
+#vlink {
+  position: absolute;
+  margin: auto;
+  left: 50%;
+  top: 95%;
+  -webkit-transform: translateX(-50%);
+  cursor: pointer;
 }
 
 
