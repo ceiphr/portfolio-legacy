@@ -22,6 +22,10 @@ body {
 
 /*Header Styling*/
 
+.head {
+  padding-left: 30px;
+}
+
 #home {
   z-index: 9999;
 }
