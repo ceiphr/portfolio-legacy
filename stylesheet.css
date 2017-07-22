@@ -9,10 +9,21 @@ html {
   z-index: 9999;
 }
 
+body {
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background-position: right top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+
 /*Header Styling*/
 
 .head {
   padding-left: 30px;
+  z-index: 9999;
 }
 
 .header_title {
@@ -128,87 +139,6 @@ a, a:visited, a:active {
   width: 50%;
   margin-left: 25%;
 }
-
-
-/*Button Styling*/
-
-
-/*Scroll Link Styling/Animation*/
-
-#mouse-scroll {
-  position: absolute;
-  margin: auto;
-  left: 50%;
-  top: 90%;
-  -webkit-transform: translateX(-50%);
-  z-index: 9998;
-  cursor: pointer;
-}
-
-#mouse-scroll .mouse {
-  height: 42px;
-  width: 28px;
-  border-radius: 20px;
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-  border: 2px solid #ffffff;
-  top: 170px;
-}
-
-#mouse-scroll .mouse-in {
-  height: 10px;
-  width: 2px;
-  display: block;
-  margin: 8px auto;
-  border-radius: 2px;
-  background: #ffffff;
-  position: relative;
-}
-
-#mouse-scroll .mouse-in {
-  -webkit-animation: animated-mouse 2s ease infinite;
-}
-
-@-webkit-keyframes animated-mouse {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(10px);
-    -ms-transform: translateY(10px);
-    transform: translateY(10px);
-  }
-}
-
-@-webkit-keyframes mouse-scroll {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: .5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes mouse-scroll {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 
 /*Slide In Animation*/
 
