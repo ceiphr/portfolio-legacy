@@ -9,16 +9,6 @@ html {
   z-index: 9999;
 }
 
-body {
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/bk.jpg');
-  background-position: right top;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-}
-
-
 /*Header Styling*/
 
 .head {
