@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background: black;
+  background: #23272A;
   width: 100%;
   z-index: 9000;
 }
@@ -147,7 +147,8 @@ a, a:visited, a:active {
   position: absolute;
   margin: auto;
   left: 50%;
-  top: 92%;
+  top: 100%;
+  transform: translateY(-150%) !important;
   z-index: 9999;
   -webkit-transform: translateX(-50%);
   cursor: pointer;
