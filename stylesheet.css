@@ -30,7 +30,8 @@ body {
   color: white;
   font-family: 'Roboto', sans-serif;
   top: 50%;
-  font-size: 32px;
+  font-size: 20px;
+  margin-top: 0;
   position: absolute;
 }
 
@@ -146,7 +147,7 @@ a, a:visited, a:active {
   position: absolute;
   margin: auto;
   left: 50%;
-  top: 90%;
+  top: 92%;
   z-index: 9999;
   -webkit-transform: translateX(-50%);
   cursor: pointer;
@@ -232,6 +233,7 @@ a, a:visited, a:active {
 
 .header1 {
   color: #7289DA;
+  font-size: 24px;
 }
 
 .text_light {
@@ -253,10 +255,12 @@ a:hover {
 
 .textHeaderl {
   color: white;
+  font-size: 40px;
 }
 
 .textHeaderd {
   color: #2C2F33;
+  font-size: 40px;
 }
 
 .textLogo_light {
@@ -356,7 +360,7 @@ a:hover {
 }
 
 .hackTextDate {
-  color: #2C2F33;
+  color: #2C2F33 !important;
 }
 
 #hackbcaivbk {
@@ -387,6 +391,8 @@ a:hover {
 code {
   color: white;
   background: #2C2F33;
+  font-size: 24px;
+  line-height: 0;
   transition-duration: 0.2s;
 }
 
