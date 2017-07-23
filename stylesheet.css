@@ -147,8 +147,7 @@ a, a:visited, a:active {
   position: absolute;
   margin: auto;
   left: 50%;
-  top: 100%;
-  transform: translateY(-150%) !important;
+  bottom: 2%;
   z-index: 9999;
   -webkit-transform: translateX(-50%);
   cursor: pointer;
