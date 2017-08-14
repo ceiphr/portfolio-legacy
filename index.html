@@ -10,19 +10,17 @@
   <meta name="apple-mobile-web-app-title" content="Ceiphr" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="#23272A" />
+
   <link rel="apple-touch-icon" href="/images/avatar1.png" />
   <link rel="apple-touch-startup-image" href="/images/avatar1.png" />
-  <title>Ari Birnbaum // Ceiphr</title>
 
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <title>Ari Birnbaum // Ceiphr</title>
 
   <!--Google Analytics-->
   <script max-age=86400>
-    (function(i, s, o, g, r, a, m) {
+    (function (i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function() {
+      i[r] = i[r] || function () {
         (i[r].q = i[r].q || []).push(arguments)
       }, i[r].l = 1 * new Date();
       a = s.createElement(o),
@@ -37,16 +35,16 @@
   </script>
 
   <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-
-  <!--Stylesheet-->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-  <!--JavaScript-->
+  <!-- Latest compiled JavaScript -->
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/materialize/dist/js/materialize.min.js"></script>
   <script max-age=86400 type="text/javascript" src="backend.js"></script>
 
   <!--Favicon-->
@@ -87,20 +85,22 @@
     </nav>
   </div>
   <!--Front Page-->
-  <div class="head">
+  <div>
     <div id="home">
       <!--Centered Elements-->
       <div class="container">
-        <div class="left">
+        <div class="left head">
           <img max-age=86400 src="images/ceiphrTextWhite.png" class="logo">
-          <header><h1 class="header_title">Hey, I'm Ari and this is my portfolio.</h1></header>
+          <header>
+            <h1 class="header_title">Hey, I'm Ari and this is my portfolio.</h1>
+          </header>
         </div>
         <a href="#aboutme">
           <section class="scroll-section">
             <span class="scroll-icon">
               <span class="scroll-icon__wheel-outer">
                 <span class="scroll-icon__wheel-inner"></span>
-              </span>
+            </span>
             </span>
           </section>
         </a>
@@ -111,10 +111,12 @@
   <div class="body">
     <!--About Me Page-->
     <div id="aboutme">
-      <div class="container head">
+      <div class="container">
         <!--Page Title-->
         <div class="slideanim">
-          <header><h2 class="textHeaderl">About Me</h2></header>
+          <header>
+            <h2 class="textHeaderl">About Me</h2>
+          </header>
           <div class="headDivider"></div>
         </div>
       </div>
@@ -126,7 +128,9 @@
             <i class="material-icons icon_light">code</i>
             <h3 class="header1">Born a Hacker</h3>
           </div>
-          <p class="text_light slideanim center">Since I was little I've been playing with tech. In 7th grade I worked on Minecraft mod packs with other developers and made <a class="textLink" href="https://www.technicpack.net/modpack/the-simple-pack-18.600862" target="_blank">The Simple Pack</a>            which achieved 70k downloads last year. Recently I've gone to my first <a class="textLink" href="https://hackbca.com/" target="_blank">Hackathon</a> where I learned to develop web apps.</p>
+          <p class="text_light slideanim center">Since I was little I've been playing with tech. In 7th grade I worked on Minecraft mod packs with other developers
+            and made <a class="textLink" href="https://www.technicpack.net/modpack/the-simple-pack-18.600862" target="_blank">The Simple Pack</a>            which achieved 70k downloads last year. Recently I've gone to my first <a class="textLink" href="https://hackbca.com/"
+              target="_blank">Hackathon</a> where I learned to develop web apps.</p>
         </div>
         <!--User Experience-->
         <div class="col-sm-4">
@@ -134,7 +138,8 @@
             <i class="material-icons icon_light">people</i>
             <h3 class="header1">User Experience</h3>
           </div>
-          <p class="text_light slideanim center">I enjoy making websites like the one you're on right now. I love Google's material design and incorporate it into every interface I make. My main focus at the moment is html, css, javascipt and python.</p>
+          <p class="text_light slideanim center">I enjoy making websites like the one you're on right now. I love Google's material design and incorporate it into
+            every interface I make. My main focus at the moment is html, css, javascipt and python.</p>
         </div>
         <!--Editing Reality-->
         <div class="col-sm-4">
@@ -142,7 +147,11 @@
             <i class="material-icons icon_light">camera</i>
             <h3 class="header1">Editing Reality</h3>
           </div>
-          <p class="text_light slideanim center">Besides my major hacking skills I also enjoy editing videos with After Effects and photos using Photoshop and Illustrator. You can check out my photography and graphics on <a class="textLink" href="https://www.instagram.com/ceiphr/" target="_blank">Instagram</a>            and in the future you can check out my videos on <a class="textLink" href="https://www.youtube.com/channel/UC18bVTGP63HUEnG2uiKsSPg/videos" target="_blank">Youtube</a>.</p>
+          <p class="text_light slideanim center">Besides my major hacking skills I also enjoy editing videos with After Effects and photos using Photoshop and Illustrator.
+            You can check out my photography and graphics on
+            <a class="textLink" href="https://www.instagram.com/ceiphr/" target="_blank">Instagram</a> and in the future
+            you can check out my videos on <a class="textLink" href="https://www.youtube.com/channel/UC18bVTGP63HUEnG2uiKsSPg/videos"
+              target="_blank">Youtube</a>.</p>
         </div>
       </div>
     </div>
@@ -152,7 +161,9 @@
     <!--Page Title-->
     <div class="container head">
       <div class="slideanim">
-        <header><h2 class="textHeaderd">My Projects</h2></header>
+        <header>
+          <h2 class="textHeaderd">My Projects</h2>
+        </header>
         <div class="headDivider"></div>
       </div>
     </div>
@@ -203,7 +214,9 @@
     <!--Page Title-->
     <div class="container head">
       <div class="slideanim">
-        <header><h2 class="textHeaderl">Hackathon Contributions</h2></header>
+        <header>
+          <h2 class="textHeaderl">Hackathon Contributions</h2>
+        </header>
         <div class="headDivider"></div>
       </div>
     </div>
@@ -220,7 +233,8 @@
               <div class="hackText">
                 <p class="card-title">HackBCA IV</p>
                 <p class="hackTextDate">March 25-26, 2017</p>
-                <p class="hackTextBody">HackBCA IV is the fourth annual hackathon hosted at the Bergen County Academies. HackBCA is open to all high school students who are interested in exploring computer science.</p>
+                <p class="hackTextBody">HackBCA IV is the fourth annual hackathon hosted at the Bergen County Academies. HackBCA is open to all high
+                  school students who are interested in exploring computer science.</p>
               </div>
             </div>
             <div class="card-action">
@@ -236,7 +250,9 @@
     <!--Page Title-->
     <div class="container head">
       <div class="slideanim">
-        <header><h2 class="textHeaderd">Contact Me</h2></header>
+        <header>
+          <h2 class="textHeaderd">Contact Me</h2>
+        </header>
         <div class="headDivider"></div>
       </div>
     </div>
@@ -244,14 +260,15 @@
       <div class="center emaildiv">
         <div>
           <i class="material-icons emailcontact">email</i>
-          <h3><code>contact@ceiphr.com</code><h3>
+          <h3><code>contact@ceiphr.com</code>
+            <h3>
         </div>
       </div>
       <div class="center">
-        <a target="_blank" href="https://github.com/ceiphr"><img class="icon svg" max-age=86400 src="images/icons/github.svg"/></a>
-        <a target="_blank" href="https://www.instagram.com/ceiphr/"><img class="icon svg" max-age=86400 src="images/icons/instagram.svg"/></a>
-        <a target="_blank" href="https://twitter.com/ceiphr"><img class="icon svg" max-age=86400 src="images/icons/twitter.svg"/></a>
-        <a target="_blank" href="https://www.facebook.com/ceiphr"><img class="icon svg" max-age=86400 src="images/icons/facebook.svg"/></a>
+        <a target="_blank" href="https://github.com/ceiphr"><img class="icon svg" max-age=86400 src="images/icons/github.svg" /></a>
+        <a target="_blank" href="https://www.instagram.com/ceiphr/"><img class="icon svg" max-age=86400 src="images/icons/instagram.svg" /></a>
+        <a target="_blank" href="https://twitter.com/ceiphr"><img class="icon svg" max-age=86400 src="images/icons/twitter.svg" /></a>
+        <a target="_blank" href="https://www.facebook.com/ceiphr"><img class="icon svg" max-age=86400 src="images/icons/facebook.svg" /></a>
       </div>
     </div>
   </div>

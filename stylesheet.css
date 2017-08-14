@@ -30,8 +30,8 @@ body {
   color: white;
   font-family: 'Roboto', sans-serif;
   top: 50%;
+  line-height: 0;
   font-size: 20px;
-  margin-top: 0;
   position: absolute;
 }
 
@@ -65,9 +65,12 @@ body {
   overflow: hidden;
 }
 
+
 /*Link Styling*/
 
-a, a:visited, a:active {
+a,
+a:visited,
+a:active {
   text-decoration: none !important;
   color: white;
 }
@@ -96,7 +99,9 @@ a, a:visited, a:active {
   height: 100vh;
 }
 
-#aboutme, #projects, #hackathons {
+#aboutme,
+#projects,
+#hackathons {
   max-height: auto;
   padding-top: 15vh;
   padding-bottom: 15vh;
@@ -111,11 +116,14 @@ a, a:visited, a:active {
   overflow: hidden;
 }
 
-#projects, #contact {
+#projects,
+#contact {
   background: white;
 }
 
-#aboutme, #hackathons, .sidebarbk {
+#aboutme,
+#hackathons,
+.sidebarbk {
   background: #2C2F33;
 }
 
@@ -129,9 +137,6 @@ a, a:visited, a:active {
   margin-bottom: 32px;
   height: 1px;
   background: #7289DA;
-}
-
-.headDivider {
   width: 64px;
 }
 
@@ -140,7 +145,10 @@ a, a:visited, a:active {
   margin-left: 25%;
 }
 
+
 /*Scroll Icon*/
+
+
 /*https://codepen.io/JonasNoldeDev/pen/BKMXwV*/
 
 .scroll-section {
@@ -154,11 +162,21 @@ a, a:visited, a:active {
 }
 
 @keyframes scroll_1 {
-  0%   { transform: translateY(0); }
-  25%  { transform: translateY(-0.6em); }
-  50%  { transform: translateY(0); }
-  75%  { transform: translateY(0.6em); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-0.6em);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(0.6em);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .scroll-icon__wheel-outer {
@@ -209,7 +227,7 @@ a, a:visited, a:active {
 @keyframes slide {
   0% {
     opacity: 0;
-    transform: translateY(70%);
+    transform: translateY(15%);
   }
   100% {
     opacity: 1;
@@ -220,7 +238,7 @@ a, a:visited, a:active {
 @-webkit-keyframes slide {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(70%);
+    -webkit-transform: translateY(15%);
   }
   100% {
     opacity: 1;
@@ -380,11 +398,11 @@ a:hover {
 
 /*Contacts Page Styling*/
 
-.emaildiv{
+.emaildiv {
   padding-top: 15vh;
 }
 
-.emailcontact{
+.emailcontact {
   font-size: 64px !important;
 }
 

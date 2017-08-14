@@ -1,4 +1,6 @@
-$(document).ready(function() {
+//Side Nav
+
+$(document).ready(function () {
   $('.button-collapse').sideNav({
     menuWidth: 300,
     edge: 'left',
@@ -7,8 +9,10 @@ $(document).ready(function() {
   });
 })
 
-$(document).ready(function() {
-  $("nav, a, footer a[href='#!']").on('click', function(event) {
+//Slide Animation
+
+$(document).ready(function () {
+  $("nav, a, footer a[href='#!']").on('click', function (event) {
 
     if (this.hash !== "") {
 
@@ -18,7 +22,7 @@ $(document).ready(function() {
 
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 1200, function() {
+      }, 1200, function () {
 
         window.location.hash = hash;
       });
@@ -26,8 +30,8 @@ $(document).ready(function() {
   });
 })
 
-$(window).scroll(function() {
-  $(".slideanim").each(function() {
+$(window).scroll(function () {
+  $(".slideanim").each(function () {
     var pos = $(this).offset().top;
 
     var winTop = $(window).scrollTop();
@@ -37,7 +41,7 @@ $(window).scroll(function() {
   });
 });
 
-$(window).on("scroll", function() {
+$(window).on("scroll", function () {
   if ($(window).scrollTop() > 800) {
     $(".hamburger").addClass("scroll");
   } else {
