@@ -299,6 +299,17 @@ a:hover {
   color: white;
 }
 
+.modal-content .textHeaderd {
+  font-size: 24px;
+}
+
+.modal-content p a {
+  color: #7289DA;
+}
+
+.modal-content p a:hover {
+  color: #2C2F33;
+}
 
 /*Project Page Styling*/
 
@@ -314,13 +325,13 @@ a:hover {
   color: white !important;
 }
 
-.card-content>p>a {
+.card-content p a {
   color: #7289DA !important;
   transition-duration: 0.2s;
   -webkit-animation-duration: 0.2s;
 }
 
-.card-content>p>a:hover {
+.card-content p a:hover {
   color: #2C2F33 !important;
 }
 
@@ -408,6 +419,10 @@ a:hover {
 
 .contactCard {
   background: #2C2F33;
+  max-width: 320px;
+  margin-right: 30px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .contactContent {
@@ -434,8 +449,7 @@ a:hover {
 .contactName {
   font-family: 'Roboto Slab', serif;
   font-size: 18px;
-  line-height: 0;
-  color: #7289DA;
+  color: #7289DA !important;
   padding-top: 20px;
 }
 
@@ -446,7 +460,8 @@ a:hover {
 }
 
 .contactEmail {
-  color: #99AAB5;
+  color: #99AAB5 !important;
+  padding-bottom: 16px;
 }
 
 .contactBlurb {

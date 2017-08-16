@@ -78,12 +78,113 @@
           <li><a class="sideLink waves-effect" href="#projects"><i class="material-icons side_icon">dashboard</i>Projects</a></li>
           <li><a class="sideLink waves-effect" href="#hackathons"><i class="material-icons side_icon">code</i>Hackathons</a></li>
           <li><a class="sideLink waves-effect" href="#contact"><i class="material-icons side_icon">email</i>Contact</a></li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li><a class="subheader">Legal</a></li>
+          <li><a class="sideLink waves-effect modal-trigger" href="#credits">Licenses</a></li>
+          <li><a class="sideLink waves-effect modal-trigger" href="#privacy">Privacy</a></li>
+
           <!--Side Bar Divider-->
         </ul>
         <!--Hamburger Menu-->
         <a href="#" data-activates="slide-out" class="button-collapse hamburger show-on-large"><i class="material-icons">menu</i></a>
       </div>
     </nav>
+  </div>
+  <!--Credits-->
+  <div id="credits" class="modal">
+    <div class="modal-content">
+      <p class="textHeaderd">Credits, Licenses and Libraries</p>
+      <p>
+        v0.8.4 Release
+        <br> © Ari Birnbaum, 2017
+        <br>
+        <br>
+        <a href="https://github.com/ceiphr/ceiphr.github.io" target="_blank">Source Code</a> for this website
+        <br>
+        <br> Licenses
+        <br>
+        <br>
+        <a href="https://github.com/ceiphr/ceiphr.github.io/blob/master/LICENSE.txt" target="_blank">Apache License</a>
+        <br> Version 2.0, January 2004
+        <br>
+        <br> Libraries
+        <br>
+        <br>
+        <a href="https://www.google.com/analytics/" target="_blank">Google Analytics</a>
+        <br> Google Analytics is a freemium web analytics service offered by Google that tracks and reports website traffic.
+        <br>
+        <br>
+        <a href="http://materializecss.com/" target="_blank">Materialize</a>
+        <br> A modern responsive front-end framework based on Material Design
+        <br>
+        <br>
+        <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
+        <br> Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.
+        <br>
+        <br>
+        <a href="http://jquery.com/" target="_blank">jQuery</a>
+        <br> jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML.
+        <br>
+        <br>
+        <a href="https://icons8.com/" target="_blank">Icons8</a>
+        <br> Single icon pack with 55,900 free icons. Each icon is in 5 flat styles. Download as PNG, SVG, or as a font.
+        <br>
+        <br>
+        <a href="https://codepen.io/saransh/pen/BKJun?editors=1100" target="_blank">Parallax Star background in CSS</a>
+        <br> Sass and Haml based parallax star background by Saransh Sinha.
+        <br>
+        <br>
+        <a href="https://codepen.io/JonasNoldeDev/pen/BKMXwV?q=scroll%20icon&limit=all&order=popularity&depth=everything&show_forks=false"
+          target="_blank">pure css scroll-icon animation</a>
+        <br> Less based scroll icon animation by Jonas.
+        <br>
+        <br>
+        <a href="https://fonts.google.com/specimen/Roboto" target="_blank">Roboto font</a>
+        <br> This is the regular family, which can be used alongside the Roboto Condensed family and the Roboto Slab family.
+        A font by Christian Robertson.
+        <br>
+        <br>
+        <a href="https://fonts.google.com/specimen/Roboto+Slab" target="_blank">Roboto Slab font</a>
+        <br> This is the Roboto Slab family, which can be used alongside the normal Roboto family and the Roboto Condensed
+        family. Another font by Christian Robertson.
+        <br>
+        <br>
+        <a href="https://fonts.google.com/specimen/Abril+Fatface" target="_blank">Abril Fatface</a>
+        <br> Abril is designed by TypeTogether - Veronika Burian & José Scaglione.
+      </p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect btn-flat">Close</a>
+    </div>
+  </div>
+  <!--Privacy-->
+  <div id="privacy" class="modal">
+    <div class="modal-content">
+      <a href="//www.iubenda.com/privacy-policy/8103385" class="iubenda-nostyle no-brand iub-body-embed iubenda-embed" title="Privacy Policy">Privacy Policy</a>
+      <script type="text/javascript">
+        (function (w, d) {
+          var loader = function () {
+            var s = d.createElement("script"),
+              tag = d.getElementsByTagName("script")[0];
+            s.src = "//cdn.iubenda.com/iubenda.js";
+            tag.parentNode.insertBefore(s, tag);
+          };
+          if (w.addEventListener) {
+            w.addEventListener("load",
+              loader, false);
+          } else if (w.attachEvent) {
+            w.attachEvent("onload", loader);
+          } else {
+            w.onload = loader;
+          }
+        })(window, document);
+      </script>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect btn-flat">Close</a>
+    </div>
   </div>
   <!--Front Page-->
   <div>
@@ -263,37 +364,27 @@
       </div>
     </div>
     <!--Contact Card-->
-    <div class="slideanim">
-      <div class="container row">
-        <div class="col-sm-6 col-sm-offset-3">
-          <div class="card contactCard">
-            <div class="row">
-              <div class="card-image col-sm-12">
-                <div class="contactBio">
-                  <img class="contactAvatar" src="images/avatar1.png">
-                  <p class="contactName">Ari Birnbaum</p>
-                  <p class="contactEmail">contact@ceiphr.com</p>
-                </div>
-              </div>
-              <div class="card-content card-image col-sm-12">
-                <div class="contactContent">
-                  <p class="contactBlurb">
-                    I'm a highschool student who has a passion for software engineering. Feel free to contact me for internships, jobs or freelance
-                    work.
-                  </p>
-                  <!--<button class="btn resume" href="#">Resume</button>-->
-                  <ul class="social">
-                    <li><a target="_blank" href="https://github.com/ceiphr"><img max-age=86400 src="images/icons/github.svg" /></a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/ceiphr/"><img max-age=86400 src="images/icons/instagram.svg" /></a></li>
-                    <li><a target="_blank" href="https://twitter.com/ceiphr"><img max-age=86400 src="images/icons/twitter.svg" /></a></li>
-                    <li><a target="_blank" href="https://www.facebook.com/ceiphr"><img max-age=86400 src="images/icons/facebook.svg" /></a></li>
-                  </ul>
-                </div>
-              </div>
+    <div class="slideanim container">
+      <div class="slideanim">
+        <div class="card contactCard">
+          <div class="card-content">
+            <div class="contactBio">
+              <img class="contactAvatar" src="images/avatar1.png">
+              <p class="contactName">Ari Birnbaum</p>
+              <p class="contactEmail">contact@ceiphr.com</p>
             </div>
-            <!--<div class="card-action">
-            <a href="#">Resume</a>
-          </div>-->
+            <div class="contactContent">
+              <p class="contactBlurb">
+                I'm a highschool student who has a passion for software engineering. Feel free to contact me for internships, jobs or freelance
+                work.
+              </p>
+              <ul class="social">
+                <li><a target="_blank" href="https://github.com/ceiphr"><img max-age=86400 src="images/icons/github.svg" /></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/ceiphr/"><img max-age=86400 src="images/icons/instagram.svg" /></a></li>
+                <li><a target="_blank" href="https://twitter.com/ceiphr"><img max-age=86400 src="images/icons/twitter.svg" /></a></li>
+                <li><a target="_blank" href="https://www.facebook.com/ceiphr"><img max-age=86400 src="images/icons/facebook.svg" /></a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
