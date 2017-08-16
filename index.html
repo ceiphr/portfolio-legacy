@@ -41,6 +41,7 @@
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="stars.css">
 
   <!-- Latest compiled JavaScript -->
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -51,7 +52,7 @@
   <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
 
   <!--Fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto|Roboto+Slab" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
@@ -85,14 +86,19 @@
     </nav>
   </div>
   <!--Front Page-->
-  <div id="video">
+  <div>
     <div id="home">
+      <div id="starsContainer">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+      </div>
       <!--Centered Elements-->
       <div class="container">
-        <div class="left head">
-          <img max-age=86400 src="images/ceiphrTextWhite.png" class="logo">
+        <div class="left head coverTitle">
           <header>
-            <h1 class="header_title">Hey, I'm Ari and this is my portfolio.</h1>
+            <h1 id="headerTitle">Ari Birnbaum</h1>
+            <p id="headerSubtext">Software Developer and UI/UX Designer</p>
           </header>
         </div>
         <a href="#aboutme">
@@ -111,7 +117,7 @@
   <div class="body">
     <!--About Me Page-->
     <div id="aboutme">
-      <div class="container">
+      <div class="container head">
         <!--Page Title-->
         <div class="slideanim">
           <header>
@@ -223,7 +229,7 @@
     <!--Hackathons-->
     <!--HackBCA IV-->
     <div class="row container">
-      <div class="col-sm-12 slideanim">
+      <div class="col-sm-8 col-sm-offset-2 slideanim">
         <div class="card hackathon">
           <div class="card-image">
             <div id="hackbcaivbk"><img class="hacklogo" max-age=86400 src="images/hackathons/hackbcaiv/logo.png"></div>
@@ -256,19 +262,40 @@
         <div class="headDivider"></div>
       </div>
     </div>
-    <div class="container slideanim">
-      <div class="center emaildiv">
-        <div>
-          <i class="material-icons emailcontact">email</i>
-          <h3><code>contact@ceiphr.com</code>
-            <h3>
+    <!--Contact Card-->
+    <div class="slideanim">
+      <div class="container row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <div class="card contactCard">
+            <div class="row">
+              <div class="card-image col-sm-12">
+                <div class="contactBio">
+                  <img class="contactAvatar" src="images/avatar1.png">
+                  <p class="contactName">Ari Birnbaum</p>
+                  <p class="contactEmail">contact@ceiphr.com</p>
+                </div>
+              </div>
+              <div class="card-content card-image col-sm-12">
+                <div class="contactContent">
+                  <p class="contactBlurb">
+                    I'm a highschool student who has a passion for software engineering. Feel free to contact me for internships, jobs, or freelance
+                    work.
+                  </p>
+                  <!--<button class="btn resume" href="#">Resume</button>-->
+                  <ul class="social">
+                    <li><a target="_blank" href="https://github.com/ceiphr"><img max-age=86400 src="images/icons/github.svg" /></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/ceiphr/"><img max-age=86400 src="images/icons/instagram.svg" /></a></li>
+                    <li><a target="_blank" href="https://twitter.com/ceiphr"><img max-age=86400 src="images/icons/twitter.svg" /></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/ceiphr"><img max-age=86400 src="images/icons/facebook.svg" /></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--<div class="card-action">
+            <a href="#">Resume</a>
+          </div>-->
+          </div>
         </div>
-      </div>
-      <div class="center">
-        <a target="_blank" href="https://github.com/ceiphr"><img class="icon svg" max-age=86400 src="images/icons/github.svg" /></a>
-        <a target="_blank" href="https://www.instagram.com/ceiphr/"><img class="icon svg" max-age=86400 src="images/icons/instagram.svg" /></a>
-        <a target="_blank" href="https://twitter.com/ceiphr"><img class="icon svg" max-age=86400 src="images/icons/twitter.svg" /></a>
-        <a target="_blank" href="https://www.facebook.com/ceiphr"><img class="icon svg" max-age=86400 src="images/icons/facebook.svg" /></a>
       </div>
     </div>
   </div>
