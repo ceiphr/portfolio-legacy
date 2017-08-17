@@ -9,6 +9,11 @@ html {
   z-index: 9999;
 }
 
+.modal-content {
+  box-shadow: none !important;
+  border: none !important;
+}
+
 body {
   background: #23272A;
   width: 100%;
@@ -38,13 +43,6 @@ body {
 .headerSubtext {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
-}
-
-.logo {
-  top: 40%;
-  max-height: 64px;
-  max-width: 230px;
-  position: absolute;
 }
 
 .hamburger {
@@ -164,7 +162,6 @@ a:active {
   margin: auto;
   left: 50%;
   bottom: 2%;
-  z-index: 9999;
   -webkit-transform: translateX(-50%);
   cursor: pointer;
 }
