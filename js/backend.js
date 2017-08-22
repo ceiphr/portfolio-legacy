@@ -54,7 +54,7 @@ $(window).scroll(function () {
   });
 });
 
-//Change Scroll Color
+//Change Scroll
 
 $(window).on("scroll", function () {
   if ($(window).scrollTop() > 800) {
