@@ -81,7 +81,7 @@ body {
 
 #cover-subtext {
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 .cover {
@@ -496,7 +496,7 @@ a:hover {
 
 .footer {
   height: 12vh;
-  padding-top: 32px;
+  padding-top: 24px;
   background: white;
 }
 
