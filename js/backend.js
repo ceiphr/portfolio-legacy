@@ -44,7 +44,7 @@ $(document).ready(function () {
 })
 
 $(window).scroll(function () {
-  $(".slideanim").each(function () {
+  $(".slide-animation").each(function () {
     var pos = $(this).offset().top;
 
     var winTop = $(window).scrollTop();
@@ -54,10 +54,12 @@ $(window).scroll(function () {
   });
 });
 
+//Change Scroll Color
+
 $(window).on("scroll", function () {
   if ($(window).scrollTop() > 800) {
-    $(".hamburger").addClass("scroll");
+    $(".menu").addClass("scroll");
   } else {
-    $(".hamburger").removeClass("scroll");
+    $(".menu").removeClass("scroll");
   }
 });

@@ -2,18 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.navbar {
-  background: transparent;
-  box-shadow: none;
-  position: fixed;
-  z-index: 9999;
-}
-
-.modal-content {
-  box-shadow: none !important;
-  border: none !important;
-}
-
 body {
   background: #23272A;
   width: 100%;
@@ -21,44 +9,69 @@ body {
 }
 
 
-/*Header Styling*/
+/*Navbar*/
 
-.head {
-  padding-left: 30px;
+.navbar {
+  background: transparent;
+  box-shadow: none;
+  position: fixed;
+  z-index: 9999;
 }
 
-.coverTitle {
-  position: absolute;
+.side-div {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+.side-nav {
+  background: white;
+  border-radius: 0;
+  border-width: 0;
+}
+
+.menu {
   color: white;
-  top: 50vh;
-  transform: translateY(-50%);
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
 }
 
-#headerTitle {
+.menu.scroll {
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+  color: #23272A !important;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.nav-link:hover {
+  color: #7289DA !important;
+}
+
+.nav-icon {
+  color: #23272A !important;
+}
+
+
+/*Cover*/
+
+#cover-title {
   font-family: 'Roboto Slab', serif;
   font-size: 42px;
   line-height: 0.2;
 }
 
-.headerSubtext {
+#cover-subtext {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
 }
 
-.hamburger {
+.cover {
+  position: absolute;
   color: white;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-}
-
-.hamburger.scroll {
-  color: #99AAB5;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-}
-
-.hamburger:hover {
-  color: #7289DA;
+  top: 50vh;
+  transform: translateY(-50%);
 }
 
 .background {
@@ -78,23 +91,6 @@ a:active {
   color: white;
 }
 
-.sideLink {
-  color: #23272A !important;
-  font-family: 'Roboto', sans-serif !important;
-}
-
-.sideLink:hover {
-  color: #7289DA !important;
-}
-
-.side_icon {
-  color: #23272A!important;
-}
-
-.divider {
-  background: #23272A;
-}
-
 
 /*Body Styling*/
 
@@ -102,7 +98,7 @@ a:active {
   height: 100vh;
 }
 
-#starsContainer {
+#stars-container {
   overflow: hidden;
   height: 100vh;
 }
@@ -133,22 +129,19 @@ a:active {
   background: #2C2F33;
 }
 
-.side-nav {
-  background: white;
-  border-radius: 0;
-  border-width: 0;
+.padding-left {
+  padding-left: 24px;
 }
 
-.headDivider {
+.row {
+  transform: translateX(-10.5px)
+}
+
+.title-divider {
   margin-bottom: 32px;
   height: 1px;
   background: #7289DA;
   width: 100vw;
-}
-
-.contentDivider {
-  width: 50%;
-  margin-left: 25%;
 }
 
 
@@ -217,7 +210,7 @@ a:active {
 
 /*Slide In Animation*/
 
-.slideanim {
+.slide-animation {
   visibility: hidden;
 }
 
@@ -254,12 +247,12 @@ a:active {
 
 /*Text Formatting/Styling*/
 
-.header1 {
+.sub-title {
   color: #7289DA;
   font-size: 24px;
 }
 
-.text_light {
+.text-light {
   color: #99AAB5;
   font-size: 16px;
 }
@@ -276,27 +269,31 @@ a:hover {
   color: #7289DA;
 }
 
-.textHeaderl {
+.title-light {
   color: white;
   font-size: 40px;
 }
 
-.textHeaderd {
+.title-dark {
   color: #2C2F33;
   font-size: 40px;
 }
 
-.textLogo_light {
-  width: 60%;
-}
-
-.icon_light {
+.icon-light {
   font-size: 100px !important;
   text-align: center;
   color: white;
 }
 
-.modal-content .textHeaderd {
+
+/*Modals*/
+
+.modal-content {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.modal-content .title-dark {
   font-size: 24px;
 }
 
@@ -307,6 +304,7 @@ a:hover {
 .modal-content p a:hover {
   color: #2C2F33;
 }
+
 
 /*Project Page Styling*/
 
@@ -332,30 +330,31 @@ a:hover {
   color: #2C2F33 !important;
 }
 
-#proj1bk {
-  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/proj1/bk.jpg');
+#project1-bk {
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/project1/bk.jpg');
   background-position: center;
   height: 256px;
 }
 
-#proj1logo {
+#project1-logo {
   padding-top: 48px;
   margin-left: 50%;
   transform: translate(-50%);
   width: 350px;
 }
 
-#proj2bk {
-  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/proj2/bk.jpg');
+#project2-bk {
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/project2/bk.jpg');
   background-position: bottom;
   height: 256px;
 }
 
-#proj2logo {
+#project2-logo {
   font-family: 'Abril Fatface', cursive;
   font-size: 38px;
   color: white;
   padding-top: 100px;
+  margin: 0;
 }
 
 
@@ -370,19 +369,6 @@ a:hover {
   background: #7289DA;
 }
 
-.hackHead {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  width: 18%;
-}
-
-.hackHead>img {
-  object-fit: cover;
-  height: 100%;
-}
-
 .card-action>a {
   color: white !important;
   transition-duration: 0.2s;
@@ -393,18 +379,18 @@ a:hover {
   color: #2C2F33 !important;
 }
 
-.hackTextDate {
+.date {
   color: #2C2F33 !important;
 }
 
-#hackbcaivbk {
+#hackbcaiv-bk {
   background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/hackathons/hackbcaiv/bk.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 256px;
 }
 
-.hacklogo {
+#hackbcaiv-logo {
   width: 128px !important;
   padding-top: 64px;
   margin-left: 50%;
@@ -414,15 +400,15 @@ a:hover {
 
 /*Contacts Page Styling*/
 
-.contactCard {
+.contact {
   background: #2C2F33;
+  width: 85%;
   max-width: 320px;
-  margin-right: 30px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.contactContent {
+.contact-content {
   width: auto;
   height: auto;
   padding: 0px 20px 25px 20px;
@@ -430,42 +416,43 @@ a:hover {
   float: none;
 }
 
-.contactBio {
+.bio {
   padding-top: 25px;
   margin-left: 50%;
   transform: translateX(-50%);
 }
 
-.contactAvatar {
+.avatar {
   width: 128px !important;
   border-radius: 100% !important;
-  margin-left: 52%;
+  margin-left: 50%;
   transform: translateX(-50%);
 }
 
-.contactName {
+.ari {
   font-family: 'Roboto Slab', serif;
   font-size: 18px;
   color: #7289DA !important;
   padding-top: 20px;
 }
 
-.contactBlurb,
-.contactEmail,
-.contactName {
-  text-align: center !important;
-}
-
-.contactEmail {
-  color: #99AAB5 !important;
-  padding-bottom: 16px;
-}
-
-.contactBlurb {
+.blurb {
   color: white !important;
   max-width: 215px;
   margin-left: auto !important;
   margin-right: auto !important;
+}
+
+.blurb,
+.contact-email,
+.ari {
+  text-align: center !important;
+}
+
+.contact-email {
+  color: #99AAB5 !important;
+  position: relative;
+  padding-bottom: 16px;
 }
 
 .social {
@@ -496,7 +483,7 @@ a:hover {
   background: white;
 }
 
-.footerText {
+.footer-text {
   font-size: 14px;
   font-family: 'Roboto:400', sans-serif !important;
   position: absolute;

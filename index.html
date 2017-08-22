@@ -11,56 +11,29 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="#23272A" />
 
-  <link rel="apple-touch-icon" href="/images/avatar1.png" />
-  <link rel="apple-touch-startup-image" href="/images/avatar1.png" />
+  <link rel="apple-touch-icon" href="/images/profile/avatar1.png" />
+  <link rel="apple-touch-startup-image" href="/images/profile/avatar1.png" />
 
   <title>Ari Birnbaum // Ceiphr</title>
 
-  <!--Google Analytics-->
-  <script max-age=86400>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-82625288-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-
-  <!-- jQuery library -->
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="stylesheet" type="text/css" href="stars.css">
-
-  <!-- Latest compiled JavaScript -->
-  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="bower_components/materialize/dist/js/materialize.min.js"></script>
-  <script max-age=86400 type="text/javascript" src="backend.js"></script>
-
-  <!--Favicon-->
-  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/stars.css">
 
   <!--Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto|Roboto+Slab" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" type="image/png" href="images/profile/favicon.png" />
 
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
   <!--Nav Bar-->
   <div class="nav">
-    <nav class="navbar">
+    <nav class="navbar menu">
       <div class="nav-wrapper">
         <!--Side Bar-->
         <ul class="side-nav navbar" id="slide-out">
@@ -68,36 +41,36 @@
           <li>
             <div class="userView">
               <div class="background sidebarbk"></div>
-              <a href="#!user"><img class="circle" max-age=86400 src="images/avatar1.png"></a>
+              <a href="#!user"><img class="circle" max-age=86400 src="images/profile/avatar1.png"></a>
               <a href="#!name"><span class="white-text name">Ari Birnbaum</span></a>
               <a href="#!email"><span class="white-text email">contact@ceiphr.com</span></a>
             </div>
           </li>
           <!--Navigation Links-->
-          <li><a class="sideLink waves-effect" href="#aboutme"><i class="material-icons side_icon">account_circle</i>About</a></li>
-          <li><a class="sideLink waves-effect" href="#projects"><i class="material-icons side_icon">dashboard</i>Projects</a></li>
-          <li><a class="sideLink waves-effect" href="#hackathons"><i class="material-icons side_icon">code</i>Hackathons</a></li>
-          <li><a class="sideLink waves-effect" href="#contact"><i class="material-icons side_icon">email</i>Contact</a></li>
+          <li><a class="nav-link waves-effect" href="#aboutme"><i class="material-icons nav-icon">account_circle</i>About</a></li>
+          <li><a class="nav-link waves-effect" href="#projects"><i class="material-icons nav-icon">dashboard</i>Projects</a></li>
+          <li><a class="nav-link waves-effect" href="#hackathons"><i class="material-icons nav-icon">code</i>Hackathons</a></li>
+          <li><a class="nav-link waves-effect" href="#contact"><i class="material-icons nav-icon">email</i>Contact</a></li>
           <li>
-            <div class="divider"></div>
+            <div class="divider side-div"></div>
           </li>
           <li><a class="subheader">Legal</a></li>
-          <li><a class="sideLink waves-effect modal-trigger" href="#credits">Licenses</a></li>
-          <li><a class="sideLink waves-effect modal-trigger" href="#privacy">Privacy</a></li>
-
-          <!--Side Bar Divider-->
+          <li><a class="nav-link waves-effect modal-trigger" href="#credits">Licenses</a></li>
+          <li><a class="nav-link waves-effect modal-trigger" href="#privacy">Privacy</a></li>
         </ul>
-        <!--Hamburger Menu-->
-        <a href="#" data-activates="slide-out" class="button-collapse hamburger show-on-large"><i class="material-icons">menu</i></a>
+        <!--Menu-->
+        <div>
+          <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+        </div>
       </div>
     </nav>
   </div>
   <!--Credits-->
   <div id="credits" class="modal">
     <div class="modal-content">
-      <p class="textHeaderd">Credits, Licenses and Libraries</p>
+      <p class="title-dark">Credits, Licenses and Libraries</p>
       <p>
-        v0.8.5 Release
+        v0.8.6 Release
         <br> © Ari Birnbaum, 2017
         <br>
         <br>
@@ -112,28 +85,12 @@
         <br> Libraries
         <br>
         <br>
-        <a href="https://www.google.com/analytics/" target="_blank">Google Analytics</a>
-        <br> Google Analytics is a freemium web analytics service offered by Google that tracks and reports website traffic.
-        <br>
-        <br>
         <a href="http://materializecss.com/" target="_blank">Materialize</a>
         <br> A modern responsive front-end framework based on Material Design
         <br>
         <br>
-        <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
-        <br> Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.
-        <br>
-        <br>
         <a href="http://jquery.com/" target="_blank">jQuery</a>
         <br> jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML.
-        <br>
-        <br>
-        <a href="https://icons8.com/" target="_blank">Icons8</a>
-        <br> Single icon pack with 55,900 free icons. Each icon is in 5 flat styles. Download as PNG, SVG, or as a font.
-        <br>
-        <br>
-        <a href="http://cultofthepartyparrot.com/" target="_blank">Party Parrot</a>
-        <br> The kakapo in the footer. Based on Sirocco senpai.
         <br>
         <br>
         <a href="https://codepen.io/saransh/pen/BKJun?editors=1100" target="_blank">Parallax Star background in CSS</a>
@@ -146,7 +103,16 @@
         <br>
         <br>
         <a href="https://material.io/icons/" target="_blank">Material Icons</a>
-        <br> Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects. Developed by Google.
+        <br> Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects.
+        Developed by Google.
+        <br>
+        <br>
+        <a href="https://icons8.com/" target="_blank">Icons8</a>
+        <br> Single icon pack with 55,900 free icons. Each icon is in 5 flat styles. Download as PNG, SVG, or as a font.
+        <br>
+        <br>
+        <a href="http://cultofthepartyparrot.com/" target="_blank">Party Parrot</a>
+        <br> The kakapo in the footer. Based on Sirocco senpai.
         <br>
         <br>
         <a href="https://fonts.google.com/specimen/Roboto" target="_blank">Roboto font</a>
@@ -197,17 +163,17 @@
   <!--Front Page-->
   <div>
     <div id="home">
-      <div id="starsContainer">
+      <div id="stars-container">
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
       </div>
       <!--Centered Elements-->
       <div class="container">
-        <div class="left head coverTitle">
+        <div class="left padding-left cover">
           <header>
-            <h1 id="headerTitle">Ari Birnbaum</h1>
-            <p id="headerSubtext">Software Developer and UI/UX Designer</p>
+            <h1 id="cover-title">Ari Birnbaum</h1>
+            <p id="cover-subtext">Software Developer and UI/UX Designer</p>
           </header>
         </div>
         <a href="#aboutme">
@@ -225,44 +191,44 @@
   <!--Body Pages-->
   <div class="body">
     <!--About Me Page-->
-    <div id="aboutme">
-      <div class="container head">
+    <div id="aboutme" class="padding-left">
+      <div class="container">
         <!--Page Title-->
-        <div class="slideanim">
+        <div class="slide-animation">
           <header>
-            <h2 class="textHeaderl">About Me</h2>
+            <h2 class="title-light">About Me</h2>
           </header>
-          <div class="headDivider"></div>
+          <div class="title-divider"></div>
         </div>
       </div>
       <!--Row Elements-->
       <div class="row container">
         <!--Born a Hacker-->
-        <div class="col-sm-4">
-          <div class="icon_light slideanim">
-            <i class="material-icons icon_light">code</i>
-            <h3 class="header1">Born a Hacker</h3>
+        <div class="col s12 m4">
+          <div class="icon-light slide-animation">
+            <i class="material-icons icon-light">code</i>
+            <h3 class="sub-title">Born a Hacker</h3>
           </div>
-          <p class="text_light slideanim center">Since I was little I've been playing with tech. In 7th grade I worked on Minecraft mod packs with other developers
+          <p class="text-light slide-animation center">Since I was little I've been playing with tech. In 7th grade I worked on Minecraft mod packs with other developers
             and made <a class="textLink" href="https://www.technicpack.net/modpack/the-simple-pack-18.600862" target="_blank">The Simple Pack</a>            which achieved 70k downloads last year. Recently I've gone to my first <a class="textLink" href="https://hackbca.com/"
               target="_blank">Hackathon</a> where I learned to develop web apps.</p>
         </div>
         <!--User Experience-->
-        <div class="col-sm-4">
-          <div class="icon_light slideanim">
-            <i class="material-icons icon_light">people</i>
-            <h3 class="header1">User Experience</h3>
+        <div class="col m4">
+          <div class="icon-light slide-animation">
+            <i class="material-icons icon-light">people</i>
+            <h3 class="sub-title">User Experience</h3>
           </div>
-          <p class="text_light slideanim center">I enjoy making websites like the one you're on right now. I love Google's material design and incorporate it into
+          <p class="text-light slide-animation center">I enjoy making websites like the one you're on right now. I love Google's material design and incorporate it into
             every interface I make. My main focus at the moment is html, css, javascript and python.</p>
         </div>
         <!--Editing Reality-->
-        <div class="col-sm-4">
-          <div class="icon_light slideanim">
-            <i class="material-icons icon_light">camera</i>
-            <h3 class="header1">Editing Reality</h3>
+        <div class="col m4">
+          <div class="icon-light slide-animation">
+            <i class="material-icons icon-light">camera</i>
+            <h3 class="sub-title">Editing Reality</h3>
           </div>
-          <p class="text_light slideanim center">Besides my major hacking skills I also enjoy editing videos with After Effects and photos using Photoshop and Illustrator.
+          <p class="text-light slide-animation center">Besides my major hacking skills I also enjoy editing videos with After Effects and photos using Photoshop and Illustrator.
             You can check out my photography and graphics on
             <a class="textLink" href="https://www.instagram.com/ceiphr/" target="_blank">Instagram</a> and in the future
             you can check out my videos on <a class="textLink" href="https://www.youtube.com/channel/UC18bVTGP63HUEnG2uiKsSPg/videos"
@@ -272,88 +238,92 @@
     </div>
   </div>
   <!--Projects Page-->
-  <div id="projects">
+  <div id="projects" class="padding-left">
     <!--Page Title-->
-    <div class="container head">
-      <div class="slideanim">
+    <div class="container">
+      <div class="slide-animation">
         <header>
-          <h2 class="textHeaderd">My Projects</h2>
+          <h2 class="title-dark">My Projects</h2>
         </header>
-        <div class="headDivider"></div>
+        <div class="title-divider"></div>
       </div>
     </div>
     <!--Projects-->
     <div class="row container">
       <!--Project 2-->
-      <div class="col-sm-6 slideanim">
-        <div class="card project">
-          <div class="card-image">
-            <div id="proj2bk">
-              <div>
-                <p class="center" id="proj2logo">Dr.Frieda</p>
+      <div class="col s12 m6">
+        <div class="slide-animation">
+          <div class="card project">
+            <div class="card-image">
+              <div id="project2-bk">
+                <p class="center" id="project2-logo">Dr.Frieda</p>>
               </div>
             </div>
-          </div>
-          <div class="card-content">
-            <span class="card-title activator">Dr.Frieda<i class="material-icons right">more_vert</i></span>
-            <p><a href="https://ceiphr.com/drfrieda" target="_blank">Visit Project</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title">Dr.Frieda<i class="material-icons right">close</i></span>
-            <p class="white-text">This website was developed as a blog/portfolio for Dr. Frieda Birnbaum (my mom).</p>
+            <div class="card-content">
+              <span class="card-title activator">Dr.Frieda<i class="material-icons right">more_vert</i></span>
+              <p><a href="https://ceiphr.com/drfrieda" target="_blank">Visit Project</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title">Dr.Frieda<i class="material-icons right">close</i></span>
+              <p class="white-text">This website was developed as a blog/portfolio for Dr. Frieda Birnbaum (my mom).</p>
+            </div>
           </div>
         </div>
       </div>
       <!--Project 1-->
-      <div class="col-sm-6 slideanim">
-        <div class="card project">
-          <div class="card-image">
-            <div id="proj1bk">
-              <div><img id="proj1logo" max-age=86400 src="images/proj1/logo.png"></div>
+      <div class="col s12 m6">
+        <div class="slide-animation">
+          <div class="card project">
+            <div class="card-image">
+              <div id="project1-bk">
+                <div><img id="project1-logo" max-age=86400 src="images/project1/logo.png"></div>
+              </div>
             </div>
-          </div>
-          <div class="card-content">
-            <span class="card-title activator ">The Simple Pack<i class="material-icons right">more_vert</i></span>
-            <p><a href="https://ceiphr.com/tspWeb" target="_blank">Visit Project</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title">The Simple Pack<i class="material-icons right">close</i></span>
-            <p class="white-text">The Simple Pack is a graphical enhancement mod pack for Minecraft versions 1.8 and 1.9.4.</p>
+            <div class="card-content">
+              <span class="card-title activator ">The Simple Pack<i class="material-icons right">more_vert</i></span>
+              <p><a href="https://ceiphr.com/tspWeb" target="_blank">Visit Project</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title">The Simple Pack<i class="material-icons right">close</i></span>
+              <p class="white-text">The Simple Pack is a graphical enhancement mod pack for Minecraft versions 1.8 and 1.9.4.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
   <!--Hackathon Page-->
-  <div id="hackathons">
+  <div id="hackathons" class="padding-left">
     <!--Page Title-->
-    <div class="container head">
-      <div class="slideanim">
+    <div class="container">
+      <div class="slide-animation">
         <header>
-          <h2 class="textHeaderl">Hackathon Contributions</h2>
+          <h2 class="title-light">Hackathon Contributions</h2>
         </header>
-        <div class="headDivider"></div>
+        <div class="title-divider"></div>
       </div>
     </div>
     <!--Hackathons-->
     <!--HackBCA IV-->
     <div class="row container">
-      <div class="col-sm-8 col-sm-offset-2 slideanim">
-        <div class="card hackathon">
-          <div class="card-image">
-            <div id="hackbcaivbk"><img class="hacklogo" max-age=86400 src="images/hackathons/hackbcaiv/logo.png"></div>
-          </div>
-          <div class="card-stacked">
-            <div class="card-content">
-              <div class="hackText">
-                <p class="card-title">HackBCA IV</p>
-                <p class="hackTextDate">March 25-26, 2017</p>
-                <p class="hackTextBody">HackBCA IV is the fourth annual hackathon hosted at the Bergen County Academies. HackBCA is open to all high
-                  school students who are interested in exploring computer science.</p>
-              </div>
+      <div class="col m8 offset-m2">
+        <div class="slide-animation">
+          <div class="card hackathon">
+            <div class="card-image">
+              <div id="hackbcaiv-bk"><img id="hackbcaiv-logo" max-age=86400 src="images/hackathons/hackbcaiv/logo.png"></div>
             </div>
-            <div class="card-action">
-              <a href="http://hackbca.com/" target="blank_">Visit Website</a>
+            <div class="card-stacked">
+              <div class="card-content">
+                <div class="hackText">
+                  <p class="card-title">HackBCA IV</p>
+                  <p class="date">March 25-26, 2017</p>
+                  <p>HackBCA IV is the fourth annual hackathon hosted at the Bergen County Academies. HackBCA is open to all
+                    high school students who are interested in exploring computer science.</p>
+                </div>
+              </div>
+              <div class="card-action">
+                <a href="http://hackbca.com/" target="blank_">Visit Website</a>
+              </div>
             </div>
           </div>
         </div>
@@ -363,36 +333,34 @@
   <!--Contacts Page-->
   <div id="contact">
     <!--Page Title-->
-    <div class="container head">
-      <div class="slideanim">
+    <div class="container padding-left">
+      <div class="slide-animation">
         <header>
-          <h2 class="textHeaderd">Contact Me</h2>
+          <h2 class="title-dark">Contact Me</h2>
         </header>
-        <div class="headDivider"></div>
+        <div class="title-divider"></div>
       </div>
     </div>
     <!--Contact Card-->
-    <div class="slideanim container">
-      <div class="slideanim">
-        <div class="card contactCard">
-          <div class="card-content">
-            <div class="contactBio">
-              <img class="contactAvatar" src="images/avatar1.png">
-              <p class="contactName">Ari Birnbaum</p>
-              <p class="contactEmail">contact@ceiphr.com</p>
-            </div>
-            <div class="contactContent">
-              <p class="contactBlurb">
-                I'm a highschool student who has a passion for software engineering. Feel free to contact me for internships, jobs or freelance
-                work.
-              </p>
-              <ul class="social">
-                <li><a target="_blank" href="https://github.com/ceiphr"><img max-age=86400 src="images/icons/github.svg" /></a></li>
-                <li><a target="_blank" href="https://www.instagram.com/ceiphr/"><img max-age=86400 src="images/icons/instagram.svg" /></a></li>
-                <li><a target="_blank" href="https://twitter.com/ceiphr"><img max-age=86400 src="images/icons/twitter.svg" /></a></li>
-                <li><a target="_blank" href="https://www.facebook.com/ceiphr"><img max-age=86400 src="images/icons/facebook.svg" /></a></li>
-              </ul>
-            </div>
+    <div class="slide-animation container contact-padding">
+      <div class="card contact">
+        <div class="card-content">
+          <div class="bio">
+            <img class="avatar" src="images/profile/avatar1.png">
+            <p class="ari">Ari Birnbaum</p>
+            <p class="contact-email">contact@ceiphr.com</p>
+          </div>
+          <div class="contact-content">
+            <p class="blurb">
+              I'm a highschool student who has a passion for software engineering. Feel free to contact me for internships, jobs or freelance
+              work.
+            </p>
+            <ul class="social">
+              <li><a target="_blank" href="https://github.com/ceiphr"><img max-age=86400 src="images/icons/github.svg" /></a></li>
+              <li><a target="_blank" href="https://www.instagram.com/ceiphr/"><img max-age=86400 src="images/icons/instagram.svg" /></a></li>
+              <li><a target="_blank" href="https://twitter.com/ceiphr"><img max-age=86400 src="images/icons/twitter.svg" /></a></li>
+              <li><a target="_blank" href="https://www.facebook.com/ceiphr"><img max-age=86400 src="images/icons/facebook.svg" /></a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -400,7 +368,33 @@
   </div>
   <!--Footer-->
   <div class="footer">
-    <span class="footerText"><p>Made with <img class="parrot" max-age=86400 src="images/parrot.gif"> by Ari Birnbaum.</p></span>
+    <span class="footer-text"><p>Made with <img class="parrot" max-age=86400 src="images/icons/parrot.gif"> by Ari Birnbaum.</p></span>
   </div>
+
+  <!--Google Analytics-->
+  <script max-age=86400>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-82625288-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- jQuery library -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="bower_components/materialize/dist/js/materialize.min.js"></script>
+  <script max-age=86400 type="text/javascript" src="js/backend.js"></script>
+
 </body>
 <html>
