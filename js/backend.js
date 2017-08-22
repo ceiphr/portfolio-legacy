@@ -62,4 +62,9 @@ $(window).on("scroll", function () {
   } else {
     $(".menu").removeClass("scroll");
   }
+  if ($(window).scrollTop() > 800) {
+    $(".menu-title").addClass("scroll");
+  } else {
+    $(".menu-title").removeClass("scroll");
+  }
 });
