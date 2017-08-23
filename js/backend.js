@@ -57,12 +57,12 @@ $(window).scroll(function () {
 //Change Scroll
 
 $(window).on("scroll", function () {
-  if ($(window).scrollTop() > 800) {
+  if ($(window).scrollTop() > 700) {
     $(".menu").addClass("scroll");
   } else {
     $(".menu").removeClass("scroll");
   }
-  if ($(window).scrollTop() > 800) {
+  if ($(window).scrollTop() > 700) {
     $(".menu-title").addClass("scroll");
   } else {
     $(".menu-title").removeClass("scroll");

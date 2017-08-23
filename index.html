@@ -67,7 +67,7 @@
     <div class="modal-content">
       <p class="title-dark">Credits, Licenses and Libraries</p>
       <p>
-        v0.9.5 Release
+        v0.9.6 Release
         <br> © Ari Birnbaum, 2017
         <br>
         <br>
@@ -167,7 +167,7 @@
       </div>
       <!--Centered Elements-->
       <div class="container">
-        <div class="left padding-left cover">
+        <div class="left cover">
           <header>
             <h1 id="cover-title">Ari Birnbaum</h1>
             <p id="cover-subtext">Software Developer and UI/UX Designer</p>
@@ -188,7 +188,7 @@
   <!--Body Pages-->
   <div class="body">
     <!--About Me Page-->
-    <div id="aboutme" class="padding-left">
+    <div id="aboutme">
       <div class="container">
         <!--Page Title-->
         <div class="slide-animation">
@@ -237,7 +237,7 @@
     </div>
   </div>
   <!--Projects Page-->
-  <div id="projects" class="padding-left">
+  <div id="projects">
     <!--Page Title-->
     <div class="container">
       <div class="slide-animation">
@@ -292,7 +292,7 @@
     </div>
   </div>
   <!--Hackathon Page-->
-  <div id="hackathons" class="padding-left">
+  <div id="hackathons">
     <!--Page Title-->
     <div class="container">
       <div class="slide-animation">
@@ -332,7 +332,7 @@
   <!--Contacts Page-->
   <div id="contact">
     <!--Page Title-->
-    <div class="container padding-left">
+    <div class="container">
       <div class="slide-animation">
         <header>
           <h2 class="title-dark">Contact Me</h2>
@@ -340,8 +340,57 @@
         <div class="title-divider"></div>
       </div>
     </div>
+    <!--Contact Form-->
+    <div class="row container slide-animation">
+      <form class="col s12" method="post" action="index.php">
+          <div class="row">
+            <div class="input-field col s6 m4 offset-m2">
+              <input id="first_name" type="text" name="first-name" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6 m4">
+              <input id="last_name" type="text" name="last-name" class="validate">
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 m8 offset-m2">
+              <i class="material-icons prefix">mail</i>
+              <input id="email" type="email" name="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 m8 offset-m2">
+              <i class="material-icons prefix">edit</i>
+              <textarea id="message" class="materialize-textarea" name="message"></textarea>
+              <label for="message">Message</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m8 offset-m2">
+              <div class="g-recaptcha right" data-sitekey="6LfDpScUAAAAAIs78SALdCk8klXL3g4cddWoR6p-"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s6 m4 offset-m2">
+              <ul class="social left">
+                <li><a target="_blank" href="https://github.com/ceiphr" rel="noopener"><img max-age=86400 src="css/images/icons/github.svg" /></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/ceiphr/" rel="noopener"><img max-age=86400 src="css/images/icons/instagram.svg" /></a></li>
+                <li><a target="_blank" href="https://twitter.com/ceiphr" rel="noopener"><img max-age=86400 src="css/images/icons/twitter.svg" /></a></li>
+                <li><a target="_blank" href="https://www.facebook.com/ceiphr" rel="noopener"><img max-age=86400 src="css/images/icons/facebook.svg" /></a></li>
+              </ul>
+            </div>
+            <div class="col s6 m4">
+              <button class="btn waves-effect waves-light right submit disabled" id="submit" type="submit" name="submit">Submit
+              <i class="material-icons right">send</i>
+            </button>
+            </div>
+          </div>
+      </form>
+    </div>
     <!--Contact Card-->
-    <div class="slide-animation container contact-padding">
+    <!--<div class="slide-animation container contact-padding">
       <div class="card contact">
         <div class="card-content">
           <div class="bio">
@@ -362,8 +411,8 @@
             </ul>
           </div>
         </div>
-      </div>
-    </div>
+      </div>-->
+  </div>
   </div>
   <!--Footer-->
   <div class="footer">
@@ -398,6 +447,7 @@
   <!-- Latest compiled JavaScript -->
   <script src="bower_components/materialize/dist/js/materialize.min.js"></script>
   <script max-age=86400 type="text/javascript" src="js/backend.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js' async defer></script>
 
 </body>
 <html>
