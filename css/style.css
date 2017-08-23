@@ -8,6 +8,7 @@ body {
   z-index: 9000;
 }
 
+
 /*Navbar*/
 
 .navbar {
@@ -148,10 +149,6 @@ a:active {
 
 .padding-left {
   padding-left: 24px;
-}
-
-.row {
-  transform: translateX(-10.5px)
 }
 
 .title-divider {
@@ -417,7 +414,8 @@ a:hover {
 
 /*Contacts Page Styling*/
 
-.contact {
+
+/*.contact {
   background: #2C2F33;
   width: 85%;
   max-width: 320px;
@@ -474,13 +472,57 @@ a:hover {
   padding-bottom: 14px;
   margin-left: auto;
   margin-right: auto;
+}*/
+
+
+/* label color */
+
+.input-field label {
+  color: #2C2F33;
+}
+
+
+/* label focus color */
+
+.input-field input:focus+label {
+  color: #7289DA !important;
+}
+
+.input-field textarea:focus+label {
+  color: #7289DA !important;
+}
+
+/* label underline focus color */
+
+.row .input-field input:focus {
+  border-bottom: 1px solid #7289DA !important;
+  box-shadow: 0 1px 0 0 #7289DA !important
+}
+
+.row .input-field textarea:focus {
+  border-bottom: 1px solid #7289DA !important;
+  box-shadow: 0 1px 0 0 #7289DA !important
+}
+
+
+/* icon prefix focus color */
+
+.input-field .prefix.active {
+  color: #7289DA !important;
+}
+
+.submit {
+  background: #2C2F33;
+}
+
+.submit:hover {
+  background: #7289DA;
 }
 
 .social {
-  width: 128px;
-  padding-top: 24px;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  width: 150px;
+  top: -12px;
 }
 
 .social li {
@@ -488,11 +530,13 @@ a:hover {
   box-sizing: border-box;
   float: left;
   width: 25%;
+  line-height: 30px;
 }
 
 .social li a img {
   height: 24px;
   width: 24px;
+  vertical-align: middle !important;
 }
 
 
