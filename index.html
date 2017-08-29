@@ -27,11 +27,27 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-  <!--Nav Bar-->
+  <!--Nav-->
   <div class="nav">
+    <!--Dropdown-->
+    <ul id="legal-dropdown" class="dropdown-content">
+      <li><a class="waves-effect modal-trigger" href="#credits">Licenses</a></li>
+      <li><a class="waves-effect modal-trigger" href="#privacy">Privacy</a></li>
+    </ul>
     <nav class="navbar menu">
       <div class="nav-wrapper">
-        <!--Side Bar-->
+        <!--Nav Bar-->
+        <a href="#home" class="brand-logo menu-title">Ari Birnbaum</a>
+        <a href="#" data-activates="slide-out" class="button-collapse" data-activates="mobile-demo"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <!--Navigation Links-->
+          <li><a class="waves-effect" href="#aboutme">About</a></li>
+          <li><a class="waves-effect" href="#projects">Projects</a></li>
+          <li><a class="waves-effect" href="#hackathons">Hackathons</a></li>
+          <li><a class="waves-effect" href="#contact">Contact</a></li>
+          <li><a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="legal-dropdown">Legal</a></li>
+        </ul>
+        <!--Mobile Nav-->
         <ul class="side-nav navbar" id="slide-out">
           <!--User Profile-->
           <li>
@@ -51,14 +67,9 @@
             <div class="divider side-div"></div>
           </li>
           <li><a class="subheader">Legal</a></li>
-          <li><a class="nav-link waves-effect modal-trigger" href="#credits">Licenses</a></li>
           <li><a class="nav-link waves-effect modal-trigger" href="#privacy">Privacy</a></li>
+          <li><a class="nav-link waves-effect modal-trigger" href="#credits">Licenses</a></li>
         </ul>
-        <!--Menu-->
-        <div>
-          <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
-          <p class="menu-title">Ari Birnbaum</p>
-        </div>
       </div>
     </nav>
   </div>
@@ -67,7 +78,6 @@
     <div class="modal-content">
       <p class="title-dark">Credits, Licenses and Libraries</p>
       <p>
-        v0.9.6 Release
         <br> © Ari Birnbaum, 2017
         <br>
         <br>
@@ -158,31 +168,29 @@
     </div>
   </div>
   <!--Front Page-->
-  <div>
-    <div id="home">
-      <div id="stars-container">
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
+  <div id="home">
+    <div id="stars-container">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </div>
+    <!--Centered Elements-->
+    <div class="container">
+      <div class="left cover">
+        <header>
+          <h1 id="cover-title">Ari Birnbaum</h1>
+          <p id="cover-subtext">Software Developer and UI/UX Designer</p>
+        </header>
       </div>
-      <!--Centered Elements-->
-      <div class="container">
-        <div class="left cover">
-          <header>
-            <h1 id="cover-title">Ari Birnbaum</h1>
-            <p id="cover-subtext">Software Developer and UI/UX Designer</p>
-          </header>
-        </div>
-        <a href="#aboutme">
-          <section class="scroll-section">
-            <span class="scroll-icon">
+      <a href="#aboutme">
+        <section class="scroll-section">
+          <span class="scroll-icon">
               <span class="scroll-icon__wheel-outer">
                 <span class="scroll-icon__wheel-inner"></span>
-            </span>
-            </span>
-          </section>
-        </a>
-      </div>
+          </span>
+          </span>
+        </section>
+      </a>
     </div>
   </div>
   <!--Body Pages-->
@@ -342,100 +350,57 @@
     </div>
     <!--Contact Form-->
     <div class="row container slide-animation">
-      <form class="col s12" method="post" action="index.php">
-          <div class="row">
-            <div class="input-field col s6 m4 offset-m2">
-              <input id="first_name" type="text" name="first-name" class="validate">
-              <label for="first_name">First Name</label>
-            </div>
-            <div class="input-field col s6 m4">
-              <input id="last_name" type="text" name="last-name" class="validate">
-              <label for="last_name">Last Name</label>
-            </div>
+      <form class="col s12" method="post" action="https://formspree.io/contact@ceiphr.com">
+        <input type="text" name="_gotcha" style="display:none" />
+        <input type="hidden" name="_next" value="https://ceiphr.com/thanks.html" />
+        <input type="hidden" name="_subject" value="New email // Ceiphr.com" />
+        <div class="row">
+          <div class="input-field col s6 m4 offset-m2">
+            <input id="first_name" type="text" name="first-name" class="validate">
+            <label for="first_name">First Name</label>
           </div>
-          <div class="row">
-            <div class="input-field col s12 m8 offset-m2">
-              <i class="material-icons prefix">mail</i>
-              <input id="email" type="email" name="email" class="validate">
-              <label for="email">Email</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 m8 offset-m2">
-              <i class="material-icons prefix">edit</i>
-              <textarea id="message" class="materialize-textarea" name="message"></textarea>
-              <label for="message">Message</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col s12 m8 offset-m2">
-              <div class="g-recaptcha right" data-sitekey="6LfDpScUAAAAAIs78SALdCk8klXL3g4cddWoR6p-"></div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col s6 m4 offset-m2">
-              <ul class="social left">
-                <li><a target="_blank" href="https://github.com/ceiphr" rel="noopener"><img max-age=86400 src="css/images/icons/github.svg" /></a></li>
-                <li><a target="_blank" href="https://www.instagram.com/ceiphr/" rel="noopener"><img max-age=86400 src="css/images/icons/instagram.svg" /></a></li>
-                <li><a target="_blank" href="https://twitter.com/ceiphr" rel="noopener"><img max-age=86400 src="css/images/icons/twitter.svg" /></a></li>
-                <li><a target="_blank" href="https://www.facebook.com/ceiphr" rel="noopener"><img max-age=86400 src="css/images/icons/facebook.svg" /></a></li>
-              </ul>
-            </div>
-            <div class="col s6 m4">
-              <button class="btn waves-effect waves-light right submit disabled" id="submit" type="submit" name="submit">Submit
-              <i class="material-icons right">send</i>
-            </button>
-            </div>
-          </div>
-      </form>
-    </div>
-    <!--Contact Card-->
-    <!--<div class="slide-animation container contact-padding">
-      <div class="card contact">
-        <div class="card-content">
-          <div class="bio">
-            <img class="avatar" src="css/images/profile/avatar1.png">
-            <p class="ari"><span>Ari Birnbaum</span></p>
-            <p class="contact-email">contact@ceiphr.com</p>
-          </div>
-          <div class="contact-content">
-            <p class="blurb">
-              I'm a highschool student who has a passion for software engineering. Feel free to contact me for internships, jobs or freelance
-              work.
-            </p>
-            <ul class="social">
-              <li><a target="_blank" href="https://github.com/ceiphr" rel="noopener"><img max-age=86400 src="css/images/icons/github.svg" /></a></li>
-              <li><a target="_blank" href="https://www.instagram.com/ceiphr/" rel="noopener"><img max-age=86400 src="css/images/icons/instagram.svg" /></a></li>
-              <li><a target="_blank" href="https://twitter.com/ceiphr" rel="noopener"><img max-age=86400 src="css/images/icons/twitter.svg" /></a></li>
-              <li><a target="_blank" href="https://www.facebook.com/ceiphr" rel="noopener"><img max-age=86400 src="css/images/icons/facebook.svg" /></a></li>
-            </ul>
+          <div class="input-field col s6 m4">
+            <input id="last_name" type="text" name="last-name" class="validate">
+            <label for="last_name">Last Name</label>
           </div>
         </div>
-      </div>-->
+        <div class="row">
+          <div class="input-field col s12 m8 offset-m2">
+            <i class="material-icons prefix">mail</i>
+            <input id="email" type="email" name="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12 m8 offset-m2">
+            <i class="material-icons prefix">edit</i>
+            <textarea id="message" class="materialize-textarea" name="message"></textarea>
+            <label for="message">Message</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m8 offset-m2">
+            <button class="btn waves-effect waves-light right submit" id="submit" type="submit" name="submit">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
   </div>
   </div>
   <!--Footer-->
-  <div class="footer">
-    <span class="footer-text"><p>Made with <img class="parrot" max-age=86400 src="css/images/icons/parrot.gif"> by Ari Birnbaum.</p></span>
+  <div id="footer">
+    <div class="footer-content">
+      <ul class="social">
+        <li><a target="_blank" href="https://github.com/ceiphr" rel="noopener"><img max-age=86400 src="css/images/icons/github.svg" /></a></li>
+        <li><a target="_blank" href="https://www.instagram.com/ceiphr/" rel="noopener"><img max-age=86400 src="css/images/icons/instagram.svg" /></a></li>
+        <li><a target="_blank" href="https://twitter.com/ceiphr" rel="noopener"><img max-age=86400 src="css/images/icons/twitter.svg" /></a></li>
+        <li><a target="_blank" href="https://www.facebook.com/ceiphr" rel="noopener"><img max-age=86400 src="css/images/icons/facebook.svg" /></a></li>
+      </ul>
+      <span class="footer-text"><p>Made with <img class="parrot" max-age=86400 src="css/images/icons/parrot.gif"> by Ari Birnbaum.</p></span>
+    </div>
   </div>
-
-  <!--Google Analytics-->
-  <script max-age=86400>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-82625288-1', 'auto');
-    ga('send', 'pageview');
-  </script>
 
   <!--Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto|Roboto+Slab" rel="stylesheet">
@@ -447,7 +412,6 @@
   <!-- Latest compiled JavaScript -->
   <script src="bower_components/materialize/dist/js/materialize.min.js"></script>
   <script max-age=86400 type="text/javascript" src="js/backend.js"></script>
-  <script src='https://www.google.com/recaptcha/api.js' async defer></script>
 
 </body>
 <html>
