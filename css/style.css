@@ -30,7 +30,7 @@ body {
 
 .menu-title {
   font-family: 'Roboto Slab', serif;
-  font-size: 24px;
+  font-size: 24px !important;
   margin-left: 8px;
   color: transparent !important;
   -webkit-transition-duration: 0.6s;
@@ -88,7 +88,7 @@ body {
 
 #cover-subtext {
   font-family: 'Roboto', sans-serif;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .cover {
@@ -470,6 +470,7 @@ a:hover {
   background: #2C2F33;
 }
 
+
 /*Footer Styling*/
 
 #footer {
@@ -484,6 +485,7 @@ a:hover {
 .footer-text {
   font-family: 'Roboto:400', sans-serif !important;
   position: absolute;
+  font-size: 12px;
   bottom: 8px;
   color: #2C2F33;
   margin-left: 50%;
@@ -517,6 +519,7 @@ a:hover {
   height: 10px;
 }
 
+
 /*404/Thanks*/
 
 .alt-cover {
@@ -528,7 +531,7 @@ a:hover {
 }
 
 .alt-text {
-  font-family: 'Roboto', sans-serif !important;  
+  font-family: 'Roboto', sans-serif !important;
   text-align: center;
 }
 
@@ -549,7 +552,7 @@ a:hover {
 }
 
 .light-btn:hover {
-  color: white;  
+  color: white;
   background: #7289DA;
 }
 
