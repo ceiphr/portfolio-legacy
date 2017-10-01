@@ -8,6 +8,26 @@ body {
   z-index: 9000;
 }
 
+::selection {
+  background: #A8B8FF;
+  color: #23272A;  
+}
+::-moz-selection {
+  background: #7289DA;
+  color: #23272A;  
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #23272A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7289DA;
+}
 
 /*Navbar*/
 
@@ -74,7 +94,7 @@ body {
 
 .dropdown-content li>a,
 .dropdown-content li>span {
-  color: #7289DA !important;
+  color: #23272A !important;
 }
 
 
@@ -227,7 +247,6 @@ a:active {
   border-radius: 2em;
 }
 
-
 /*Slide In Animation*/
 
 .slide-animation {
@@ -308,6 +327,13 @@ a:hover {
 
 /*Modals*/
 
+iframe{
+  font-family: 'Roboto:400', sans-serif !important;
+  border: 0; 
+  width: 100%;
+  height: auto;
+}
+
 .modal-content {
   box-shadow: none !important;
   border: none !important;
@@ -351,20 +377,19 @@ a:hover {
 }
 
 #project1-bk {
-  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/project1/bk.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('bk_images/projects/1/bk.jpg');
   background-position: center;
   height: 256px;
 }
 
 #project1-logo {
-  padding-top: 48px;
   margin-left: 50%;
-  transform: translate(-50%);
-  width: 350px;
+  transform: translate(-50%, 75px);
+  width: 300px;
 }
 
 #project2-bk {
-  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/project2/bk.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('bk_images/projects/2/bk.jpg');
   background-position: bottom;
   height: 256px;
 }
@@ -377,6 +402,29 @@ a:hover {
   margin: 0;
 }
 
+#project3-bk {
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('bk_images/projects/3/bk.jpg');
+  background-position: center;
+  height: 256px;
+}
+
+#project3-logo {
+  margin-left: 50%;
+  transform: translate(-50%, 50%);
+  width: 128px;
+}
+
+#project4-bk {
+  background: linear-gradient(270deg, #d90429, #2b2d42);
+  background-position: center;
+  height: 256px;
+}
+
+#project4-logo {
+  margin-left: 50%;
+  transform: translate(-50%, 100px);
+  width: 128px;
+}
 
 /*Hackathons Page Styling*/
 
@@ -404,7 +452,7 @@ a:hover {
 }
 
 #hackbcaiv-bk {
-  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/hackathons/hackbcaiv/bk.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('bk_images/hackathons/hackbcaiv/bk.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 256px;
@@ -525,9 +573,9 @@ a:hover {
 .alt-cover {
   position: absolute;
   color: white;
-  top: 40vh;
   left: 50%;
-  transform: translate(-50%)
+  top: 50%;
+  transform: translate(-50%,-50%)
 }
 
 .alt-text {
