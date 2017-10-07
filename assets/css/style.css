@@ -9,11 +9,11 @@ body {
 }
 
 ::selection {
-  background: #7289DA;
+  background: rgba(114, 137, 218, 0.9);
   color: #23272A;  
 }
 ::-moz-selection {
-  background: #7289DA;
+  background: rgba(114, 137, 218, 0.9);
   color: #23272A;  
 }
 
