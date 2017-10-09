@@ -1,11 +1,5 @@
 //Nav
 $(document).ready(function() {
-	setTimeout(preloadTimer, 3000)
-
-	function preloadTimer() {
-		$(".preload").addClass("end");
-		$(".fade-out").addClass("hide");
-	}
 	$('.carousel.carousel-slider').carousel({
 		noWrap: true,
 		dist: 0,
