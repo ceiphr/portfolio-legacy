@@ -553,7 +553,7 @@ textarea,
   position: absolute;
   width: 150px;
   bottom: 30px;
-  margin-left: 50.5%;
+  margin-left: 50%;
   transform: translate(-50%);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
