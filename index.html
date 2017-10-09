@@ -30,18 +30,23 @@
 	<link rel="stylesheet" href="assets/bower_components/materialize/dist/css/materialize.min.css">
 
 	<!-- Preloader -->
+	<script max-age=691200 type="text/javascript">
+		var top = window.location.hash='front-page';
+	</script>
+
 	<style>
 		/* Indeterminate Preloader */
-		
+
 		.progress {
 			background-color: #7289DA !important;
 			margin: 0 !important;
 		}
+
 		.progress .indeterminate {
 			background: #2C2F33 !important;
 		}
 		/* Keyframes for the fade-out */
-		
+
 		.fade-out {
 			visibility: visible;
 			position: absolute;
@@ -52,7 +57,6 @@
 			opacity: 1;
 			opacity: 0 \9;
 			/*just in case ie*/
-			
 			-webkit-animation: fadeOut ease-in 1;
 			-webkit-animation-delay: 1s;
 			-moz-animation: fadeOut ease-in 1;
@@ -66,6 +70,7 @@
 			-moz-animation-duration: 2s;
 			animation-duration: 2s;
 		}
+
 		@-webkit-keyframes fadeOut {
 			from {
 				opacity: 1;
@@ -74,6 +79,7 @@
 				opacity: 0;
 			}
 		}
+
 		@-moz-keyframes fadeOut {
 			from {
 				opacity: 1;
@@ -82,6 +88,7 @@
 				opacity: 0;
 			}
 		}
+
 		@keyframes fadeOut {
 			from {
 				opacity: 1;
@@ -90,6 +97,7 @@
 				opacity: 0;
 			}
 		}
+
 		.preload {
 			height: 100vh;
 			overflow: hidden;
@@ -100,6 +108,7 @@
 			animation-duration: 1.5s;
 			-webkit-animation-duration: 1.5s;
 		}
+
 		@keyframes preload {
 			0% {
 				opacity: 0;
@@ -110,6 +119,7 @@
 				transform: translateY(0%);
 			}
 		}
+
 		@-webkit-keyframes preload {
 			0% {
 				opacity: 0;
@@ -120,10 +130,12 @@
 				-webkit-transform: translateY(0%);
 			}
 		}
+
 		.fade-out.hide {
 			opacity: 0;
 			visibility: hidden;
 		}
+
 		.preload.end {
 			height: auto;
 			overflow: default;
@@ -132,7 +144,7 @@
 
 </head>
 
-<body>
+<body onload="top">
 
 	<!-- Preloader -->
 	<div class="fade-out">
@@ -232,7 +244,8 @@
 					<br>
 					<br>
 					<a href="https://material.io/icons/" target="_blank" rel="noopener">Material Icons</a>
-					<br> Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects. Developed by Google.
+					<br> Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects. Developed
+					by Google.
 					<br>
 					<br>
 					<a href="https://icons8.com/" target="_blank" rel="noopener">Icons8</a>
@@ -240,17 +253,20 @@
 					<br>
 					<br>
 					<a href="https://fonts.google.com/specimen/Roboto" target="_blank" rel="noopener">Roboto font</a>
-					<br> This is the regular family, which can be used alongside the Roboto Condensed family and the Roboto Slab family. A font by Christian Robertson.
+					<br> This is the regular family, which can be used alongside the Roboto Condensed family and the Roboto Slab family.
+					A font by Christian Robertson.
 					<br>
 					<br>
 					<a href="https://fonts.google.com/specimen/Roboto+Slab" target="_blank" rel="noopener">Roboto Slab font</a>
-					<br> This is the Roboto Slab family, which can be used alongside the normal Roboto family and the Roboto Condensed family. Another font by Christian Robertson.
+					<br> This is the Roboto Slab family, which can be used alongside the normal Roboto family and the Roboto Condensed family.
+					Another font by Christian Robertson.
 					<br>
 					<br> Resources
 					<br>
 					<br>
 					<a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a>
-					<br> Formspree is a project that solves a problem many of us have faced: easily adding forms to otherwise static HTML pages.
+					<br> Formspree is a project that solves a problem many of us have faced: easily adding forms to otherwise static HTML
+					pages.
 					<br>
 					<br>
 					<a href="http://cultofthepartyparrot.com/" target="_blank" rel="noopener">Party Parrot</a>
@@ -261,7 +277,8 @@
 					<br> Sass and Haml based parallax star background by Saransh Sinha.
 					<br>
 					<br>
-					<a href="https://codepen.io/JonasNoldeDev/pen/BKMXwV?q=scroll%20icon&limit=all&order=popularity&depth=everything&show_forks=false" target="_blank" rel="noopener">pure css scroll-icon animation</a>
+					<a href="https://codepen.io/JonasNoldeDev/pen/BKMXwV?q=scroll%20icon&limit=all&order=popularity&depth=everything&show_forks=false"
+					 target="_blank" rel="noopener">pure css scroll-icon animation</a>
 					<br> Less based scroll icon animation by Jonas.
 					<br>
 					<br>
@@ -277,8 +294,8 @@
 			<div class="modal-content">
 				<a href="//www.iubenda.com/privacy-policy/8103385" class="iubenda-nostyle no-brand iub-body-embed iubenda-embed" title="Privacy Policy">Privacy Policy</a>
 				<script type="text/javascript">
-					(function(w, d) {
-						var loader = function() {
+					(function (w, d) {
+						var loader = function () {
 							var s = d.createElement("script"),
 								tag = d.getElementsByTagName("script")[0];
 							s.src = "//cdn.iubenda.com/iubenda.js";
@@ -456,7 +473,8 @@
 									<div class="hackText">
 										<p class="card-title">HackBCA IV</p>
 										<p class="date">March 25-26, 2017</p>
-										<p>HackBCA IV is the fourth annual hackathon hosted at the Bergen County Academies. HackBCA is open to all high school students who are interested in exploring computer science.</p>
+										<p>HackBCA IV is the fourth annual hackathon hosted at the Bergen County Academies. HackBCA is open to all high school
+											students who are interested in exploring computer science.</p>
 									</div>
 								</div>
 								<div class="card-action">
@@ -490,7 +508,8 @@
 									<h2>Inexperienced Script Kiddy</h2>
 									<span><i class="material-icons star">star_rate</i><i class="material-icons star">star_rate</i><i class="material-icons star">star_half</i><i class="material-icons star">star_border</i><i class="material-icons star">star_border</i></span>
 									<blockquote>
-										"Your website needs improvements, as a professional designer and web developer I believe your user interface is very lack luster. I'm hear to read about Ari Birnbaum, not some inexperienced script kiddy."
+										"Your website needs improvements, as a professional designer and web developer I believe your user interface is very lack
+										luster. I'm hear to read about Ari Birnbaum, not some inexperienced script kiddy."
 									</blockquote>
 									<i class="right text-light">- Alessandro Pace</i>
 								</p>
@@ -514,7 +533,8 @@
 									<h2>Literal Garbage</h2>
 									<span><i class="material-icons star">star_half</i><i class="material-icons star">star_border</i><i class="material-icons star">star_border</i><i class="material-icons star">star_border</i><i class="material-icons star">star_border</i></span>
 									<blockquote>
-										"You are worse than reusable garbage. Being your friend makes my life miserable. You're a mediocre person, get the hell away from me."
+										"You are worse than reusable garbage. Being your friend makes my life miserable. You're a mediocre person, get the hell away
+										from me."
 									</blockquote>
 									<i class="right text-light">- Steven Park</i>
 								</p>
@@ -526,7 +546,8 @@
 									<h2>I'm Calling The Police</h2>
 									<span><i class="material-icons star">star_rate</i><i class="material-icons star">star_rate</i><i class="material-icons star">star_rate</i><i class="material-icons star">star_border</i><i class="material-icons star">star_border</i></span>
 									<blockquote>
-										"You're the most incapable software engineer I've ever seen. Please admit yourself into a mental institution. You're a danger to yourself and others."
+										"You're the most incapable software engineer I've ever seen. Please admit yourself into a mental institution. You're a danger
+										to yourself and others."
 									</blockquote>
 									<i class="right text-light">- Barack Obama</i>
 								</p>
@@ -549,12 +570,12 @@
 				</div>
 			</div>
 			<!-- Contact Form -->
-			<div class="row container slide-animation">
+			<div class="row container">
 				<form class="col s12" method="post" action="https://formspree.io/contact@ceiphr.com">
 					<input type="text" name="_gotcha" style="display:none" />
 					<input type="hidden" name="_next" value="https://ceiphr.com/thanks" />
 					<input type="hidden" name="_subject" value="New email // Ceiphr.com" />
-					<div class="row">
+					<div class="row slide-animation">
 						<div class="input-field col s6 m4 offset-m2">
 							<input id="first_name" type="text" name="first-name">
 							<label for="first_name">First Name</label>
@@ -564,14 +585,14 @@
 							<label for="last_name">Last Name</label>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row slide-animation">
 						<div class="input-field col s12 m8 offset-m2">
 							<i class="material-icons prefix">mail</i>
 							<input id="email" type="email" name="email" class="validate">
 							<label for="email">Email</label>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row slide-animation">
 						<div class="input-field col s12 m8 offset-m2">
 							<i class="material-icons prefix">edit</i>
 							<textarea id="message" class="materialize-textarea" name="message"></textarea>
@@ -623,7 +644,7 @@
 		_paq.push(["disableCookies"]);
 		_paq.push(['trackPageView']);
 		_paq.push(['enableLinkTracking']);
-		(function() {
+		(function () {
 			var u = "//ceiphr.innocraft.cloud/";
 			_paq.push(['setTrackerUrl', u + 'piwik.php']);
 			_paq.push(['setSiteId', '1']);

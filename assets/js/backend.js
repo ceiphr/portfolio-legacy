@@ -1,6 +1,6 @@
 //Nav
 $(document).ready(function() {
-	setTimeout(preloadTimer, 2600)
+	setTimeout(preloadTimer, 3000)
 
 	function preloadTimer() {
 		$(".preload").addClass("end");
@@ -59,7 +59,7 @@ $(window).scroll(function() {
 		var pos = $(this).offset().top;
 
 		var winTop = $(window).scrollTop();
-		if (pos < winTop + 600) {
+		if (pos < winTop + 700) {
 			$(this).addClass("slide");
 		}
 	});
