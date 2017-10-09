@@ -9,12 +9,10 @@ body {
 ::scrollbar {
   width: 2px;
 }
-
- ::-moz-scrollbar {
+::-moz-scrollbar {
   width: 2px;
 }
-
- ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 2px;
 }
 ::selection {

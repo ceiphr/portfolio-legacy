@@ -8,673 +8,654 @@
 -->
 
 <head>
-  <!-- Meta Data -->
-  <meta charset="utf-8" />
-  <meta name="google-site-verification" content="qDNe7a2j3pmulYQAsfEnb6U9YgwY8Xi8EIlNIeud_QA" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Ceiphr // The portfolio of Ari Birnbaum." />
-  <meta name="theme-color" content="#23272A" />
-  <meta name="apple-mobile-web-app-title" content="Ceiphr" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<!-- Meta Data -->
+	<meta charset="utf-8" />
+	<meta name="google-site-verification" content="qDNe7a2j3pmulYQAsfEnb6U9YgwY8Xi8EIlNIeud_QA" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Ceiphr // The portfolio of Ari Birnbaum." />
+	<meta name="theme-color" content="#23272A" />
+	<meta name="apple-mobile-web-app-title" content="Ceiphr" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-  <link rel="apple-touch-icon" href="assets/images/profile/avatar1.png" />
-  <link rel="apple-touch-startup-image" href="assets/images/profile/avatar1.png" />
+	<link rel="apple-touch-icon" href="assets/images/profile/avatar1.png" />
+	<link rel="apple-touch-startup-image" href="assets/images/profile/avatar1.png" />
 
-  <title>Ari Birnbaum // Ceiphr</title>
+	<title>Ari Birnbaum // Ceiphr</title>
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/png" href="assets/images/profile/favicon.png" />
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/png" href="assets/images/profile/favicon.png" />
 
-  <!-- CSS Framework -->
-  <link rel="stylesheet" href="assets/bower_components/materialize/dist/css/materialize.min.css">  
-  
-  <!-- Preloader -->
-  <style>
-    /* Indeterminate Preloader */
+	<!-- CSS Framework -->
+	<link rel="stylesheet" href="assets/bower_components/materialize/dist/css/materialize.min.css">
 
-    .progress {
-      background-color: #7289DA !important;
-      margin: 0 !important;
-    }
-
-    .progress .indeterminate {
-      background: #2C2F33 !important;
-    }
-    /* Keyframes for the fade-out */
-
-    .fade-out {
-      visibility: visible;
-      position: absolute;
-      z-index: 99;
-      background: #23272A;
-      height: 100%;
-      width: 100%;
-      opacity: 1;
-      opacity: 0 \9;
-      /*just in case ie*/
-      -webkit-animation: fadeOut ease-in 1;
-      -webkit-animation-delay: 1s;
-      -moz-animation: fadeOut ease-in 1;
-      -moz-animation-delay: 1s;
-      animation: fadeOut ease-in 1;
-      animation-delay: 1s;
-      -webkit-animation-fill-mode: forwards;
-      -moz-animation-fill-mode: forwards;
-      animation-fill-mode: forwards;
-      -webkit-animation-duration: 2s;
-      -moz-animation-duration: 2s;
-      animation-duration: 2s;
-    }
-
-    @-webkit-keyframes fadeOut {
-      from {
-        opacity: 1;
-      }
-      to {
-        opacity: 0;
-      }
-    }
-
-    @-moz-keyframes fadeOut {
-      from {
-        opacity: 1;
-      }
-      to {
-        opacity: 0;
-      }
-    }
-
-    @keyframes fadeOut {
-      from {
-        opacity: 1;
-      }
-      to {
-        opacity: 0;
-      }
-    }
-
-    .preload {
-      height: 100vh;
-      overflow: hidden;
-      animation-name: preload;
-      animation-delay: 1s;
-      -webkit-animation-name: preload;
-      -webkit-animation-delay: 1s;
-      animation-duration: 1.5s;
-      -webkit-animation-duration: 1.5s;
-    }
-
-    @keyframes preload {
-      0% {
-        opacity: 0;
-        transform: translateY(15%);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0%);
-      }
-    }
-
-    @-webkit-keyframes preload {
-      0% {
-        opacity: 0;
-        -webkit-transform: translateY(15%);
-      }
-      100% {
-        opacity: 1;
-        -webkit-transform: translateY(0%);
-      }
-    }
-
-    .fade-out.hide {
-      opacity: 0;
-      visibility: hidden;
-    }
-
-    .preload.end {
-      height: auto;
-      overflow: default;
-    }
-  </style>
+	<!-- Preloader -->
+	<style>
+		/* Indeterminate Preloader */
+		
+		.progress {
+			background-color: #7289DA !important;
+			margin: 0 !important;
+		}
+		.progress .indeterminate {
+			background: #2C2F33 !important;
+		}
+		/* Keyframes for the fade-out */
+		
+		.fade-out {
+			visibility: visible;
+			position: absolute;
+			z-index: 99;
+			background: #23272A;
+			height: 100%;
+			width: 100%;
+			opacity: 1;
+			opacity: 0 \9;
+			/*just in case ie*/
+			
+			-webkit-animation: fadeOut ease-in 1;
+			-webkit-animation-delay: 1s;
+			-moz-animation: fadeOut ease-in 1;
+			-moz-animation-delay: 1s;
+			animation: fadeOut ease-in 1;
+			animation-delay: 1s;
+			-webkit-animation-fill-mode: forwards;
+			-moz-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+			-webkit-animation-duration: 2s;
+			-moz-animation-duration: 2s;
+			animation-duration: 2s;
+		}
+		@-webkit-keyframes fadeOut {
+			from {
+				opacity: 1;
+			}
+			to {
+				opacity: 0;
+			}
+		}
+		@-moz-keyframes fadeOut {
+			from {
+				opacity: 1;
+			}
+			to {
+				opacity: 0;
+			}
+		}
+		@keyframes fadeOut {
+			from {
+				opacity: 1;
+			}
+			to {
+				opacity: 0;
+			}
+		}
+		.preload {
+			height: 100vh;
+			overflow: hidden;
+			animation-name: preload;
+			animation-delay: 1s;
+			-webkit-animation-name: preload;
+			-webkit-animation-delay: 1s;
+			animation-duration: 1.5s;
+			-webkit-animation-duration: 1.5s;
+		}
+		@keyframes preload {
+			0% {
+				opacity: 0;
+				transform: translateY(15%);
+			}
+			100% {
+				opacity: 1;
+				transform: translateY(0%);
+			}
+		}
+		@-webkit-keyframes preload {
+			0% {
+				opacity: 0;
+				-webkit-transform: translateY(15%);
+			}
+			100% {
+				opacity: 1;
+				-webkit-transform: translateY(0%);
+			}
+		}
+		.fade-out.hide {
+			opacity: 0;
+			visibility: hidden;
+		}
+		.preload.end {
+			height: auto;
+			overflow: default;
+		}
+	</style>
 
 </head>
 
 <body>
 
-  <!-- Preloader -->
-  <div class="fade-out">
-    <div class="progress">
-      <div class="indeterminate"></div>
-    </div>
-  </div>
+	<!-- Preloader -->
+	<div class="fade-out">
+		<div class="progress">
+			<div class="indeterminate"></div>
+		</div>
+	</div>
 
-  <div class="preload">
-    <!-- Nav -->
-    <div class="nav">
-      <!-- Dropdown -->
-      <ul id="legal-dropdown" class="dropdown-content">
-        <li><a class="waves-effect modal-trigger" href="#privacy">Privacy</a>
-        </li>
-        <li><a class="waves-effect modal-trigger" href="#credits">Licenses</a>
-        </li>
-      </ul>
-      <nav class="navbar menu">
-        <div class="nav-wrapper">
-          <!-- Nav Bar -->
-          <a href="#front-page" class="brand-logo menu-title">Ari Birnbaum</a>
-          <a href="#" data-activates="slide-out" class="button-collapse" data-activates="mobile-demo"><i class="material-icons">menu</i></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <!-- Navigation Links -->
-            <li><a class="waves-effect" href="#projects">Projects</a>
-            </li>
-            <li><a class="waves-effect" href="#hackathons">Hackathons</a>
-            </li>
-            <li><a class="waves-effect" href="#testimonials">Testimonials</a>
-            </li>
-            <li><a class="waves-effect" href="#contact">Contact</a>
-            </li>
-            <li><a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="legal-dropdown"><i class="material-icons">more_horiz</i></a>
-            </li>
-          </ul>
-          <!-- Mobile Nav -->
-          <ul class="side-nav navbar" id="slide-out">
-            <!-- User Profile -->
-            <li>
-              <div class="userView">
-                <div class="background sidebarbk"></div>
-                <a href="#!user"><img class="circle" max-age=691200 src="assets/images/profile/avatar1.png">
-							</a>
-                <a href="#!name"><span class="white-text name">Ari Birnbaum</span></a>
-                <a href="#!email"><span class="white-text email">contact@ceiphr.com</span></a>
-              </div>
-            </li>
-            <!-- Navigation Links -->
-            <li><a class="nav-link waves-effect" href="#projects"><i class="material-icons nav-icon">dashboard</i>Projects</a>
-            </li>
-            <li><a class="nav-link waves-effect" href="#hackathons"><i class="material-icons nav-icon">code</i>Hackathons</a>
-            </li>
-            <li><a class="nav-link waves-effect" href="#testimonials"><i class="material-icons nav-icon">stars</i>Testimonials</a>
-            </li>
-            <li><a class="nav-link waves-effect" href="#contact"><i class="material-icons nav-icon">email</i>Contact</a>
-            </li>
-            <li>
-              <div class="divider side-div"></div>
-            </li>
-            <li><a class="subheader">Legal</a>
-            </li>
-            <li><a class="nav-link waves-effect modal-trigger" href="#privacy">Privacy</a>
-            </li>
-            <li><a class="nav-link waves-effect modal-trigger" href="#credits">Licenses</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+	<div class="preload">
+		<!-- Nav -->
+		<div class="nav">
+			<!-- Dropdown -->
+			<ul id="legal-dropdown" class="dropdown-content">
+				<li><a class="waves-effect modal-trigger" href="#privacy">Privacy</a>
+				</li>
+				<li><a class="waves-effect modal-trigger" href="#credits">Licenses</a>
+				</li>
+			</ul>
+			<nav class="navbar menu">
+				<div class="nav-wrapper">
+					<!-- Nav Bar -->
+					<a href="#front-page" class="brand-logo menu-title">Ari Birnbaum</a>
+					<a href="#" data-activates="slide-out" class="button-collapse" data-activates="mobile-demo"><i class="material-icons">menu</i></a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<!-- Navigation Links -->
+						<li><a class="waves-effect" href="#projects">Projects</a>
+						</li>
+						<li><a class="waves-effect" href="#hackathons">Hackathons</a>
+						</li>
+						<li><a class="waves-effect" href="#testimonials">Testimonials</a>
+						</li>
+						<li><a class="waves-effect" href="#contact">Contact</a>
+						</li>
+						<li><a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="legal-dropdown"><i class="material-icons">more_horiz</i></a>
+						</li>
+					</ul>
+					<!-- Mobile Nav -->
+					<ul class="side-nav navbar" id="slide-out">
+						<!-- User Profile -->
+						<li>
+							<div class="userView">
+								<div class="background sidebarbk"></div>
+								<a href="#!user"><img class="circle" max-age=691200 src="assets/images/profile/avatar1.png">
+								</a>
+								<a href="#!name"><span class="white-text name">Ari Birnbaum</span></a>
+								<a href="#!email"><span class="white-text email">contact@ceiphr.com</span></a>
+							</div>
+						</li>
+						<!-- Navigation Links -->
+						<li><a class="nav-link waves-effect" href="#projects"><i class="material-icons nav-icon">dashboard</i>Projects</a>
+						</li>
+						<li><a class="nav-link waves-effect" href="#hackathons"><i class="material-icons nav-icon">code</i>Hackathons</a>
+						</li>
+						<li><a class="nav-link waves-effect" href="#testimonials"><i class="material-icons nav-icon">stars</i>Testimonials</a>
+						</li>
+						<li><a class="nav-link waves-effect" href="#contact"><i class="material-icons nav-icon">email</i>Contact</a>
+						</li>
+						<li>
+							<div class="divider side-div"></div>
+						</li>
+						<li><a class="subheader">Legal</a>
+						</li>
+						<li><a class="nav-link waves-effect modal-trigger" href="#privacy">Privacy</a>
+						</li>
+						<li><a class="nav-link waves-effect modal-trigger" href="#credits">Licenses</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
 
-    <!-- Credits -->
-    <div id="credits" class="modal">
-      <div class="modal-content">
-        <p class="title-dark">Credits, Licenses and Libraries</p>
-        <p>
-          <br> © Ari Birnbaum, 2017
-          <br>
-          <br>
-          <a href="https://github.com/ceiphr/ceiphr.github.io" target="_blank" rel="noopener">Source Code</a> for this website
-          <br>
-          <br> Licenses
-          <br>
-          <br>
-          <a href="https://github.com/ceiphr/ceiphr.github.io/blob/master/LICENSE.txt" target="_blank" rel="noopener">Apache License</a>
-          <br> Version 2.0, January 2004
-          <br>
-          <br> Libraries
-          <br>
-          <br>
-          <a href="http://materializecss.com/" target="_blank" rel="noopener">Materialize</a>
-          <br> A modern responsive front-end framework based on Material Design.
-          <br>
-          <br>
-          <a href="http://jquery.com/" target="_blank" rel="noopener">jQuery</a>
-          <br> jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML.
-          <br>
-          <br>
-          <a href="https://material.io/icons/" target="_blank" rel="noopener">Material Icons</a>
-          <br> Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects.
-          Developed by Google.
-          <br>
-          <br>
-          <a href="https://icons8.com/" target="_blank" rel="noopener">Icons8</a>
-          <br> Single icon pack with 55,900 free icons. Each icon is in 5 flat styles. Download as PNG, SVG, or as a font.
-          <br>
-          <br>
-          <a href="https://fonts.google.com/specimen/Roboto" target="_blank" rel="noopener">Roboto font</a>
-          <br> This is the regular family, which can be used alongside the Roboto Condensed family and the Roboto Slab family.
-          A font by Christian Robertson.
-          <br>
-          <br>
-          <a href="https://fonts.google.com/specimen/Roboto+Slab" target="_blank" rel="noopener">Roboto Slab font</a>
-          <br> This is the Roboto Slab family, which can be used alongside the normal Roboto family and the Roboto Condensed
-          family. Another font by Christian Robertson.
-          <br>
-          <br> Resources
-          <br>
-          <br>
-          <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a>
-          <br> Formspree is a project that solves a problem many of us have faced: easily adding forms to otherwise static
-          HTML pages.
-          <br>
-          <br>
-          <a href="http://cultofthepartyparrot.com/" target="_blank" rel="noopener">Party Parrot</a>
-          <br> The kakapo in the footer. Based on Sirocco senpai.
-          <br>
-          <br>
-          <a href="https://codepen.io/saransh/pen/BKJun?editors=1100" target="_blank" rel="noopener">Parallax Star background in CSS</a>
-          <br> Sass and Haml based parallax star background by Saransh Sinha.
-          <br>
-          <br>
-          <a href="https://codepen.io/JonasNoldeDev/pen/BKMXwV?q=scroll%20icon&limit=all&order=popularity&depth=everything&show_forks=false"
-            target="_blank" rel="noopener">pure css scroll-icon animation</a>
-          <br> Less based scroll icon animation by Jonas.
-          <br>
-          <br>
-        </p>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-action modal-close waves-effect btn-flat">Close</a>
-      </div>
-    </div>
+		<!-- Credits -->
+		<div id="credits" class="modal">
+			<div class="modal-content">
+				<p class="title-dark">Credits, Licenses and Libraries</p>
+				<p>
+					<br> © Ari Birnbaum, 2017
+					<br>
+					<br>
+					<a href="https://github.com/ceiphr/ceiphr.github.io" target="_blank" rel="noopener">Source Code</a> for this website
+					<br>
+					<br> Licenses
+					<br>
+					<br>
+					<a href="https://github.com/ceiphr/ceiphr.github.io/blob/master/LICENSE.txt" target="_blank" rel="noopener">Apache License</a>
+					<br> Version 2.0, January 2004
+					<br>
+					<br> Libraries
+					<br>
+					<br>
+					<a href="http://materializecss.com/" target="_blank" rel="noopener">Materialize</a>
+					<br> A modern responsive front-end framework based on Material Design.
+					<br>
+					<br>
+					<a href="http://jquery.com/" target="_blank" rel="noopener">jQuery</a>
+					<br> jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML.
+					<br>
+					<br>
+					<a href="https://material.io/icons/" target="_blank" rel="noopener">Material Icons</a>
+					<br> Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects. Developed by Google.
+					<br>
+					<br>
+					<a href="https://icons8.com/" target="_blank" rel="noopener">Icons8</a>
+					<br> Single icon pack with 55,900 free icons. Each icon is in 5 flat styles. Download as PNG, SVG, or as a font.
+					<br>
+					<br>
+					<a href="https://fonts.google.com/specimen/Roboto" target="_blank" rel="noopener">Roboto font</a>
+					<br> This is the regular family, which can be used alongside the Roboto Condensed family and the Roboto Slab family. A font by Christian Robertson.
+					<br>
+					<br>
+					<a href="https://fonts.google.com/specimen/Roboto+Slab" target="_blank" rel="noopener">Roboto Slab font</a>
+					<br> This is the Roboto Slab family, which can be used alongside the normal Roboto family and the Roboto Condensed family. Another font by Christian Robertson.
+					<br>
+					<br> Resources
+					<br>
+					<br>
+					<a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a>
+					<br> Formspree is a project that solves a problem many of us have faced: easily adding forms to otherwise static HTML pages.
+					<br>
+					<br>
+					<a href="http://cultofthepartyparrot.com/" target="_blank" rel="noopener">Party Parrot</a>
+					<br> The kakapo in the footer. Based on Sirocco senpai.
+					<br>
+					<br>
+					<a href="https://codepen.io/saransh/pen/BKJun?editors=1100" target="_blank" rel="noopener">Parallax Star background in CSS</a>
+					<br> Sass and Haml based parallax star background by Saransh Sinha.
+					<br>
+					<br>
+					<a href="https://codepen.io/JonasNoldeDev/pen/BKMXwV?q=scroll%20icon&limit=all&order=popularity&depth=everything&show_forks=false" target="_blank" rel="noopener">pure css scroll-icon animation</a>
+					<br> Less based scroll icon animation by Jonas.
+					<br>
+					<br>
+				</p>
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class="modal-action modal-close waves-effect btn-flat">Close</a>
+			</div>
+		</div>
 
-    <!-- Privacy -->
-    <div id="privacy" class="modal">
-      <div class="modal-content">
-        <a href="//www.iubenda.com/privacy-policy/8103385" class="iubenda-nostyle no-brand iub-body-embed iubenda-embed" title="Privacy Policy">Privacy Policy</a>
-        <script type="text/javascript">
-          (function (w, d) {
-            var loader = function () {
-              var s = d.createElement("script"),
-                tag = d.getElementsByTagName("script")[0];
-              s.src = "//cdn.iubenda.com/iubenda.js";
-              tag.parentNode.insertBefore(s, tag);
-            };
-            if (w.addEventListener) {
-              w.addEventListener("load",
-                loader, false);
-            }
-            else if (w.attachEvent) {
-              w.attachEvent("onload", loader);
-            }
-            else {
-              w.onload = loader;
-            }
-          })(window, document);
-        </script>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-action modal-close waves-effect btn-flat">Close</a>
-      </div>
-    </div>
+		<!-- Privacy -->
+		<div id="privacy" class="modal">
+			<div class="modal-content">
+				<a href="//www.iubenda.com/privacy-policy/8103385" class="iubenda-nostyle no-brand iub-body-embed iubenda-embed" title="Privacy Policy">Privacy Policy</a>
+				<script type="text/javascript">
+					(function(w, d) {
+						var loader = function() {
+							var s = d.createElement("script"),
+								tag = d.getElementsByTagName("script")[0];
+							s.src = "//cdn.iubenda.com/iubenda.js";
+							tag.parentNode.insertBefore(s, tag);
+						};
+						if (w.addEventListener) {
+							w.addEventListener("load",
+								loader, false);
+						} else if (w.attachEvent) {
+							w.attachEvent("onload", loader);
+						} else {
+							w.onload = loader;
+						}
+					})(window, document);
+				</script>
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class="modal-action modal-close waves-effect btn-flat">Close</a>
+			</div>
+		</div>
 
-    <!-- Front Page -->
-    <div id="front-page">
-      <div id="stars-container">
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-      </div>
-      <!-- Centered Elements -->
-      <div class="container">
-        <div class="left cover">
-          <header>
-            <h1 id="cover-title">Ari Birnbaum</h1>
-            <p id="cover-subtext">Software Developer</p>
-          </header>
-        </div>
-        <a href="#projects">
-          <section class="scroll-section">
-            <span class="scroll-icon">
+		<!-- Front Page -->
+		<div id="front-page">
+			<div id="stars-container">
+				<div id="stars"></div>
+				<div id="stars2"></div>
+				<div id="stars3"></div>
+			</div>
+			<!-- Centered Elements -->
+			<div class="container">
+				<div class="left cover">
+					<header>
+						<h1 id="cover-title">Ari Birnbaum</h1>
+						<p id="cover-subtext">Software Developer</p>
+					</header>
+				</div>
+				<a href="#projects">
+					<section class="scroll-section">
+						<span class="scroll-icon">
               <span class="scroll-icon__wheel-outer">
                 <span class="scroll-icon__wheel-inner"></span>
-            </span>
-            </span>
-          </section>
-        </a>
-      </div>
-    </div>
+						</span>
+						</span>
+					</section>
+				</a>
+			</div>
+		</div>
 
-    <!-- Projects Page -->
-    <div id="projects">
-      <!-- Page Title -->
-      <div class="container">
-        <div class="slide-animation">
-          <header>
-            <h2 class="title-dark">My Projects</h2>
-          </header>
-          <div class="title-divider"></div>
-        </div>
-      </div>
-      <!-- Projects -->
-      <div class="row container">
-        <!-- Project 4 -->
-        <div class="col s12 m5">
-          <div class="slide-animation">
-            <div class="card project">
-              <div class="card-image">
-                <div id="project4-bk">
-                  <div><img id="project4-logo" max-age=691200 src="assets/images/projects/4/logo.svg">
-                  </div>
-                </div>
-              </div>
-              <div class="card-content">
-                <span class="card-title activator ">Code Highlands<i class="material-icons right">more_vert</i></span>
-                <p><a href="https://codehighlands.com/" target="_blank" rel="noopener">Visit Project</a>
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title">Code Highlands<i class="material-icons right">close</i></span>
-                <p class="white-text">The Northern Highlands Hackathon. Currently being organized.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Project 3 -->
-        <div class="col s12 m7">
-          <div class="slide-animation">
-            <div class="card project">
-              <div class="card-image">
-                <div id="project3-bk">
-                  <div><img id="project3-logo" max-age=691200 src="assets/images/projects/3/logo.svg">
-                  </div>
-                </div>
-              </div>
-              <div class="card-content">
-                <span class="card-title activator ">NHRHS Robotics<i class="material-icons right">more_vert</i></span>
-                <p><a href="https://robotics.nhrhs.org/" target="_blank" rel="noopener">Visit Project</a>
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title">NHRHS Robotics<i class="material-icons right">close</i></span>
-                <p class="white-text">Highlands Robotics 3983 competes in First Robotics competitions during the fall and winter season.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Project 2 -->
-        <div class="col s12 m7">
-          <div class="slide-animation">
-            <div class="card project">
-              <div class="card-image">
-                <div id="project2-bk">
-                  <p class="center" id="project2-logo">Dr.Frieda</p>>
-                </div>
-              </div>
-              <div class="card-content">
-                <span class="card-title activator">Dr.Frieda<i class="material-icons right">more_vert</i></span>
-                <p><a href="https://doctorfrieda.wordpress.com/" target="_blank" rel="noopener">Visit Project</a>
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title">Dr.Frieda<i class="material-icons right">close</i></span>
-                <p class="white-text">This website was developed as a blog/portfolio for Dr. Frieda Birnbaum (my mom).</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Project 1 -->
-        <div class="col s12 m5">
-          <div class="slide-animation">
-            <div class="card project">
-              <div class="card-image">
-                <div id="project1-bk">
-                  <div><img id="project1-logo" max-age=691200 src="assets/images/projects/1/logo.png">
-                  </div>
-                </div>
-              </div>
-              <div class="card-content">
-                <span class="card-title activator ">The Simple Pack<i class="material-icons right">more_vert</i></span>
-                <p><a href="https://www.technicpack.net/modpack/the-simple-pack-18.600862" target="_blank" rel="noopener">Visit Project</a>
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title">The Simple Pack<i class="material-icons right">close</i></span>
-                <p class="white-text">The Simple Pack is a graphical enhancement mod pack for Minecraft versions 1.8 and 1.9.4.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+		<!-- Projects Page -->
+		<div id="projects">
+			<!-- Page Title -->
+			<div class="container">
+				<div class="slide-animation">
+					<header>
+						<h2 class="title-dark">My Projects</h2>
+					</header>
+					<div class="title-divider"></div>
+				</div>
+			</div>
+			<!-- Projects -->
+			<div class="row container">
+				<!-- Project 4 -->
+				<div class="col s12 m5">
+					<div class="slide-animation">
+						<div class="card project">
+							<div class="card-image">
+								<div id="project4-bk">
+									<div><img id="project4-logo" max-age=691200 src="assets/images/projects/4/logo.svg">
+									</div>
+								</div>
+							</div>
+							<div class="card-content">
+								<span class="card-title activator ">Code Highlands<i class="material-icons right">more_vert</i></span>
+								<p><a href="https://codehighlands.com/" target="_blank" rel="noopener">Visit Project</a>
+								</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title">Code Highlands<i class="material-icons right">close</i></span>
+								<p class="white-text">The Northern Highlands Hackathon. Currently being organized.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Project 3 -->
+				<div class="col s12 m7">
+					<div class="slide-animation">
+						<div class="card project">
+							<div class="card-image">
+								<div id="project3-bk">
+									<div><img id="project3-logo" max-age=691200 src="assets/images/projects/3/logo.svg">
+									</div>
+								</div>
+							</div>
+							<div class="card-content">
+								<span class="card-title activator ">NHRHS Robotics<i class="material-icons right">more_vert</i></span>
+								<p><a href="https://robotics.nhrhs.org/" target="_blank" rel="noopener">Visit Project</a>
+								</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title">NHRHS Robotics<i class="material-icons right">close</i></span>
+								<p class="white-text">Highlands Robotics 3983 competes in First Robotics competitions during the fall and winter season.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Project 2 -->
+				<div class="col s12 m7">
+					<div class="slide-animation">
+						<div class="card project">
+							<div class="card-image">
+								<div id="project2-bk">
+									<p class="center" id="project2-logo">Dr.Frieda</p>>
+								</div>
+							</div>
+							<div class="card-content">
+								<span class="card-title activator">Dr.Frieda<i class="material-icons right">more_vert</i></span>
+								<p><a href="https://doctorfrieda.wordpress.com/" target="_blank" rel="noopener">Visit Project</a>
+								</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title">Dr.Frieda<i class="material-icons right">close</i></span>
+								<p class="white-text">This website was developed as a blog/portfolio for Dr. Frieda Birnbaum (my mom).</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Project 1 -->
+				<div class="col s12 m5">
+					<div class="slide-animation">
+						<div class="card project">
+							<div class="card-image">
+								<div id="project1-bk">
+									<div><img id="project1-logo" max-age=691200 src="assets/images/projects/1/logo.png">
+									</div>
+								</div>
+							</div>
+							<div class="card-content">
+								<span class="card-title activator ">The Simple Pack<i class="material-icons right">more_vert</i></span>
+								<p><a href="https://www.technicpack.net/modpack/the-simple-pack-18.600862" target="_blank" rel="noopener">Visit Project</a>
+								</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title">The Simple Pack<i class="material-icons right">close</i></span>
+								<p class="white-text">The Simple Pack is a graphical enhancement mod pack for Minecraft versions 1.8 and 1.9.4.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- Hackathon Page -->
-    <div id="hackathons">
-      <!-- Page Title -->
-      <div class="container">
-        <div class="slide-animation">
-          <header>
-            <h2 class="title-light">Hackathon Contributions</h2>
-          </header>
-          <div class="title-divider"></div>
-        </div>
-      </div>
-      <!-- Hackathons -->
-      <!-- HackBCA IV -->
-      <div class="row container">
-        <div class="col m8 offset-m2">
-          <div class="slide-animation">
-            <div class="card hackathon">
-              <div class="card-image">
-                <div id="hackbcaiv-bk"><img id="hackbcaiv-logo" max-age=691200 src="assets/images/hackathons/hackbcaiv/logo.png">
-                </div>
-              </div>
-              <div class="card-stacked">
-                <div class="card-content">
-                  <div class="hackText">
-                    <p class="card-title">HackBCA IV</p>
-                    <p class="date">March 25-26, 2017</p>
-                    <p>HackBCA IV is the fourth annual hackathon hosted at the Bergen County Academies. HackBCA is open to all
-                      high school students who are interested in exploring computer science.</p>
-                  </div>
-                </div>
-                <div class="card-action">
-                  <a href="http://hackbca.com/" target="blank_">Visit Website</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+		<!-- Hackathon Page -->
+		<div id="hackathons">
+			<!-- Page Title -->
+			<div class="container">
+				<div class="slide-animation">
+					<header>
+						<h2 class="title-light">Hackathon Contributions</h2>
+					</header>
+					<div class="title-divider"></div>
+				</div>
+			</div>
+			<!-- Hackathons -->
+			<!-- HackBCA IV -->
+			<div class="row container">
+				<div class="col m8 offset-m2">
+					<div class="slide-animation">
+						<div class="card hackathon">
+							<div class="card-image">
+								<div id="hackbcaiv-bk"><img id="hackbcaiv-logo" max-age=691200 src="assets/images/hackathons/hackbcaiv/logo.png">
+								</div>
+							</div>
+							<div class="card-stacked">
+								<div class="card-content">
+									<div class="hackText">
+										<p class="card-title">HackBCA IV</p>
+										<p class="date">March 25-26, 2017</p>
+										<p>HackBCA IV is the fourth annual hackathon hosted at the Bergen County Academies. HackBCA is open to all high school students who are interested in exploring computer science.</p>
+									</div>
+								</div>
+								<div class="card-action">
+									<a href="http://hackbca.com/" target="blank_">Visit Website</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- Testimonials Page -->
-    <div id="testimonials">
-      <div class="container">
-        <!-- Page Title -->
-        <div class="slide-animation">
-          <header>
-            <h2 class="title-dark">Testimonials</h2>
-          </header>
-          <div class="title-divider"></div>
-        </div>
-      </div>
-      <!-- Row Elements -->
-      <div class="container">
-        <div class="slide-animation">
-          <div class="carousel carousel-slider" data-indicators="true">
-            <div class="carousel-item row" href="#one!">
-              <div class="col m8 offset-m2">
-                <p class="quote-text">
-                  <h2>Inexperienced Script Kiddy</h2>
-                  <span><i class="material-icons star">star_rate</i><i class="material-icons star">star_rate</i><i class="material-icons star">star_half</i><i class="material-icons star">star_border</i><i class="material-icons star">star_border</i></span>
-                  <blockquote>
-                    "Your website needs improvements, as a professional designer and web developer I believe your user interface is very lack
-                    luster. I'm hear to read about Ari Birnbaum, not some inexperienced script kiddy."
-                  </blockquote>
-                  <i class="right text-light">- Alessandro Pace</i>
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item row" href="#two!">
-              <div class="col m8 offset-m2">
-                <p class="quote-text">
-                  <h2>Uncultured Swine</h2>
-                  <span><i class="material-icons star">star_rate</i><i class="material-icons star">star_border</i><i class="material-icons star">star_border</i><i class="material-icons star">star_border</i><i class="material-icons star">star_border</i></span>
-                  <blockquote>
-                    "I can already tell you're going to be homeless in the next six months."
-                  </blockquote>
-                  <i class="right text-light">- Elon Musk</i>
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item row" href="#three!">
-              <div class="col m8 offset-m2">
-                <p class="quote-text">
-                  <h2>Literal Garbage</h2>
-                  <span><i class="material-icons star">star_half</i><i class="material-icons star">star_border</i><i class="material-icons star">star_border</i><i class="material-icons star">star_border</i><i class="material-icons star">star_border</i></span>
-                  <blockquote>
-                    "You are worse than reusable garbage. Being your friend makes my life miserable. You're a mediocre person, get the hell away
-                    from me."
-                  </blockquote>
-                  <i class="right text-light">- Steven Park</i>
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item row" href="#four!">
-              <div class="col m8 offset-m2">
-                <p class="quote-text">
-                  <h2>I'm Calling The Police</h2>
-                  <span><i class="material-icons star">star_rate</i><i class="material-icons star">star_rate</i><i class="material-icons star">star_rate</i><i class="material-icons star">star_border</i><i class="material-icons star">star_border</i></span>
-                  <blockquote>
-                    "You're the most incapable software engineer I've ever seen. Please admit yourself into a mental institution. You're a danger
-                    to yourself and others."
-                  </blockquote>
-                  <i class="right text-light">- Barack Obama</i>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+		<!-- Testimonials Page -->
+		<div id="testimonials">
+			<div class="container">
+				<!-- Page Title -->
+				<div class="slide-animation">
+					<header>
+						<h2 class="title-dark">Testimonials</h2>
+					</header>
+					<div class="title-divider"></div>
+				</div>
+			</div>
+			<!-- Row Elements -->
+			<div class="container">
+				<div class="slide-animation">
+					<div class="carousel carousel-slider" data-indicators="true">
+						<div class="carousel-item row" href="#one!">
+							<div class="col m8 offset-m2">
+								<p class="quote-text">
+									<h2>Inexperienced Script Kiddy</h2>
+									<span><i class="material-icons star">star_rate</i><i class="material-icons star">star_rate</i><i class="material-icons star">star_half</i><i class="material-icons star">star_border</i><i class="material-icons star">star_border</i></span>
+									<blockquote>
+										"Your website needs improvements, as a professional designer and web developer I believe your user interface is very lack luster. I'm hear to read about Ari Birnbaum, not some inexperienced script kiddy."
+									</blockquote>
+									<i class="right text-light">- Alessandro Pace</i>
+								</p>
+							</div>
+						</div>
+						<div class="carousel-item row" href="#two!">
+							<div class="col m8 offset-m2">
+								<p class="quote-text">
+									<h2>Uncultured Swine</h2>
+									<span><i class="material-icons star">star_rate</i><i class="material-icons star">star_border</i><i class="material-icons star">star_border</i><i class="material-icons star">star_border</i><i class="material-icons star">star_border</i></span>
+									<blockquote>
+										"I can already tell you're going to be homeless in the next six months."
+									</blockquote>
+									<i class="right text-light">- Elon Musk</i>
+								</p>
+							</div>
+						</div>
+						<div class="carousel-item row" href="#three!">
+							<div class="col m8 offset-m2">
+								<p class="quote-text">
+									<h2>Literal Garbage</h2>
+									<span><i class="material-icons star">star_half</i><i class="material-icons star">star_border</i><i class="material-icons star">star_border</i><i class="material-icons star">star_border</i><i class="material-icons star">star_border</i></span>
+									<blockquote>
+										"You are worse than reusable garbage. Being your friend makes my life miserable. You're a mediocre person, get the hell away from me."
+									</blockquote>
+									<i class="right text-light">- Steven Park</i>
+								</p>
+							</div>
+						</div>
+						<div class="carousel-item row" href="#four!">
+							<div class="col m8 offset-m2">
+								<p class="quote-text">
+									<h2>I'm Calling The Police</h2>
+									<span><i class="material-icons star">star_rate</i><i class="material-icons star">star_rate</i><i class="material-icons star">star_rate</i><i class="material-icons star">star_border</i><i class="material-icons star">star_border</i></span>
+									<blockquote>
+										"You're the most incapable software engineer I've ever seen. Please admit yourself into a mental institution. You're a danger to yourself and others."
+									</blockquote>
+									<i class="right text-light">- Barack Obama</i>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- Contacts Page -->
-    <div id="contact">
-      <!-- Page Title -->
-      <div class="container">
-        <div class="slide-animation">
-          <header>
-            <h2 class="title-light">Contact Me</h2>
-          </header>
-          <div class="title-divider"></div>
-        </div>
-      </div>
-      <!-- Contact Form -->
-      <div class="row container slide-animation">
-        <form class="col s12" method="post" action="https://formspree.io/contact@ceiphr.com">
-          <input type="text" name="_gotcha" style="display:none" />
-          <input type="hidden" name="_next" value="https://ceiphr.com/thanks" />
-          <input type="hidden" name="_subject" value="New email // Ceiphr.com" />
-          <div class="row">
-            <div class="input-field col s6 m4 offset-m2">
-              <input id="first_name" type="text" name="first-name">
-              <label for="first_name">First Name</label>
-            </div>
-            <div class="input-field col s6 m4">
-              <input id="last_name" type="text" name="last-name">
-              <label for="last_name">Last Name</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 m8 offset-m2">
-              <i class="material-icons prefix">mail</i>
-              <input id="email" type="email" name="email" class="validate">
-              <label for="email">Email</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 m8 offset-m2">
-              <i class="material-icons prefix">edit</i>
-              <textarea id="message" class="materialize-textarea" name="message"></textarea>
-              <label for="message">Message</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col s12 m8 offset-m2">
-              <button class="btn waves-effect waves-light right submit" id="submit" type="submit">Submit<i class="material-icons right">send</i>
-						</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
+		<!-- Contacts Page -->
+		<div id="contact">
+			<!-- Page Title -->
+			<div class="container">
+				<div class="slide-animation">
+					<header>
+						<h2 class="title-light">Contact Me</h2>
+					</header>
+					<div class="title-divider"></div>
+				</div>
+			</div>
+			<!-- Contact Form -->
+			<div class="row container slide-animation">
+				<form class="col s12" method="post" action="https://formspree.io/contact@ceiphr.com">
+					<input type="text" name="_gotcha" style="display:none" />
+					<input type="hidden" name="_next" value="https://ceiphr.com/thanks" />
+					<input type="hidden" name="_subject" value="New email // Ceiphr.com" />
+					<div class="row">
+						<div class="input-field col s6 m4 offset-m2">
+							<input id="first_name" type="text" name="first-name">
+							<label for="first_name">First Name</label>
+						</div>
+						<div class="input-field col s6 m4">
+							<input id="last_name" type="text" name="last-name">
+							<label for="last_name">Last Name</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12 m8 offset-m2">
+							<i class="material-icons prefix">mail</i>
+							<input id="email" type="email" name="email" class="validate">
+							<label for="email">Email</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12 m8 offset-m2">
+							<i class="material-icons prefix">edit</i>
+							<textarea id="message" class="materialize-textarea" name="message"></textarea>
+							<label for="message">Message</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12 m8 offset-m2">
+							<button class="btn waves-effect waves-light right submit" id="submit" type="submit">Submit<i class="material-icons right">send</i>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
 
-    <!-- Footer -->
-    <div id="footer">
-      <div class="footer-content">
-        <ul class="social">
-          <li>
-            <a target="_blank" href="https://github.com/ceiphr" rel="noopener"><img max-age=691200 src="assets/images/icons/github.svg" />
-					</a>
-          </li>
-          <li>
-            <a target="_blank" href="https://www.instagram.com/ceiphr/" rel="noopener"><img max-age=691200 src="assets/images/icons/instagram.svg" />
-					</a>
-          </li>
-          <li>
-            <a target="_blank" href="https://twitter.com/ceiphr" rel="noopener"><img max-age=691200 src="assets/images/icons/twitter.svg" />
-					</a>
-          </li>
-          <li>
-            <a target="_blank" href="https://www.facebook.com/ceiphr" rel="noopener"><img max-age=691200 src="assets/images/icons/facebook.svg" />
-					</a>
-          </li>
-        </ul>
-        <span class="footer-text"><p>Made with <img class="parrot" max-age=691200 src="assets/images/icons/parrot.gif"> by Ari Birnbaum.</p></span>
-      </div>
-    </div>
-  </div>
-  <!-- Piwik -->
-  <script type="text/javascript">
-    var _paq = _paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-    _paq.push(["setCookieDomain", "*.ceiphr.com"]);
-    _paq.push(["setDomains", ["*.ceiphr.com"]]);
-    _paq.push(["disableCookies"]);
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function () {
-      var u = "//ceiphr.innocraft.cloud/";
-      _paq.push(['setTrackerUrl', u + 'piwik.php']);
-      _paq.push(['setSiteId', '1']);
-      var d = document,
-        g = d.createElement('script'),
-        s = d.getElementsByTagName('script')[0];
-      g.type = 'text/javascript';
-      g.async = true;
-      g.defer = true;
-      g.src = u + 'piwik.js';
-      s.parentNode.insertBefore(g, s);
-    })();
-  </script>
-  <noscript>
-    <p><img src="//ceiphr.innocraft.cloud/piwik.php?idsite=1&rec=1" style="border:0;" alt="" />
-    </p>
-  </noscript>
+		<!-- Footer -->
+		<div id="footer">
+			<div class="footer-content">
+				<ul class="social">
+					<li>
+						<a target="_blank" href="https://github.com/ceiphr" rel="noopener"><img max-age=691200 src="assets/images/icons/github.svg" />
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.instagram.com/ceiphr/" rel="noopener"><img max-age=691200 src="assets/images/icons/instagram.svg" />
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://twitter.com/ceiphr" rel="noopener"><img max-age=691200 src="assets/images/icons/twitter.svg" />
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.facebook.com/ceiphr" rel="noopener"><img max-age=691200 src="assets/images/icons/facebook.svg" />
+						</a>
+					</li>
+				</ul>
+				<span class="footer-text"><p>Made with <img class="parrot" max-age=691200 src="assets/images/icons/parrot.gif"> by Ari Birnbaum.</p></span>
+			</div>
+		</div>
+	</div>
+	<!-- Piwik -->
+	<script type="text/javascript">
+		var _paq = _paq || [];
+		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+		_paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+		_paq.push(["setCookieDomain", "*.ceiphr.com"]);
+		_paq.push(["setDomains", ["*.ceiphr.com"]]);
+		_paq.push(["disableCookies"]);
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+		(function() {
+			var u = "//ceiphr.innocraft.cloud/";
+			_paq.push(['setTrackerUrl', u + 'piwik.php']);
+			_paq.push(['setSiteId', '1']);
+			var d = document,
+				g = d.createElement('script'),
+				s = d.getElementsByTagName('script')[0];
+			g.type = 'text/javascript';
+			g.async = true;
+			g.defer = true;
+			g.src = u + 'piwik.js';
+			s.parentNode.insertBefore(g, s);
+		})();
+	</script>
+	<noscript>
+		<p><img src="//ceiphr.innocraft.cloud/piwik.php?idsite=1&rec=1" style="border:0;" alt="" />
+		</p>
+	</noscript>
 
-  <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/stars.css">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/stars.css">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto|Roboto+Slab" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto|Roboto+Slab" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!-- jQuery library -->
-  <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+	<!-- jQuery library -->
+	<script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
 
-  <!-- Core JavaScript -->
-  <script src="assets/bower_components/materialize/dist/js/materialize.min.js"></script>
-  <script max-age=691200 type="text/javascript" src="assets/js/backend.js"></script>
+	<!-- Core JavaScript -->
+	<script src="assets/bower_components/materialize/dist/js/materialize.min.js"></script>
+	<script max-age=691200 type="text/javascript" src="assets/js/backend.js"></script>
 
 </body>
 <html>

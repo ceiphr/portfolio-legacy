@@ -1,6 +1,7 @@
 //Nav
-$(document).ready(function () {
-	setTimeout(preloadTimer, 2400)
+$(document).ready(function() {
+	setTimeout(preloadTimer, 2600)
+
 	function preloadTimer() {
 		$(".preload").addClass("end");
 		$(".fade-out").addClass("hide");
@@ -21,7 +22,7 @@ $(document).ready(function () {
 
 //Modal
 
-$(document).ready(function () {
+$(document).ready(function() {
 	$('.modal').modal({
 		dismissible: true, // Modal can be dismissed by clicking outside of the modal
 		opacity: 0, // Opacity of modal background
@@ -34,8 +35,8 @@ $(document).ready(function () {
 
 //Slide Animation
 
-$(document).ready(function () {
-	$("nav, a, footer a[href='#!']").on('click', function (event) {
+$(document).ready(function() {
+	$("nav, a, footer a[href='#!']").on('click', function(event) {
 
 		if (this.hash !== "") {
 
@@ -45,7 +46,7 @@ $(document).ready(function () {
 
 			$('html, body').animate({
 				scrollTop: $(hash).offset().top
-			}, 1200, function () {
+			}, 1200, function() {
 
 				window.location.hash = hash;
 			});
@@ -53,8 +54,8 @@ $(document).ready(function () {
 	});
 })
 
-$(window).scroll(function () {
-	$(".slide-animation").each(function () {
+$(window).scroll(function() {
+	$(".slide-animation").each(function() {
 		var pos = $(this).offset().top;
 
 		var winTop = $(window).scrollTop();
@@ -66,17 +67,15 @@ $(window).scroll(function () {
 
 //Change Scroll
 
-$(window).on("scroll", function () {
+$(window).on("scroll", function() {
 	if ($(window).scrollTop() > (window.innerHeight - 25)) {
 		$(".menu").addClass("scroll");
-	}
-	else {
+	} else {
 		$(".menu").removeClass("scroll");
 	}
 	if ($(window).scrollTop() > (window.innerHeight - 25)) {
 		$(".menu-title").addClass("scroll");
-	}
-	else {
+	} else {
 		$(".menu-title").removeClass("scroll");
 	}
 });
