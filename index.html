@@ -26,21 +26,26 @@
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/png" href="assets/images/profile/favicon.png" />
 
-  <!-- Core CSS -->
-  <link rel="stylesheet" href="assets/bower_components/materialize/dist/css/materialize.min.css">
+  <!-- CSS Framework -->
+  <link rel="stylesheet" href="assets/bower_components/materialize/dist/css/materialize.min.css">  
+  
+  <!-- Preloader -->
   <style>
+    /* Indeterminate Preloader */
+
     .progress {
+      background-color: #7289DA !important;
       margin: 0 !important;
-      background: #2C2F33;
     }
 
     .progress .indeterminate {
-      background-color: #7289DA;
+      background: #2C2F33 !important;
     }
     /* Keyframes for the fade-out */
 
     .fade-out {
-      position: fixed;
+      visibility: visible;
+      position: absolute;
       z-index: 99;
       background: #23272A;
       height: 100%;
@@ -90,6 +95,8 @@
     }
 
     .preload {
+      height: 100vh;
+      overflow: hidden;
       animation-name: preload;
       animation-delay: 1s;
       -webkit-animation-name: preload;
@@ -118,6 +125,16 @@
         opacity: 1;
         -webkit-transform: translateY(0%);
       }
+    }
+
+    .fade-out.hide {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .preload.end {
+      height: auto;
+      overflow: default;
     }
   </style>
 

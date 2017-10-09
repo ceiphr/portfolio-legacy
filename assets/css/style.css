@@ -6,7 +6,22 @@ body {
   width: 100%;
   z-index: 9000;
 }
+::scrollbar {
+  width: 2px;
+}
+
+ ::-moz-scrollbar {
+  width: 2px;
+}
+
+ ::-webkit-scrollbar {
+  width: 2px;
+}
 ::selection {
+  background: rgba(114, 137, 218, 0.9);
+  color: #23272A;
+}
+::-webkit-selection {
   background: rgba(114, 137, 218, 0.9);
   color: #23272A;
 }
@@ -14,8 +29,17 @@ body {
   background: rgba(114, 137, 218, 0.9);
   color: #23272A;
 }
-::-webkit-scrollbar {
-  width: 2px;
+::-moz-scrollbar-track {
+  background: #23272A;
+}
+::-moz-scrollbar-thumb {
+  background: #7289DA;
+}
+::scrollbar-track {
+  background: #23272A;
+}
+::scrollbar-thumb {
+  background: #7289DA;
 }
 ::-webkit-scrollbar-track {
   background: #23272A;
