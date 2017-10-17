@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  font-family: 'Roboto-Regular', sans-serif;  
 }
 body {
   background: #23272A;
@@ -69,7 +70,7 @@ body {
   border-width: 0;
 }
 .menu-title {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto-Slab', serif;
   font-size: 20px !important;
   padding-left: 15px !important;
   padding-right: 15px !important;
@@ -97,7 +98,7 @@ body {
 }
 .nav-link {
   color: #23272A !important;
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Roboto-Regular', sans-serif !important;
 }
 .nav-link:hover {
   color: #7289DA !important;
@@ -112,12 +113,11 @@ body {
 /*Cover*/
 
 #cover-title {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto-Slab', serif;
   font-size: 42px;
   line-height: 0.2;
 }
 #cover-subtext {
-  font-family: 'Roboto', sans-serif;
   font-size: 18px;
 }
 .cover {
@@ -316,7 +316,7 @@ a:hover {
 /*Modals*/
 
 iframe {
-  font-family: 'Roboto:400', sans-serif !important;
+  font-family: 'Roboto-Regular', sans-serif !important;
   border: 0;
   width: 100%;
   height: auto;
@@ -381,7 +381,7 @@ iframe {
   height: 256px;
 }
 #project2-logo {
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Roboto-Light', cursive;
   font-size: 38px;
   color: white;
   padding-top: 100px;
@@ -539,7 +539,6 @@ textarea,
   overflow: hidden;
 }
 .footer-text {
-  font-family: 'Roboto:400', sans-serif !important;
   position: absolute;
   font-size: 12px;
   bottom: 8px;
@@ -593,7 +592,6 @@ textarea,
   user-select: none;
 }
 .alt-text {
-  font-family: 'Roboto', sans-serif !important;
   text-align: center;
 }
 .alt-text h1 {
