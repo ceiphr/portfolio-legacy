@@ -1,6 +1,5 @@
 <!doctype html5>
 <html lang="en">
-
 <!--
   ▒█▀▀▄ █▀▀ ▀█░█▀ █▀▀ █░░ █▀▀█ █▀▀█ █▀▀ █▀▀▄ 　 █▀▀▄ █░░█ 　 ▒█▀▀█ █▀▀ ░▀░ █▀▀█ █░░█ █▀▀█ 
   ▒█░▒█ █▀▀ ░█▄█░ █▀▀ █░░ █░░█ █░░█ █▀▀ █░░█ 　 █▀▀▄ █▄▄█ 　 ▒█░░░ █▀▀ ▀█▀ █░░█ █▀▀█ █▄▄▀ 
@@ -10,11 +9,14 @@
 <head>
 	<!-- Meta Data -->
 	<meta charset="utf-8" />
-	<meta name="google-site-verification" content="qDNe7a2j3pmulYQAsfEnb6U9YgwY8Xi8EIlNIeud_QA" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<meta name="google-site-verification" content="qDNe7a2j3pmulYQAsfEnb6U9YgwY8Xi8EIlNIeud_QA" />
+	<title>Ari Birnbaum // Ceiphr</title>	
 	<meta name="description" content="Ceiphr // The portfolio of Ari Birnbaum." />
 	<meta name="theme-color" content="#23272A" />
+
 	<meta name="apple-mobile-web-app-title" content="Ceiphr" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -22,13 +24,8 @@
 	<link rel="apple-touch-icon" href="assets/images/profile/avatar1.png" />
 	<link rel="apple-touch-startup-image" href="assets/images/profile/avatar1.png" />
 
-	<title>Ari Birnbaum // Ceiphr</title>
-
 	<!-- Favicon -->
 	<link rel="shortcut icon" type="image/png" href="assets/images/profile/favicon.png" />
-
-	<!-- CSS Framework -->
-	<link rel="stylesheet" href="assets/bower_components/materialize/dist/css/materialize.min.css">
 
 	<!-- Preloader -->
 	<script max-age=691200 type="text/javascript">
@@ -41,6 +38,10 @@
 	<style>
 		/* Indeterminate Preloader */
 
+		body {
+			margin: 0;
+		}
+
 		.progress {
 			background-color: #7289DA !important;
 			margin: 0 !important;
@@ -48,6 +49,92 @@
 
 		.progress .indeterminate {
 			background: #2C2F33 !important;
+		}
+
+		.progress .indeterminate:before {
+			content: '';
+			position: absolute;
+			background-color: inherit;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			will-change: left, right;
+			-webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+			animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+		}
+
+		.progress .indeterminate:after {
+			content: '';
+			position: absolute;
+			background-color: inherit;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			will-change: left, right;
+			-webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+			animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+			-webkit-animation-delay: 1.15s;
+			animation-delay: 1.15s;
+		}
+
+		@-webkit-keyframes indeterminate {
+			0% {
+				left: -35%;
+				right: 100%;
+			}
+			60% {
+				left: 100%;
+				right: -90%;
+			}
+			100% {
+				left: 100%;
+				right: -90%;
+			}
+		}
+
+		@keyframes indeterminate {
+			0% {
+				left: -35%;
+				right: 100%;
+			}
+			60% {
+				left: 100%;
+				right: -90%;
+			}
+			100% {
+				left: 100%;
+				right: -90%;
+			}
+		}
+
+		@-webkit-keyframes indeterminate-short {
+			0% {
+				left: -200%;
+				right: 100%;
+			}
+			60% {
+				left: 107%;
+				right: -8%;
+			}
+			100% {
+				left: 107%;
+				right: -8%;
+			}
+		}
+
+		@keyframes indeterminate-short {
+			0% {
+				left: -200%;
+				right: 100%;
+			}
+			60% {
+				left: 107%;
+				right: -8%;
+			}
+			100% {
+				left: 107%;
+				right: -8%;
+			}
 		}
 
 		/* Keyframes for the fade-out */
@@ -608,11 +695,10 @@
 									<i class="material-icons star">star_border</i>
 								</span>
 								<blockquote>
-									"The universe is composed of billions of atoms bouncing around each other. This process somehow created cells that formed
-									humans that could reason. Unfortunately, the universe failed to realize how much of a failure it had created when
-									it came to Ari."
+									"Over a billion years of evolution has lead to the development of organisms that could reason. I refuse to believe Ari is
+									a product of evolution, he's just awful."
 								</blockquote>
-								<i class="right text-light">- Muhar Muhar</i>
+								<i class="right text-light">- Maher Maher</i>
 							</p>
 						</div>
 					</div>
@@ -742,6 +828,7 @@
 			</span>
 		</div>
 	</div>
+
 	<!-- Piwik -->
 	<script type="text/javascript">
 				var _paq = _paq || [];
@@ -772,14 +859,9 @@
 		</p>
 	</noscript>
 
-	<!-- Fonts -->
-	<link href="assets/bower_components/roboto-fontface/css/roboto/roboto-fontface.css" rel="stylesheet">
-	<link href="assets/bower_components/roboto-fontface/css/roboto-slab/roboto-slab-fontface.css" rel="stylesheet">
-	<link href="assets/bower_components/material-design-icons/iconfont/material-icons.css" rel="stylesheet">
-
 	<!-- CSS -->
+	<link rel="stylesheet" href="assets/bower_components/materialize/dist/css/materialize.css">	
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/stars.css">
 
 	<!-- jQuery library -->
 	<script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
