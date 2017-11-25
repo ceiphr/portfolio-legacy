@@ -1,43 +1,43 @@
 // Nav
 $(document).ready(function () {
-	$('.carousel.carousel-slider').carousel({
+	$(".carousel.carousel-slider").carousel({
 		noWrap: true,
 		dist: 0,
 		fullWidth: true
 	});
 	$(".dropdown-button").dropdown();
-	$('.button-collapse').sideNav({
+	$(".button-collapse").sideNav({
 		menuWidth: 300,
-		edge: 'left',
+		edge: "left",
 		closeOnClick: true,
 		draggable: true
 	});
-})
+});
 
 // Modal
 
 $(document).ready(function () {
-	$('.modal').modal({
+	$(".modal").modal({
 		dismissible: true, // Modal can be dismissed by clicking outside of the modal
 		opacity: 0, // Opacity of modal background
 		inDuration: 200, // Transition in duration
 		outDuration: 100, // Transition out duration
-		startingTop: '4%', // Starting top style attribute
-		endingTop: '10%', // Ending top style attribute
+		startingTop: "4%", // Starting top style attribute
+		endingTop: "10%", // Ending top style attribute
 	});
 });
 
 // Slide Animation
 
 $(document).ready(function () {
-	$("nav, a, footer a[href='#!']").on('click', function (event) {
+	$("nav, a, footer a[href='#!']").on("click", function (event) {
 		if (this.hash !== "") {
 
 			event.preventDefault();
 
 			var hash = this.hash;
 
-			$('html, body').animate({
+			$("html, body").animate({
 
 				scrollTop: $(hash).offset().top,
 
@@ -47,7 +47,7 @@ $(document).ready(function () {
 			});
 		}
 	});
-})
+});
 
 $(window).scroll(function () {
 	$(".slide-animation").each(function () {

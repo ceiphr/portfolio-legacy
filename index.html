@@ -11,9 +11,9 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	
+
 	<meta name="google-site-verification" content="qDNe7a2j3pmulYQAsfEnb6U9YgwY8Xi8EIlNIeud_QA" />
-	<title>Ari Birnbaum // Ceiphr</title>	
+	<title>Ari Birnbaum // Ceiphr</title>
 	<meta name="description" content="Ceiphr // The portfolio of Ari Birnbaum." />
 	<meta name="theme-color" content="#23272A" />
 
@@ -59,6 +59,7 @@
 			left: 0;
 			bottom: 0;
 			will-change: left, right;
+			-moz-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
 			-webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
 			animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
 		}
@@ -71,9 +72,11 @@
 			left: 0;
 			bottom: 0;
 			will-change: left, right;
+			-moz-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+			-moz-animation-delay: 1.15s;
 			-webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
-			animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
 			-webkit-animation-delay: 1.15s;
+			animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
 			animation-delay: 1.15s;
 		}
 
@@ -136,7 +139,6 @@
 				right: -8%;
 			}
 		}
-
 		/* Keyframes for the fade-out */
 
 		.fade-out {
@@ -149,17 +151,17 @@
 			opacity: 1;
 			opacity: 0 \9;
 			/*just in case ie*/
-			-webkit-animation: fadeOut ease-in 1;
-			-webkit-animation-delay: 1.5s;
 			-moz-animation: fadeOut ease-in 1;
 			-moz-animation-delay: 1.5s;
+			-moz-animation-fill-mode: forwards;
+			-moz-animation-duration: 1s;
+			-webkit-animation: fadeOut ease-in 1;
+			-webkit-animation-delay: 1.5s;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-duration: 1s;
 			animation: fadeOut ease-in 1;
 			animation-delay: 1.5s;
-			-webkit-animation-fill-mode: forwards;
-			-moz-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
-			-webkit-animation-duration: 1s;
-			-moz-animation-duration: 1s;
 			animation-duration: 1s;
 		}
 
@@ -191,23 +193,29 @@
 		}
 
 		.preload-one {
-			animation-name: preload;
-			animation-delay: 1s;
+			-moz-animation-name: preload;
+			-moz-animation-delay: 1s;
+			-moz-animation-duration: 2s;
 			-webkit-animation-name: preload;
 			-webkit-animation-delay: 1s;
-			animation-duration: 2s;
 			-webkit-animation-duration: 2s;
+			animation-name: preload;
+			animation-delay: 1s;
+			animation-duration: 2s;
 		}
 
 		.preload-two {
 			height: 100vh;
 			overflow: hidden;
-			animation-name: preload;
-			animation-delay: 1s;
+			-moz-animation-name: preload;
+			-moz-animation-delay: 1s;
+			-moz-animation-duration: 2s;
 			-webkit-animation-name: preload;
 			-webkit-animation-delay: 1s;
-			animation-duration: 2s;
 			-webkit-animation-duration: 2s;
+			animation-name: preload;
+			animation-delay: 1s;
+			animation-duration: 2s;
 		}
 
 		@keyframes preload {
@@ -398,7 +406,7 @@
 				<br>
 				<br>
 				<a href="https://codepen.io/JonasNoldeDev/pen/BKMXwV?q=scroll%20icon&limit=all&order=popularity&depth=everything&show_forks=false"
-				 target="_blank" rel="noopener">pure css scroll-icon animation</a>
+				    target="_blank" rel="noopener">pure css scroll-icon animation</a>
 				<br> Less based scroll icon animation by Jonas.
 				<br>
 				<br>
@@ -702,7 +710,6 @@
 							</p>
 						</div>
 					</div>
-
 					<div class="carousel-item row" href="#four!">
 						<div class="col m8 offset-m2">
 							<p class="quote-text">
@@ -737,6 +744,23 @@
 									to yourself and others."
 								</blockquote>
 								<i class="right text-light">- Barack Obama</i>
+							</p>
+						</div>
+					</div>
+					<div class="carousel-item row" href="#six!">
+						<div class="col m8 offset-m2">
+							<p class="quote-text">
+								<h2>Inhumane</h2>
+								<span>
+									<i class="material-icons star">star_rate</i>
+									<i class="material-icons star">star_rate</i>
+									<i class="material-icons star">star_border</i>
+									<i class="material-icons star">star_border</i>
+									<i class="material-icons star">star_border</i>
+								</span>
+								<blockquote>
+									He dips his Oreos in Dr. Pepper... can you really trust anyone who does that?								</blockquote>
+								<i class="right text-light">- Generic Human #173</i>
 							</p>
 						</div>
 					</div>
@@ -831,27 +855,27 @@
 
 	<!-- Piwik -->
 	<script type="text/javascript">
-				var _paq = _paq || [];
-				/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-				_paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-				_paq.push(["setCookieDomain", "*.ceiphr.com"]);
-				_paq.push(["setDomains", ["*.ceiphr.com"]]);
-				_paq.push(["disableCookies"]);
-				_paq.push(['trackPageView']);
-				_paq.push(['enableLinkTracking']);
-				(function () {
-					var u = "//ceiphr.innocraft.cloud/";
-					_paq.push(['setTrackerUrl', u + 'piwik.php']);
-					_paq.push(['setSiteId', '1']);
-					var d = document,
-						g = d.createElement('script'),
-						s = d.getElementsByTagName('script')[0];
-					g.type = 'text/javascript';
-					g.async = true;
-					g.defer = true;
-					g.src = u + 'piwik.js';
-					s.parentNode.insertBefore(g, s);
-				})();
+		var _paq = _paq || [];
+		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+		_paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+		_paq.push(["setCookieDomain", "*.ceiphr.com"]);
+		_paq.push(["setDomains", ["*.ceiphr.com"]]);
+		_paq.push(["disableCookies"]);
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+		(function () {
+			var u = "//ceiphr.innocraft.cloud/";
+			_paq.push(['setTrackerUrl', u + 'piwik.php']);
+			_paq.push(['setSiteId', '1']);
+			var d = document,
+				g = d.createElement('script'),
+				s = d.getElementsByTagName('script')[0];
+			g.type = 'text/javascript';
+			g.async = true;
+			g.defer = true;
+			g.src = u + 'piwik.js';
+			s.parentNode.insertBefore(g, s);
+		})();
 	</script>
 	<noscript>
 		<p>
@@ -860,7 +884,7 @@
 	</noscript>
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="assets/bower_components/materialize/dist/css/materialize.css">	
+	<link rel="stylesheet" href="assets/bower_components/materialize/dist/css/materialize.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 	<!-- jQuery library -->
