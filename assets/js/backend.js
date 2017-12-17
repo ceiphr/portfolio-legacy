@@ -1,5 +1,6 @@
 // Nav
 $(document).ready(function () {
+	$('.tooltipped').tooltip({ delay: 50 });
 	$(".carousel.carousel-slider").carousel({
 		noWrap: true,
 		dist: 0,
@@ -12,11 +13,6 @@ $(document).ready(function () {
 		closeOnClick: true,
 		draggable: true
 	});
-});
-
-// Modal
-
-$(document).ready(function () {
 	$(".modal").modal({
 		dismissible: true, // Modal can be dismissed by clicking outside of the modal
 		opacity: 0, // Opacity of modal background
@@ -25,11 +21,6 @@ $(document).ready(function () {
 		startingTop: "4%", // Starting top style attribute
 		endingTop: "10%", // Ending top style attribute
 	});
-});
-
-// Slide Animation
-
-$(document).ready(function () {
 	$("nav, a, footer a[href='#!']").on("click", function (event) {
 		if (this.hash !== "") {
 
@@ -48,6 +39,9 @@ $(document).ready(function () {
 		}
 	});
 });
+
+
+// Slide Animation
 
 $(window).scroll(function () {
 	$(".slide-animation").each(function () {
