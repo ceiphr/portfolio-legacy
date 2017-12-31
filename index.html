@@ -31,279 +31,11 @@
 	<link rel="stylesheet" href="assets/bower_components/materialize/dist/css/materialize.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-	<!-- Preloader -->
-	<!--<script max-age=691200 type="text/javascript">
-		setTimeout(preload, 3500)
-		function preload() {
-			$(".fade-out").addClass("hide");
-			$("front-page").addClass("show");
-		}
-	</script>
-	<style>
-		/* Indeterminate Preloader */
-
-		body {
-			margin: 0;
-		}
-
-		.progress {
-			background-color: #7289DA !important;
-			margin: 0 !important;
-		}
-
-		.progress .indeterminate {
-			background: #2C2F33 !important;
-		}
-
-		.progress .indeterminate:before {
-			content: '';
-			position: absolute;
-			background-color: inherit;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			will-change: left, right;
-			-moz-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
-			-webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
-			animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
-		}
-
-		.progress .indeterminate:after {
-			content: '';
-			position: absolute;
-			background-color: inherit;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			will-change: left, right;
-			-moz-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
-			-moz-animation-delay: 1.15s;
-			-webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
-			-webkit-animation-delay: 1.15s;
-			animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
-			animation-delay: 1.15s;
-		}
-
-		@-moz-keyframes indeterminate {
-			0% {
-				left: -35%;
-				right: 100%;
-			}
-			60% {
-				left: 100%;
-				right: -90%;
-			}
-			100% {
-				left: 100%;
-				right: -90%;
-			}
-		}
-
-		@-webkit-keyframes indeterminate {
-			0% {
-				left: -35%;
-				right: 100%;
-			}
-			60% {
-				left: 100%;
-				right: -90%;
-			}
-			100% {
-				left: 100%;
-				right: -90%;
-			}
-		}
-
-		@keyframes indeterminate {
-			0% {
-				left: -35%;
-				right: 100%;
-			}
-			60% {
-				left: 100%;
-				right: -90%;
-			}
-			100% {
-				left: 100%;
-				right: -90%;
-			}
-		}
-
-		@-moz-keyframes indeterminate-short {
-			0% {
-				left: -200%;
-				right: 100%;
-			}
-			60% {
-				left: 107%;
-				right: -8%;
-			}
-			100% {
-				left: 107%;
-				right: -8%;
-			}
-		}
-
-		@-webkit-keyframes indeterminate-short {
-			0% {
-				left: -200%;
-				right: 100%;
-			}
-			60% {
-				left: 107%;
-				right: -8%;
-			}
-			100% {
-				left: 107%;
-				right: -8%;
-			}
-		}
-
-		@keyframes indeterminate-short {
-			0% {
-				left: -200%;
-				right: 100%;
-			}
-			60% {
-				left: 107%;
-				right: -8%;
-			}
-			100% {
-				left: 107%;
-				right: -8%;
-			}
-		}
-		/* Keyframes for the fade-out */
-
-		.fade-out {
-			visibility: visible;
-			position: fixed;
-			z-index: 99;
-			background: #23272A;
-			height: 100%;
-			width: 100%;
-			opacity: 1;
-			opacity: 0 \9;
-			/*just in case ie*/
-			-moz-animation: fadeOut ease-in 1;
-			-moz-animation-delay: 1.5s;
-			-moz-animation-fill-mode: forwards;
-			-moz-animation-duration: 1s;
-			-webkit-animation: fadeOut ease-in 1;
-			-webkit-animation-delay: 1.5s;
-			-webkit-animation-fill-mode: forwards;
-			-webkit-animation-duration: 1s;
-			animation: fadeOut ease-in 1;
-			animation-delay: 1.5s;
-			animation-fill-mode: forwards;
-			animation-duration: 1s;
-		}
-
-		@-moz-keyframes fadeOut {
-			from {
-				opacity: 1;
-			}
-			to {
-				opacity: 0;
-			}
-		}
-
-		@-webkit-keyframes fadeOut {
-			from {
-				opacity: 1;
-			}
-			to {
-				opacity: 0;
-			}
-		}
-
-		@keyframes fadeOut {
-			from {
-				opacity: 1;
-			}
-			to {
-				opacity: 0;
-			}
-		}
-
-		.preload-one {
-			-moz-animation-name: preload;
-			-moz-animation-delay: 1s;
-			-moz-animation-duration: 2s;
-			-webkit-animation-name: preload;
-			-webkit-animation-delay: 1s;
-			-webkit-animation-duration: 2s;
-			animation-name: preload;
-			animation-delay: 1s;
-			animation-duration: 2s;
-		}
-
-		.preload-two {
-			height: 100vh;
-			overflow: hidden;
-			-moz-animation-name: preload;
-			-moz-animation-delay: 4s;
-			-moz-animation-duration: 2s;
-			-webkit-animation-name: preload;
-			-webkit-animation-delay: 4s;
-			-webkit-animation-duration: 2s;
-			animation-name: preload;
-			animation-delay: 4s;
-			animation-duration: 2s;
-		}
-
-		@-moz-keyframes preload {
-			0% {
-				opacity: 0;
-				-moz-transform: translateY(15%);
-			}
-			100% {
-				opacity: 1;
-				-moz-transform: translateY(0%);
-			}
-		}
-
-
-		@keyframes preload {
-			0% {
-				opacity: 0;
-				transform: translateY(15%);
-			}
-			100% {
-				opacity: 1;
-				transform: translateY(0%);
-			}
-		}
-
-		@-webkit-keyframes preload {
-			0% {
-				opacity: 0;
-				-webkit-transform: translateY(15%);
-			}
-			100% {
-				opacity: 1;
-				-webkit-transform: translateY(0%);
-			}
-		}
-
-		.fade-out.hide {
-			opacity: 0;
-			visibility: hidden;
-		}
-	</style>-->
-
 </head>
 
 <body>
-	<!-- Preloader -->
-	<!--<div class="fade-out">
-		<div class="progress">
-			<div class="indeterminate"></div>
-		</div>
-	</div>-->
-
 	<!-- Nav -->
-	<div class="nav preload-one">
+	<div class="nav">
 		<!-- Dropdown -->
 		<ul id="legal-dropdown" class="dropdown-content">
 			<li>
@@ -432,16 +164,20 @@
 				<br> Resources
 				<br>
 				<br>
+				<a href="https://coverr.co/" target="_blank" rel="noopener">Coverr</a>
+				<br> Beautiful, free videos for your homepage.
+				<br>
+				<br>
 				<a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a>
 				<br> Formspree is a project that solves a problem many of us have faced: easily adding forms to otherwise static HTML pages.
 				<br>
 				<br>
+				<a href="https://clipboardjs.com/" target="_blank" rel="noopener">clipboard.js</a>
+				<br> A modern approach to copy text to clipboard. No Flash. No frameworks. Just 3kb gzipped.
+				<br>
+				<br>
 				<a href="http://cultofthepartyparrot.com/" target="_blank" rel="noopener">Party Parrot</a>
 				<br> The kakapo in the footer. Based on Sirocco senpai.
-				<br>
-				<br>
-				<a href="https://codepen.io/saransh/pen/BKJun?editors=1100" target="_blank" rel="noopener">Parallax Star background in CSS</a>
-				<br> Sass and Haml based parallax star background by Saransh Sinha.
 				<br>
 				<br>
 				<a href="https://codepen.io/JonasNoldeDev/pen/BKMXwV?q=scroll%20icon&limit=all&order=popularity&depth=everything&show_forks=false"
@@ -486,11 +222,6 @@
 
 	<!-- Front Page -->
 	<div id="front-page">
-		<div id="stars-container" class="preload-two">
-			<div id="stars"></div>
-			<div id="stars2"></div>
-			<div id="stars3"></div>
-		</div>
 		<!-- Centered Elements -->
 		<div class="container">
 			<div class="left cover">
@@ -509,6 +240,16 @@
 				</section>
 			</a>
 		</div>
+		<div class="filter"></div>
+		<div class="wrapper">
+			<video playsinline autoplay loop id="bgvid" id="wrapper">
+				<source src="assets\images\MP4\Festive-Tree.mp4" type="video/mp4" />
+				<source src="assets\images\WEBM\Festive-Tree.webm" type="video/webm" />
+			</video>
+			<div class="poster hidden">
+				<img src="assets\images\Snapshots\Festive-Tree.jpg" alt="">
+			</div>
+		</div>
 	</div>
 
 	<!-- Projects Page -->
@@ -524,6 +265,33 @@
 		</div>
 		<!-- Projects -->
 		<div class="row container">
+			<!-- Project 5 -->
+			<div class="col s12 m12">
+				<div class="slide-animation">
+					<div class="card project">
+						<div class="card-image">
+							<div id="project5-bk-wrapper">
+								<img id="project5-logo" max-age=691200 src="assets/images/projects/5/logo.svg">
+								<img id="project5-bk" src="assets/images/projects/5/icon.svg">
+							</div>
+						</div>
+						<div class="card-content">
+							<span class="card-title activator ">Baum Bot
+								<i class="material-icons right">more_vert</i>
+							</span>
+							<p>
+								<a href="https://baum.ceiphr.com" target="_blank" rel="noopener">Visit Project</a>
+							</p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title">Baum Bot
+								<i class="material-icons right">close</i>
+							</span>
+							<p class="white-text">Experimental Discord bot. Developed completely in Java. Currently in early alpha.</p>
+						</div>
+					</div>
+				</div>
+			</div>
 			<!-- Project 4 -->
 			<div class="col s12 m5">
 				<div class="slide-animation">
@@ -706,7 +474,7 @@
 								</span>
 								<blockquote>
 									"Your website needs improvements, as a professional designer and web developer I believe your user interface is very lack
-									luster. I'm hear to read about Ari Birnbaum, not some inexperienced script kiddy."
+									luster. I'm here to read about Ari Birnbaum, not some inexperienced script kiddy."
 								</blockquote>
 								<i class="right text-light">- Alessandro Pace</i>
 							</p>
@@ -798,7 +566,7 @@
 									<i class="material-icons star">star_border</i>
 								</span>
 								<blockquote>
-									He dips his Oreos in Dr. Pepper... can you really trust anyone who does that? </blockquote>
+									"He dips his Oreos in Dr. Pepper... can you really trust anyone who does that?"</blockquote>
 								<i class="right text-light">- Ajit Pai</i>
 							</p>
 						</div>
@@ -810,26 +578,22 @@
 
 	<!-- Done Page -->
 	<div id="end">
-		<div class="container">
-			<div class="end-content center">
-				<p class="title-light title-end">Yeah, we're done here.</p>
-				<p class="white-text subtext-end">If you're interested in what I do, check out my resume and feel free to contact me.</p>
+		<div class="container end-content">
+			<div class="center">
+				<p class="title-light title-end">Thanks for the visit. Buh-bye now.</p>
+				<p class="white-text subtext-end">Oh also, If you're interested in what I do, feel free to contact me and check out my resume (when I release it).</p>
 			</div>
-			<div class="row">
-				<div class="col s6 m4 offset-m2">
-					<a>
-						<button class="btn-large dl-btn right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Coming Soon"><i class="material-icons right">file_download</i>Resume</button>
-					</a>
-				</div>
-				<div class="col s6 m4">
-					<a href="contact.html">
-						<button class="btn-large c-btn">Contact</button>
-					</a>
-				</div>
+			<div class="btns-end">
+				<a href="https://ceiphr.com/contact">
+					<button class="btn-large c-btn">Contact</button>
+				</a>
+				<a>
+					<button class="btn-large dl-btn right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Coming Soon">
+						<i class="material-icons right">file_download</i>Resume</button>
+				</a>
 			</div>
 		</div>
 	</div>
-
 	<!-- Footer -->
 	<div id="footer">
 		<div class="footer-content">
@@ -861,6 +625,7 @@
 			</span>
 		</div>
 	</div>
+
 
 	<!-- Piwik -->
 	<script type="text/javascript">

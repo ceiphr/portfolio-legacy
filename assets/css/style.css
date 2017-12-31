@@ -31,17 +31,17 @@ body {
 
 ::selection {
   background: rgba(114, 137, 218, 0.9);
-  color: #23272A;
+  color: white;
 }
 
 ::-webkit-selection {
   background: rgba(114, 137, 218, 0.9);
-  color: #23272A;
+  color: white;
 }
 
 ::-moz-selection {
   background: rgba(114, 137, 218, 0.9);
-  color: #23272A;
+  color: white;
 }
 
 ::-moz-scrollbar-track {
@@ -128,7 +128,7 @@ body {
   -moz-transition-duration: 0.6s;
   -webkit-transition-duration: 0.6s;
   transition-duration: 0.6s;
-  background: rgba(0, 0, 0, 0.5);
+  background: #23272A;
 }
 
 .nav-link {
@@ -162,7 +162,38 @@ body {
   font-size: 18px;
 }
 
+.wrapper {
+  overflow: hidden;
+  background-position: left;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  transform: translate(50%, 50%);
+  width: 100%;
+  height: 100%;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  min-height: 50%;
+  min-width: 50%;
+}
+
+.filter {
+  background: rgba(35, 39, 42, 0.5);
+  position: absolute;
+  z-index: 98;
+  width: 100%;
+  height: 100vh;
+}
+
 .cover {
+  z-index: 99;
   position: absolute;
   color: white;
   top: 50vh;
@@ -189,16 +220,6 @@ body {
 #front-page,
 .parallax-container {
   height: 100vh;
-}
-
-#stars-container {
-  overflow: hidden;
-  height: 100vh;
-}
-
-#stars-container-c {
-  overflow: hidden;
-  height: 20vh;
 }
 
 #testimonials,
@@ -248,6 +269,16 @@ body {
   user-select: none;
 }
 
+#stars-container {
+  overflow: hidden;
+  height: 100vh;
+}
+
+#stars-container-c {
+  overflow: hidden;
+  height: 20vh;
+}
+
 
 /*Scroll Icon*/
 
@@ -255,6 +286,7 @@ body {
 /*https://codepen.io/JonasNoldeDev/pen/BKMXwV*/
 
 .scroll-section {
+  z-index: 99;
   position: absolute;
   margin: auto;
   left: 50%;
@@ -566,6 +598,26 @@ iframe {
   width: 128px;
 }
 
+#project5-bk {
+  opacity: 0.2;
+  padding: 12px;
+  transform: translateY(-45%);
+}
+
+#project5-bk-wrapper {
+  background-color: #eeeeee;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  height: 256px;
+}
+
+#project5-logo {
+  margin-left: 50%;
+  transform: translate(-50%, 85px);
+  width: 256px;
+}
+
 
 /*Hackathons Page Styling*/
 
@@ -662,14 +714,23 @@ blockquote {
   background: #7289DA !important;
 }
 
+
 /* End Card */
+
 .title-end {
-  line-height: 1.2
+  line-height: 1.2;
 }
 
 .subtext-end {
   margin-top: -24px;
   margin-bottom: 24px;
+}
+
+.btns-end {
+  position: absolute;
+  width: 256px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .dl-btn {
@@ -710,14 +771,14 @@ blockquote {
   background: white;
 }
 
+
 /*Footer Styling*/
 
 #footer {
-  position: absolute;
   left: 0;
+  position: absolute;
   height: 100px;
   width: 100%;
-  overflow: hidden;
 }
 
 .footer-text {
@@ -802,14 +863,6 @@ blockquote {
   vertical-align: middle !important;
 }
 
-.btn-c {
-  opacity: 0.75;
-  position: relative;
-  bottom: 24px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 
 /* label color */
 
@@ -870,11 +923,9 @@ textarea,
 }
 
 #email-copy {
-  background: white !important;
   font-family: 'Roboto-Regular', sans-serif !important;
   border-radius: 2px;
   padding: 0px 4px 0px 4px;
-  color: #2C2F33;
   -moz-transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
@@ -911,6 +962,14 @@ textarea,
 .alt-text p {
   font-size: 16px;
   line-height: 0;
+}
+
+.btn-c {
+  opacity: 0.75;
+  position: relative;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .light-btn {
