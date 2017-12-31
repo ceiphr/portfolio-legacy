@@ -600,8 +600,8 @@ iframe {
 
 #project5-bk {
   opacity: 0.2;
-  padding: 12px;
-  transform: translateY(-45%);
+  padding: 32px;
+  transform: translateY(-112px);
 }
 
 #project5-bk-wrapper {
@@ -614,7 +614,7 @@ iframe {
 
 #project5-logo {
   margin-left: 50%;
-  transform: translate(-50%, 85px);
+  transform: translate(-50%, 80px);
   width: 256px;
 }
 
