@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "authors": [
+    "Ari <ari@ceiphr.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "roboto-fontface": "^0.8.0",
+    "material-design-icons": "^3.0.1"
+  }
+}
