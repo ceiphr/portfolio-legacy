@@ -98,7 +98,7 @@ body {
 }
 
 .card-content p a:hover {
-  color: #2C2F33 !important;
+  color: white !important;
 }
 
 
@@ -143,6 +143,7 @@ a:hover {
 .subtitle--light {
   color: #99AAB5;
   font-size: 16px;
+  margin-right: 10px;
 }
 
 .material-icons {
