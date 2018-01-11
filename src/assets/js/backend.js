@@ -10,12 +10,12 @@ $(document).ready(function () {
 		draggable: true
 	});
 	$(".modal").modal({
-		dismissible: true, // Modal can be dismissed by clicking outside of the modal
-		opacity: 0, // Opacity of modal background
-		inDuration: 200, // Transition in duration
-		outDuration: 100, // Transition out duration
-		startingTop: "4%", // Starting top style attribute
-		endingTop: "10%", // Ending top style attribute
+		dismissible: true,
+		opacity: 0,
+		inDuration: 200,
+		outDuration: 100,
+		startingTop: "4%",
+		endingTop: "10%",
 	});
 	$("nav, a, footer a[href='#!']").on("click", function (event) {
 		if (this.hash !== "") {
@@ -28,7 +28,7 @@ $(document).ready(function () {
 
 				scrollTop: $(hash).offset().top,
 
-			}, 1200, function () {
+			}, 500, function () {
 
 				window.location.hash = hash;
 			});

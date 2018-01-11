@@ -25,10 +25,79 @@
 	<!-- Favicon -->
 	<link rel="shortcut icon" type="image/png" href="assets/images/profile/favicon.png" />
 
-	<!-- CSS -->
-	<link rel="stylesheet" href="assets/bower_components/materialize/dist/css/materialize.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- Critical CSS -->
+	<style>
+		/* Boiler Plate */
 
+		html {
+			scroll-behavior: smooth;
+			font-family: 'Roboto-Regular', sans-serif;
+		}
+
+		body {
+			background: #23272A;
+			min-width: 332px;
+		}
+		/* Cover */
+
+		#front-page {
+			height: 100vh;
+		}
+
+		.cover {
+			z-index: 99;
+			position: absolute;
+			color: white;
+			top: 50vh;
+			transform: translateY(-50%);
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			-o-user-select: none;
+			user-select: none;
+		}
+
+		.cover__title {
+			font-family: 'Roboto-Slab', serif;
+			font-size: 42px;
+			line-height: 0.2;
+		}
+
+		.cover__subtext {
+			font-size: 18px;
+		}
+		/* Nav */
+
+		.menu-title {
+			font-family: 'Roboto-Slab', serif;
+			font-size: 20px !important;
+			padding-left: 15px !important;
+			padding-right: 15px !important;
+			color: transparent !important;
+			-moz-transition-duration: 0.6s;
+			-webkit-transition-duration: 0.6s;
+			transition-duration: 0.6s;
+		}
+
+		.menu {
+			color: white;
+			-moz-transition-duration: 0.6s;
+			-webkit-transition-duration: 0.6s;
+			transition-duration: 0.6s;
+		}
+		/* Fix onLoad issues */
+
+		nav,
+		#testimonials,
+		#projects,
+		#end,
+		#hackathon,
+		#footer {
+			display: none;
+		}
+	</style>
 </head>
 
 <body>
@@ -71,7 +140,7 @@
 						<div class="userView">
 							<div class="background sidebarbk"></div>
 							<a href="#!user">
-								<img class="circle"  src="assets/images/profile/avatar1.png">
+								<img class="circle" src="assets/images/profile/avatar1.png">
 							</a>
 							<a href="#!name">
 								<span class="white-text name">Ari Birnbaum</span>
@@ -189,7 +258,7 @@
 		<div class="container">
 			<div class="cover left">
 				<h1 class="cover__title">Ari Birnbaum</h1>
-				<p class="cover__subtext">Software Developer</p>
+				<p class="cover__subtext">Amateur Software Developer</p>
 			</div>
 			<a href="#projects">
 				<section class="scroll-section">
@@ -541,22 +610,22 @@
 		<ul class="social">
 			<li>
 				<a target="_blank" href="https://github.com/ceiphr" rel="noopener">
-					<img  src="assets/images/icons/github.svg" />
+					<img src="assets/images/icons/github.svg" />
 				</a>
 			</li>
 			<li>
 				<a target="_blank" href="https://www.instagram.com/ceiphr/" rel="noopener">
-					<img  src="assets/images/icons/instagram.svg" />
+					<img src="assets/images/icons/instagram.svg" />
 				</a>
 			</li>
 			<li>
 				<a target="_blank" href="https://twitter.com/ceiphr" rel="noopener">
-					<img  src="assets/images/icons/twitter.svg" />
+					<img src="assets/images/icons/twitter.svg" />
 				</a>
 			</li>
 			<li>
 				<a target="_blank" href="https://www.facebook.com/ceiphr" rel="noopener">
-					<img  src="assets/images/icons/facebook.svg" />
+					<img src="assets/images/icons/facebook.svg" />
 				</a>
 			</li>
 		</ul>
@@ -566,8 +635,23 @@
 		</span>
 	</div>
 
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/bower_components/materialize/dist/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<style>
+		/* Fixes on load bug */
+
+		#testimonials,
+		#projects,
+		#end,
+		#hackathons,
+		#footer,
+		nav {
+			display: block;
+		}
+	</style>
 	<!-- jQuery library -->
-	<script  src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
 
 	<!-- Core JavaScript -->
 	<script src="assets/bower_components/materialize/dist/js/materialize.min.js"></script>

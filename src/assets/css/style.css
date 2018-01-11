@@ -6,20 +6,6 @@
 
 /*********************************************/
 
-
-/*Boiler Plate*/
-
-html {
-  scroll-behavior: smooth;
-  font-family: 'Roboto-Regular', sans-serif;
-}
-
-body {
-  background: #23272A;
-  min-width: 332px;
-}
-
-
 /*Selection*/
 
 ::selection {
@@ -265,10 +251,6 @@ textarea,
 
 /*Segment Styling*/
 
-#front-page {
-  height: 100vh;
-}
-
 #testimonials,
 #projects,
 #end,
@@ -390,34 +372,6 @@ textarea,
   color: #23272A !important;
 }
 
-
-/*Cover*/
-
-.cover {
-  z-index: 99;
-  position: absolute;
-  color: white;
-  top: 50vh;
-  transform: translateY(-50%);
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-}
-
-.cover__title {
-  font-family: 'Roboto-Slab', serif;
-  font-size: 42px;
-  line-height: 0.2;
-}
-
-.cover__subtext {
-  font-size: 18px;
-}
-
 /*Scroll Icon*/
 
 
@@ -532,7 +486,7 @@ iframe {
 .modal-content {
   box-shadow: none !important;
   border: none !important;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .modal-content p a {
@@ -959,10 +913,12 @@ blockquote {
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
   cursor: default;
+  color: white !important;
+  opacity: 0.5 !important;
 }
 
 #email-copy:hover {
-  opacity: 0.75 !important;
+  opacity: 1 !important;
 }
 
 .alt-cover {
@@ -1027,7 +983,6 @@ blockquote {
     display: block;
   }
 }
-
 
 /*********************************************/
 
