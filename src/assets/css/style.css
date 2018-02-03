@@ -132,6 +132,11 @@ a:hover {
   margin-right: 10px;
 }
 
+.intext-icons {
+  width: 18px;
+  transform: translateY(3px);
+}
+
 .material-icons {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -568,7 +573,7 @@ iframe {
 }
 
 #project2__logo {
-  font-family: 'abrilfatface', cursive;
+  font-family: 'Roboto-Bold', serif;
   font-size: 38px;
   color: white;
   padding-top: 100px;

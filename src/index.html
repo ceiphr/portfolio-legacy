@@ -245,6 +245,19 @@
 				<br>
 				<a href="http://cultofthepartyparrot.com/" target="_blank" rel="noopener">Party Parrot</a>
 				<br> The kakapo in the footer. Based on Sirocco senpai.
+				<br>
+				<br> Hosting
+				<br>
+				<br>
+				<a href="https://m.do.co/c/b95c2a8a5568" target="_blank" rel="noopener">Digital Ocean</a>
+				<br> My personal preference for web hosting. Their documentation is amazing and is the primary reason I was able to set up this site with them. Click the referal link for $10 when you create an account.
+				<br>
+				<br> Want to give me money for no actual reason!?
+				<br>
+				<br>
+				<img class="intext-icons" src="assets/images/icons/bitcoin.svg" /> Bitcoin Address: <a id="address-copy" data-clipboard-text="1DbTVB1arHBSBWue4hm9QeDzvfiARrz4su" onclick="Materialize.toast('Bitcoin address copied to clipboard 😀 ', 4000)">1DbTVB1arHBSBWue4hm9QeDzvfiARrz4su</a>
+				<br>
+				<img class="intext-icons" src="assets/images/icons/ethereum.svg" /> Ethereum Address: <a id="address-copy" data-clipboard-text="0xa28c1ed4887b8c50cac8954d394836e27ef6a400" onclick="Materialize.toast('Ethereum address copied to clipboard ❤ ️', 4000)">0xa28c1ed4887b8c50cac8954d394836e27ef6a400</a>
 			</p>
 		</div>
 		<div class="modal-footer">
@@ -375,7 +388,7 @@
 					<div class="card projects">
 						<div class="card-image">
 							<div id="project2__bk">
-								<p class="center" id="project2__logo">Dr.Frieda</p>>
+								<p class="center" id="project2__logo">Dr. Frieda</p>>
 							</div>
 						</div>
 						<div class="card-content">
@@ -383,14 +396,14 @@
 								<i class="material-icons right">more_vert</i>
 							</span>
 							<p>
-								<a href="https://doctorfrieda.wordpress.com/" target="_blank" rel="noopener">Visit projects</a>
+								<a href="https://drfrieda.com" target="_blank" rel="noopener">Visit projects</a>
 							</p>
 						</div>
 						<div class="card-reveal">
 							<span class="card-title">Dr.Frieda
 								<i class="material-icons right">close</i>
 							</span>
-							<p class="white-text">This website was developed as a blog/portfolio for Dr. Frieda Birnbaum (my mom).</p>
+							<p class="white-text">This website was developed as a blog/portfolio for Dr. Frieda Birnbaum (my mom). This site is managed on a DO ghost droplet.</p>
 						</div>
 					</div>
 				</div>
@@ -656,6 +669,12 @@
 	<!-- Core JavaScript -->
 	<script src="assets/bower_components/materialize/dist/js/materialize.min.js"></script>
 	<script type="text/javascript" src="assets/js/backend.js"></script>
+	<script src="assets/node_modules/clipboard/dist/clipboard.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			new Clipboard('#address-copy');
+		});
+	</script>
 
 </body>
 <html>
