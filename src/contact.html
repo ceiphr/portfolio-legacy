@@ -19,21 +19,9 @@
 	<!--Favicon-->
 	<link rel="shortcut icon" type="image/png" href="assets/images/profile/favicon.png" />
 
-	<!-- Critical CSS -->
-	<style>
-		/* Boiler Plate */
-
-		html {
-			scroll-behavior: smooth;
-			font-family: 'Roboto-Regular', sans-serif;
-		}
-
-		body {
-			background: #23272A;
-			min-width: 332px;
-		}
-	</style>
-
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="assets/bower_components/materialize/dist/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
@@ -60,15 +48,16 @@
 						<div class="card about">
 							<div class="card-content white-text">
 								<span class="card-title">Just so you know</span>
-								<p>You can fill out the form below if you want me to do stuff for you. I'll respond to your query as soon as I can. If
-									you don't want to use the form for whatever reason you can contact me directly at<a id="email-copy" data-clipboard-text="contact@ceiphr.com" onclick="Materialize.toast('Email copied to clipboard', 4000)">contact@ceiphr.com</a>
+								<p>You can fill out the form below if you want me to do stuff for you. I'll respond to your query as soon as I can.
+									If you don't want to use the form for whatever reason you can contact me directly at
+									<a id="email-copy" data-clipboard-text="contact@ceiphr.com"
+									    onclick="Materialize.toast('Email copied to clipboard', 4000)">contact@ceiphr.com</a>
 									<br>
-									<br>
-									Oh also, I'll just leave these here...
-									<br>
-									Bitcoin Address: <a id="email-copy" data-clipboard-text="1DbTVB1arHBSBWue4hm9QeDzvfiARrz4su" onclick="Materialize.toast('Bitcoin address copied to clipboard 👌 ', 4000)">1DbTVB1arHBSBWue4hm9QeDzvfiARrz4su</a>
-									<br>
-									Ethereum Address: <a id="email-copy" data-clipboard-text="0xa28c1ed4887b8c50cac8954d394836e27ef6a400" onclick="Materialize.toast('Ethereum address copied to clipboard 💕', 4000)">0xa28c1ed4887b8c50cac8954d394836e27ef6a400</a>					
+									<br> Oh also, I'll just leave these here...
+									<br> Bitcoin Address:
+									<a id="email-copy" data-clipboard-text="1DbTVB1arHBSBWue4hm9QeDzvfiARrz4su" onclick="Materialize.toast('Bitcoin address copied to clipboard 👌 ', 4000)">1DbTVB1arHBSBWue4hm9QeDzvfiARrz4su</a>
+									<br> Ethereum Address:
+									<a id="email-copy" data-clipboard-text="0xa28c1ed4887b8c50cac8954d394836e27ef6a400" onclick="Materialize.toast('Ethereum address copied to clipboard 💕', 4000)">0xa28c1ed4887b8c50cac8954d394836e27ef6a400</a>
 								</p>
 							</div>
 							<div class="card-action">
@@ -144,10 +133,6 @@
 		</div>
 	</div>
 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="assets/bower_components/materialize/dist/css/materialize.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
 	<!-- jQuery library -->
 	<script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
 
@@ -160,7 +145,6 @@
 			new Clipboard('#email-copy');
 		});
 	</script>
-
 
 </body>
 

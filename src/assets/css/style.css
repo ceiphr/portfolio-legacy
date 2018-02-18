@@ -6,6 +6,45 @@
 
 /*********************************************/
 
+html {
+  scroll-behavior: smooth;
+  font-family: 'Roboto-Regular', sans-serif;
+}
+
+body {
+  background: #23272A;
+  min-width: 332px;
+}
+
+#front-page {
+  height: 100vh;
+}
+
+.cover {
+  z-index: 99;
+  position: absolute;
+  color: white;
+  top: 50vh;
+  transform: translateY(-50%);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.cover__title {
+  font-family: 'Roboto-Slab', serif;
+  font-size: 42px;
+  line-height: 0.2;
+}
+
+.cover__subtext {
+  font-size: 18px;
+}
+
 /*Selection*/
 
 ::selection {
@@ -908,6 +947,11 @@ blockquote {
 .submit:focus {
   color: #2C2F33;
   background: white;
+}
+
+#address-copy,
+#email-copy{
+  word-wrap: break-word !important;
 }
 
 #email-copy {
