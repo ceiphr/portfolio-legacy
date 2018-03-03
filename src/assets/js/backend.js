@@ -53,12 +53,12 @@ $(window).scroll(function () {
 // Change Scroll
 
 $(window).on("scroll", function () {
-	if ($(window).scrollTop() > (window.innerHeight - 25)) {
+	if ($(window).scrollTop() > (window.innerHeight - 25) && window.screen.availWidth < 992) {
 		$(".menu").addClass("scroll");
 	} else {
 		$(".menu").removeClass("scroll");
 	}
-	if ($(window).scrollTop() > (window.innerHeight - 25)) {
+	if ($(window).scrollTop() > (window.innerHeight - 25) && window.screen.availWidth < 992) {
 		$(".menu-title").addClass("scroll");
 	} else {
 		$(".menu-title").removeClass("scroll");

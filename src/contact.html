@@ -4,6 +4,7 @@
 <head>
 	<!--Meta Data-->
 	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description" content="Ceiphr - The portfolio of Ari Birnbaum." />
 	<meta name="theme-color" content="#23272A" />
@@ -27,109 +28,100 @@
 
 <body>
 	<!--Contact-->
-	<div id="home">
-		<div class="stars-container--small">
+	<div id="left-components">
+		<div class="stars-container">
 			<div id="stars"></div>
 			<div id="stars2"></div>
 			<div id="stars3"></div>
 			<!-- Page Title -->
 			<div class="container">
-				<header>
-					<h2 class="title--light title-c">Contact Me</h2>
+				<header class="cover">
+					<h2 class="cover__title--content">Contact Me</h2>
 				</header>
 			</div>
-
 		</div>
-		<!--Centered Elements-->
-		<div class="white">
-			<div id="contact">
-				<div class="row container">
-					<div class="col s12 m8 offset-m2">
-						<div class="card about">
-							<div class="card-content white-text">
-								<span class="card-title">Just so you know</span>
-								<p>You can fill out the form below if you want me to do stuff for you. I'll respond to your query as soon as I can.
-									If you don't want to use the form for whatever reason you can contact me directly at
-									<a id="email-copy" data-clipboard-text="contact@ceiphr.com"
-									    onclick="Materialize.toast('Email copied to clipboard', 4000)">contact@ceiphr.com</a>
-									<br>
-									<br> Oh also, I'll just leave these here...
-									<br> Bitcoin Address:
-									<a id="email-copy" data-clipboard-text="1DbTVB1arHBSBWue4hm9QeDzvfiARrz4su" onclick="Materialize.toast('Bitcoin address copied to clipboard 👌 ', 4000)">1DbTVB1arHBSBWue4hm9QeDzvfiARrz4su</a>
-									<br> Ethereum Address:
-									<a id="email-copy" data-clipboard-text="0xa28c1ed4887b8c50cac8954d394836e27ef6a400" onclick="Materialize.toast('Ethereum address copied to clipboard 💕', 4000)">0xa28c1ed4887b8c50cac8954d394836e27ef6a400</a>
-								</p>
-							</div>
-							<div class="card-action">
-								<ul class="social-c">
-									<li>
-										<a target="_blank" href="https://github.com/ceiphr" rel="noopener">
-											<img src="assets/images/icons/github.svg" />
-										</a>
-									</li>
-									<li>
-										<a target="_blank" href="https://www.instagram.com/ceiphr/" rel="noopener">
-											<img src="assets/images/icons/instagram.svg" />
-										</a>
-									</li>
-									<li>
-										<a target="_blank" href="https://twitter.com/ceiphr" rel="noopener">
-											<img src="assets/images/icons/twitter.svg" />
-										</a>
-									</li>
-									<li>
-										<a target="_blank" href="https://www.facebook.com/ceiphr" rel="noopener">
-											<img src="assets/images/icons/facebook.svg" />
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
+	</div>
+	<!--Right Elements-->
+	<div id="right-components" class="white">
+		<div id="contact">
+			<div class="container">
+				<div class="card about">
+					<div class="card-content white-text">
+						<span class="card-title">Just so you know</span>
+						<p>You can fill out the form below if you want me to do stuff for you. I'll respond to your query as soon as I can. If
+							you don't want to use the form for whatever reason you can contact me directly at
+							<a id="email-copy" data-clipboard-text="contact@ceiphr.com" onclick="Materialize.toast('Email copied to clipboard', 4000)">contact@ceiphr.com</a>.
+							<br>
+							<br> Oh also, I'll just leave these here... for reasons.
+							<br> Bitcoin Address:
+							<a id="email-copy" data-clipboard-text="1DbTVB1arHBSBWue4hm9QeDzvfiARrz4su" onclick="Materialize.toast('Bitcoin address copied to clipboard 👌 ', 4000)">1DbTVB1arHBSBWue4hm9QeDzvfiARrz4su</a>
+							<br> Ethereum Address:
+							<a id="email-copy" data-clipboard-text="0xa28c1ed4887b8c50cac8954d394836e27ef6a400" onclick="Materialize.toast('Ethereum address copied to clipboard 💕', 4000)">0xa28c1ed4887b8c50cac8954d394836e27ef6a400</a>
+						</p>
+					</div>
+					<div class="card-action">
+						<ul class="social-c">
+							<li>
+								<a target="_blank" href="https://github.com/ceiphr" rel="noopener">
+									<img src="assets/images/icons/github.svg" />
+								</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://www.instagram.com/ceiphr/" rel="noopener">
+									<img src="assets/images/icons/instagram.svg" />
+								</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://twitter.com/ceiphr" rel="noopener">
+									<img src="assets/images/icons/twitter.svg" />
+								</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://www.facebook.com/ceiphr" rel="noopener">
+									<img src="assets/images/icons/facebook.svg" />
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
-				<!-- Contact Form -->
-				<div class="row container">
-					<form class="col s12" method="post" action="https://formspree.io/contact@ceiphr.com">
-						<input type="text" name="_gotcha" style="display:none" />
-						<input type="hidden" name="_next" value="https://ceiphr.com/thanks" />
-						<input type="hidden" name="_subject" value="New email // Ceiphr.com" />
-						<div class="row">
-							<div class="input-field col s6 m4 offset-m2">
-								<input id="first_name" type="text" name="first-name">
-								<label for="first_name">First Name</label>
-							</div>
-							<div class="input-field col s6 m4">
-								<input id="last_name" type="text" name="last-name">
-								<label for="last_name">Last Name</label>
-							</div>
-						</div>
-						<div class="row">
-							<div class="input-field col s12 m8 offset-m2">
-								<i class="material-icons prefix">mail</i>
-								<input id="email" type="email" name="email" class="validate">
-								<label for="email">Email</label>
-							</div>
-						</div>
-						<div class="row">
-							<div class="input-field col s12 m8 offset-m2">
-								<i class="material-icons prefix">edit</i>
-								<textarea id="message" class="materialize-textarea" name="message"></textarea>
-								<label for="message">Message</label>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col s12 m8 offset-m2">
-								<button class="btn waves-effect waves-light right submit" id="submit" type="submit">Submit
-									<i class="material-icons right">send</i>
-								</button>
-							</div>
-						</div>
-					</form>
-				</div>
 			</div>
-			<a href="https://ceiphr.com/">
-				<button class="btn btn-c grey">Return Home</button>
-			</a>
+			<!-- Contact Form -->
+			<div class="container">
+				<form class="grid-wrapper--contact" method="post" action="https://formspree.io/contact@ceiphr.com">
+					<input type="text" name="_gotcha" style="display:none" />
+					<input type="hidden" name="_next" value="https://ceiphr.com/thanks" />
+					<input type="hidden" name="_subject" value="New email // Ceiphr.com" />
+					<div class="input-field fname-f">
+						<input id="first_name" type="text" name="first-name">
+						<label for="first_name">First Name</label>
+					</div>
+					<div class="input-field lname-f">
+						<input id="last_name" type="text" name="last-name">
+						<label for="last_name">Last Name</label>
+					</div>
+					<div class="input-field email-f">
+						<i class="material-icons prefix">mail</i>
+						<input id="email" type="email" name="email" class="validate">
+						<label for="email">Email</label>
+					</div>
+					<div class="input-field message-f">
+						<i class="material-icons prefix">edit</i>
+						<textarea id="message" class="materialize-textarea" name="message"></textarea>
+						<label for="message">Message</label>
+					</div>
+					<div class="return-btn-f">
+						<a class="btn btn-c white-text" href="https://ceiphr.com/">Return Home</a>
+					</div>
+					<div class="send-btn-f">
+						<button class="btn waves-effect waves-light right submit" id="submit" type="submit">Submit
+							<i class="material-icons right">send</i>
+						</button>
+					</div>
+				</form>
+			</div>
+			<p class="center formspree-text">All information is secured by
+				<a href="https://formspree.io/" target="_blank">formspree.io</a>
+			</p>
 		</div>
 	</div>
 
