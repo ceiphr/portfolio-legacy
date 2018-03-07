@@ -29,8 +29,7 @@ body {
   user-select: none;
 }
 
-.cover__title,
-.cover__title--contact {
+.cover__title {
   font-size: 380%;
   line-height: 0.2;
 }
@@ -338,6 +337,11 @@ textarea,
 
 #front-page {
   height: 100vh;
+  background: #23272A;
+  background: -moz-linear-gradient(#2C2F33, #23272A);
+  background: -webkit-linear-gradient(#2C2F33, #23272A); 
+  background: -o-linear-gradient(#2C2F33, #23272A);
+  background: linear-gradient(#2C2F33, #23272A);
 }
 
 #testimonials,
@@ -345,19 +349,12 @@ textarea,
 #end,
 #hackathons {
   max-height: auto;
-  padding-top: 8vh;
-  padding-bottom: 8vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   overflow: hidden;
 }
 
-#contact {
-  height: 100%;
-  padding-top: 8vh;
-  padding-bottom: 8vh;
-}
-
 #testimonials,
-#contact,
 #projects {
   background: white;
 }
@@ -367,6 +364,10 @@ textarea,
 #footer,
 .sidebarbk {
   background: #2C2F33;
+}
+
+#contact {
+  padding: 24px;
 }
 
 .stars-container {
@@ -475,6 +476,10 @@ iframe {
 
 .modal-content p a:hover {
   color: #2C2F33;
+}
+
+.modal.bottom-sheet {
+  max-height: 80% !important;
 }
 
 /*Projects Page Styling*/
@@ -775,6 +780,22 @@ blockquote {
   background: white;
 }
 
+.btn--action {
+  background: #7289DA;
+}
+
+.btn--action:hover {
+  background: #7289DA;
+}
+
+.btn--action:active {
+  background: #7289DA;
+}
+
+.btn--action:focus {
+  background: #7289DA;
+}
+
 /*Footer Styling*/
 
 #footer {
@@ -860,45 +881,8 @@ blockquote {
 }
 
 .send-btn-f {
-  grid-column: span 2;
+  grid-column: span 4;
   grid-row: 4;
-}
-
-.title-c {
-  position: absolute;
-  margin: 0;
-  top: 10vh;
-  transform: translateY(-50%);
-}
-
-.about {
-  background: #7289DA;
-}
-
-.social-c {
-  position: relative;
-  width: 150px;
-  bottom: 20px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-}
-
-.social-c li {
-  list-style: none;
-  box-sizing: border-box;
-  float: left;
-  width: 25%;
-}
-
-.social-c li a img {
-  height: 24px;
-  width: 24px;
-  vertical-align: middle !important;
 }
 
 .submit {
@@ -979,14 +963,6 @@ blockquote {
 .btn-c:focus {
   opacity: 0.35;
   background: #2C2F33;
-}
-
-.formspree-text {
-  opacity: 0.25
-}
-
-.formspree-text a {
-  color: black;
 }
 
 .light-btn {

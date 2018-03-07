@@ -1,0 +1,13 @@
+# Rule 1
+User-agent: *
+Disallow: /404
+
+# Rule 2
+User-agent: *
+Disallow: /error
+
+# Rule 3
+User-agent: *
+Disallow: /thanks
+
+Sitemap: https://ceiphr.com/sitemap.xml

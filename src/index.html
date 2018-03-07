@@ -85,6 +85,65 @@
 		</nav>
 	</div>
 
+	<!-- Action Button -->
+	<div class="fixed-action-btn click-to-toggle">
+		<a class="btn-floating btn-large btn--action">
+			<i class="large material-icons">info</i>
+		</a>
+		<ul>
+			<li>
+				<a class="btn-floating btn--action modal-trigger" href="#contact">
+					<i class="material-icons">email</i>
+				</a>
+			</li>
+			<li>
+				<a class="btn-floating btn--action disabled">
+					<i class="material-icons">file_download</i>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- Contact -->
+	<div id="contact" class="modal bottom-sheet">
+		<div class="modal-content">
+			<div class="container">
+				<h3 class="title--dark">Contact Me</h3>
+				<form class="grid-wrapper--contact" method="POST" action="https://formspree.io/contact@ceiphr.com">
+					<input type="text" name="_gotcha" style="display:none" />
+					<input type="hidden" name="_next" value="https://ceiphr.com/thanks" />
+					<input type="hidden" name="_subject" value="New email // Ceiphr.com" />
+					<div class="input-field fname-f">
+						<input id="first_name" type="text" name="first-name">
+						<label for="first_name">First Name</label>
+					</div>
+					<div class="input-field lname-f">
+						<input id="last_name" type="text" name="last-name">
+						<label for="last_name">Last Name</label>
+					</div>
+					<div class="input-field email-f">
+						<i class="material-icons prefix">mail</i>
+						<input id="email" type="email" name="email" class="validate">
+						<label for="email">Email</label>
+					</div>
+					<div class="input-field message-f">
+						<i class="material-icons prefix">edit</i>
+						<textarea id="message" class="materialize-textarea" name="message"></textarea>
+						<label for="message">Message</label>
+					</div>
+					<div class="send-btn-f">
+						<button class="btn waves-effect waves-light right submit" id="submit" type="submit">Submit
+							<i class="material-icons right">send</i>
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="modal-action modal-close waves-effect btn-flat">Close</a>
+		</div>
+	</div>
+
 	<!-- Credits -->
 	<div id="credits" class="modal">
 		<div class="modal-content">
@@ -126,7 +185,6 @@
 				<br> This is the regular family, which can be used alongside the Roboto Condensed family and the Roboto Slab family. A font
 				by Christian Robertson.
 				<br>
-				<br>
 				<br> Resources
 				<br>
 				<br>
@@ -165,7 +223,6 @@
 			<a href="#!" class="modal-action modal-close waves-effect btn-flat">Close</a>
 		</div>
 	</div>
-
 	<!-- Front Page -->
 	<div id="left-components">
 		<div id="front-page">
@@ -343,7 +400,6 @@
 				</div>
 			</div>
 		</div>
-
 		<!-- Hackathon Page -->
 		<div id="hackathons">
 			<!-- Page Title -->
@@ -504,7 +560,6 @@
 				</div>
 			</div>
 		</div>
-
 		<!-- Done Page -->
 		<div id="end">
 			<div class="container end-content">
@@ -513,11 +568,9 @@
 					<p class="white-text subtext-end">Oh also, If you're interested in what I do, feel free to contact me and check out my resume (when I release it).</p>
 				</div>
 				<div class="btns-end">
-					<a href="https://ceiphr.com/contact">
-						<button class="btn-large btn--contact">Contact</button>
-					</a>
+					<button class="btn-large btn--contact modal-trigger" href="#contact">Contact</button>
 					<a>
-						<button class="btn-large btn--dl right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Coming Soon">
+						<button class="btn-large btn--dl right disabled">
 							<i class="material-icons right">file_download</i>Resume</button>
 					</a>
 				</div>
